@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<title>Nav</title>
+	
+	<link rel="stylesheet" href="./bootstrap-3.3.5-dist/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
+
+</head>
+<body>
+	<div class="container">
+		<!-- <ul id="mytab" class="nav nav-tabs nav-stacked" role="tablist"> -->	
+
+		<ul id="mytab" class="nav nav-pills nav-justified" role="tablist">
+			<li role="presentation" class="active"><a href="#" class="">home</a></li>
+			<li role="presentation"><a href="#" class="">contact</a></li>
+			<li role="presentation" class="disabled"><a href="#" class="">help</a></li>
+			<li role="presentation" class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#" class="">product
+					<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu" role="menu">
+					<li role="presentation"><a role="menuitem" tabindex="-1">php</a></li>
+					<li role="presentation"><a role="menuitem" tabindex="-1">python</a></li>
+					<li role="presentation"><a role="menuitem" tabindex="-1">java</a></li>
+					<li role="presentation"><a role="menuitem" tabindex="-1">go</a></li>
+				</ul>
+			</li>
+		</ul>
+		
+	</div>
+	<script src="../../jquery/jquery/index.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./bootstrap-3.3.5-dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8">
+		$('#mytab a').click(function(e){
+			e.preventDefault();
+			$(this).tab("show");
+		});
+	</script>
+</body>
+</html>

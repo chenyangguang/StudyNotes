@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<title>Canvas_linearGrad</title>
+	
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+	
+</body>
+<script type="text/javascript" charset="utf-8">
+	var canvas = document.getElementById('canvas');
+
+	canvas.width = 800;
+	canvas.height = 800;
+
+	var ctx = canvas.getContext('2d');
+
+	var linearGrad = ctx.createLinearGradient(0, 0, 800, 800);
+
+	linearGrad.addColorStop(0.0,'white');
+	linearGrad.addColorStop(0.25,'yellow');
+	linearGrad.addColorStop(0.5,'green');
+	linearGrad.addColorStop(0.75,'blue');
+	linearGrad.addColorStop(1.0, 'black');
+
+	ctx.fillStyle = linearGrad;
+	ctx.fillRect(0,0,800,800);
+</script>
+
+</html>

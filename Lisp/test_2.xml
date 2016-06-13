@@ -1,0 +1,11 @@
+<define-function return-type="int" name="add">
+	<arguments>
+		<argument type="int">arg1 </argument>
+		<argument type="int">arg2 </argument>
+	</arguments>
+	<body>
+		<return>
+			<add value1="arg1" value2="arg2">
+		</return>
+	</body>
+</define>

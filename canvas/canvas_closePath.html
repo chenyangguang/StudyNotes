@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<title>Canvas_closePath</title>
+	
+</head>
+<body>
+	
+	<canvas id="myCanvas">
+	</canvas>
+	
+</body>
+<script type="text/javascript" charset="utf-8">
+	var cvs = document.getElementById('myCanvas');
+	cvs.width = 1000;
+	cvs.height = 1000;
+
+	var textCvs = cvs.getContext('2d');
+
+	textCvs.beginPath();
+	textCvs.moveTo(100,350);
+	textCvs.lineTo(500,350);
+	textCvs.lineTo(500,200);
+	textCvs.lineTo(700,400);
+	textCvs.lineTo(500,600);
+	textCvs.lineTo(500,450);
+	textCvs.lineTo(100,450);
+	textCvs.closePath();
+
+	textCvs.lineWidth = 10;
+	textCvs.fillStyle = 'yellow'; // 先调色后描边
+	textCvs.strokeStyle = '#89';
+
+	textCvs.fill();
+	textCvs.stroke();
+</script>
+</html>

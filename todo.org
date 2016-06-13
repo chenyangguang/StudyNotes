@@ -1,0 +1,24 @@
+
+
+
+* TODO Fixed bug[50%]
+DEADLINE: <2016-12-30 Fri>
+* TODO Exercise(Smimming, Running, Basketball)[40%] 
+SCHEDULED: <2016-07-01 Fri>
+
+* TODO Earn money                                                     :money:
+SCHEDULED: <2016-06-30 Thu>
+do some thing
+CLOSED: [2016-12-30 Mon 11:01]
+
+<2016-12-30 Mon 11:59>
+- [-] step one 
+  - [X] step one one 
+  - [ ] step one two
+- [-] step two
+  - [X] Step two one
+  - [test] Step two two
+  - [ ] Step three
+  - [] C-c C-s setting scheduled date for plan
+  - [ ] C-c C-d setting deadline date for plan
+

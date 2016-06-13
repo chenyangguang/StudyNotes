@@ -1,0 +1,5 @@
+set(test, 5)
+set(=, 5)
+set(test, "hello")
+set(test,=)
+set(*, "hello")

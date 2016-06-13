@@ -1,0 +1,40 @@
+
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<title>封装</title>
+	
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+	
+</body>
+<script type="text/javascript" charset="utf-8">
+	window.onload = function(){
+		var canvas = document.getElementById('canvas');
+		canvas.width = 800;
+		canvas.height = 800;
+
+		var ctx = canvas.getContext('2d');
+
+		ctx.save(); // 
+		ctx.fillStyle = 'red';
+		ctx.translate(100,100);
+		ctx.fillRect(0,0,400,400);
+		ctx.restore();
+
+
+		ctx.save(); // 
+		ctx.fillStyle = 'green';
+		ctx.translate(300, 300);
+		ctx.fillRect(0,0,400,400);
+		ctx.restore();
+	}
+
+</script>
+</html>
+

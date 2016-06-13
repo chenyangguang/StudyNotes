@@ -1,0 +1,4 @@
+<task name="Test">
+<echo message="Hello World" />
+</task>
+<Test />

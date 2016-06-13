@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<title>NavUse</title>
+	<link rel="stylesheet" href="./bootstrap-3.3.5-dist/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
+	
+
+</head>
+<body>
+	<nav class="navbar navbar-inverse" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand">vim</a>
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav" id="mytab">
+					<li class="active"><a href="#" class="heading">Link1</a></li>
+					<li><a href="#" class="heading">Link2</a></li>
+					<li><a href="#" class="heading">Link3</a></li>
+				</ul>
+
+				<form action="navbar-form navbar-left" method="get" accept-charset="utf-8" role="search">
+					<div class="form-group">
+						<input type="text" name="" value="" class="from-control" placeholder="搜索">
+						<button type="button" class="btn btn-default">Search</button>
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#" class="">Link4</a></li>
+					<li class="dropdown">
+						
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">LinkLists
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#" class="">hellotest1</a></li>
+							<li><a href="#" class="">hellotest2</a></li>
+							<li><a href="#" class="">hellotest3</a></li>
+							<li><a href="#" class="">hellotest4</a></li>
+							<li><a href="#" class="">hellotest5</a></li>
+							<li><a href="#" class="">hellotest6</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+		<ol class="breadcrumb">
+			<!-- 路径导航 -->
+			<li><a href="#" class="">Home</a></li>
+			<li><a href="#" class="">加入收藏</a></li>
+			<li><a href="#" class="">网站地图</a></li>
+		</ol>
+	</nav>
+	<script src="../../jquery/jquery/index.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./bootstrap-3.3.5-dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+$('#mytab a').click(function(e){
+			e.preventDefault();
+			$(this).tab('show');
+		});
+	</script>
+</body>
+</html>

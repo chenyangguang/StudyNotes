@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	
+		<title>Canvas_1</title>
+		
+	</head>
+<body>
+	<canvas id="canvas" style="border:1px solid #aaa:display:block;margin:50px auto;"></canvas>
+	
+</body>
+<script type="text/javascript" charset="utf-8">
+	var canvas = document.getElementById("canvas");
+	canvas.width = 800;
+	canvas.height = 800;
+
+	ctx = canvas.getContext('2d');
+	function drawDashLine (ctx, x1,y1,x2, y2, dashLength) {
+		var dashLen = dashLength === undefine ? 5 : dashLength;
+		xpos = x2 - x1; // 横轴长度
+		ypos = y2 - y1; // 纵轴高度
+		numDashes = Math.floor(Math.sqrt(xpos*xpos+ypos*ypos/dashLen));
+
+		for (var i = 0; i < numDashes; i++) {
+			if (i % 2 === 0) {
+				ctx.moveTo(x1+(xpos/numDashes)*i, y1+(ypos/numDashes)*i);
+		}else{
+			ctx.lineTo(x1+(xpos/numDashes)*i, y1+(ypos/numDashes)*i);
+		}
+		}
+		ctx.stroke();
+	}
+	ctx.lineWidth = 2;
+	ctx.strokeStyle = "#0099ee";
+	drawDashLine(ctx, 0, 0, 500, 500, 8);
+</script>
+</html>

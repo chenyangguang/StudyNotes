@@ -1,0 +1,5 @@
+(write-line "single quote used, very good!")
+(write '(* 2　3))
+(write-line " " )
+(write-line "single quote not used, go on!")
+(write (* 3 4))

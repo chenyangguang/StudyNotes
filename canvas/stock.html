@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<title>Stock</title>
+	
+</head>
+<body>
+	<canvas id="canvas_0"></canvas>
+	
+</body>
+<script type="text/javascript" charset="utf-8">
+	var canvas = document.getElementById('canvas_0');
+
+	canvas.width = 800;
+	canvas.height = 800;
+
+	var ctx = canvas.getContext('2d');
+
+	ctx.save();
+	ctx.beginPath();
+	ctx.moveTo(0,0);
+	ctx.lineTo(100,100);
+	ctx.restore();
+
+	ctx.save();
+	ctx.lineTo(150,50);
+	ctx.restore();
+
+	ctx.save();
+	ctx.lineTo(150,70);
+	ctx.restore();
+
+	ctx.save();
+	ctx.lineTo(170, 30);
+	ctx.restore();
+
+	ctx.save();
+	ctx.lineTo(170, 25);
+	ctx.restore();
+
+	ctx.save();
+	ctx.lineTo(190, 300);
+	ctx.restore();
+
+	ctx.save();
+	ctx.lineTo(191, 208);
+	ctx.restore();
+
+	ctx.save();
+	ctx.lineTo(200, 198);
+	ctx.restore();
+
+	ctx.save();
+	ctx.lineTo(203, 60);
+	ctx.restore();
+
+	ctx.save();
+	ctx.lineTo(203, 300);
+	ctx.restore();
+
+	ctx.font = '40px Arial';
+	
+	ctx.fillText('16.05', 10, 50, 50);
+	ctx.fillText('15.06', 10, 100, 50);
+	ctx.fillText('14.05', 10, 200, 50);
+	ctx.stroke();
+</script>
+</html>

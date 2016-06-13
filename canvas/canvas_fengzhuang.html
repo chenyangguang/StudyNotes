@@ -1,0 +1,75 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<title>封装</title>
+	
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+	
+</body>
+<script type="text/javascript" charset="utf-8">
+	window.onload = function(){
+		var canvas = document.getElementById('canvas');
+		canvas.width = 800;
+		canvas.height = 800;
+
+		var ctx = canvas.getContext('2d');
+
+
+		ctx.fillStyle = 'black';
+		ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+		for (var i = 0; i < 200; i++) {
+			var r = Math.random()*10+10,
+			x = Math.random()*canvas.width,
+			y = Math.random()*canvas.height,
+			a = Math.random()*360;
+
+			drawStar(ctx, x, y, r, a);
+		};
+	}
+
+	function drawStar(ctx, x, y, R, rot){
+		ctx.save();
+
+		//
+		ctx.translate(x, y);
+		ctx.rotate(rot/180*Math.PI);
+		//ctx.scale(R,R);
+
+		starPath(ctx);
+
+		ctx.fillStyle = '#fb3';
+		/*
+		ctx.strokeStyle = '#fb5';
+		ctx.lineWidth = 3;
+		ctx.lineJoin = 'round';
+		*/
+
+		ctx.fill();
+		//ctx.stroke();
+
+		ctx.restore();
+	}
+
+	//　标准五角星
+	function starPath(ctx){
+		ctx.beginPath();
+		for (var i = 0; i < 5; i++) {
+			ctx.lineTo(Math.cos((18 + i*72)/180*Math.PI)*20,
+						-Math.sin((18+i*72)/180*Math.PI)*20);
+
+			ctx.lineTo(Math.cos((54+i*72)/180*Math.PI)*0.5*20,
+
+					-Math.sin((54+i*72)/180*Math.PI)*0.5*20);
+		}
+		ctx.closePath();
+	}
+</script>
+</html>
+

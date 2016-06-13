@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="name" content="content" charset="utf-8">
+<title>Test</title>
+</html>
+<script type="text/javascript" charset="utf-8">
+    
+    String.prototype.format= function(){
+       var args = arguments;
+       return this.replace(/\{(\d+)\}/g,function(s,i){
+         return args[i];
+       });
+    }
+
+    var temp = '你的朋友{0}掉进水里了,{1}叫你别去{2}';
+    console.log(temp.format('小李','你女朋友', '他'));
+
+
+
+</script>

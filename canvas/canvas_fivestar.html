@@ -1,0 +1,56 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<title>Canvas_lineCap</title>
+	
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+	
+</body>
+<script type="text/javascript" charset="utf-8">
+	window.onload= function(){
+		var canvas = document.getElementById('canvas');
+		canvas.width = 800;
+		canvas.height = 800;
+
+		var ctx = canvas.getContext('2d');
+
+		/*
+		ctx.beginPath();
+		for (var i = 0; i < 5; i++) {
+			ctx.lineTo(Math.cos((18+i*72)/180*Math.PI)*300+400, 
+						-Math.sin((18+i*72)/180*Math.PI)*300+400);
+			ctx.lineTo(Math.cos((54+i*72)/180*Math.PI)*150+400, 
+						-Math.sin((54+i*72)/180*Math.PI)*150+400);
+		};
+		ctx.closePath();
+		*/
+		//ctx.stroke();
+
+		ctx.lineWidth = 10;
+		//ctx.lineJoin = 'bevel';
+		//ctx.lineJoin = 'round';
+		ctx.lineJoin = 'miter'; // (default)
+		ctx.miterLimit = 30; // so funny
+		drawStar(ctx, 50, 300, 400,400);
+		drawStar(ctx, 400, 300, 500,400);
+		drawStar(ctx, 30,300, 400,400, 50);
+	}
+
+	function drawStar(ctx, r, R, x, y, rot){
+		ctx.beginPath();
+		for (var i = 0; i < 5; i++) {
+			ctx.lineTo(Math.cos((18+i*72-rot)/180*Math.PI)*R+x, 
+						-Math.sin((18+i*72-rot)/180*Math.PI)*R+y);
+			ctx.lineTo(Math.cos((54+i*72-rot)/180*Math.PI)*r+x, 
+						-Math.sin((54+i*72-rot)/180*Math.PI)*r+y);
+		};
+		ctx.closePath();
+		ctx.stroke();
+	}
+</script>
+</html>

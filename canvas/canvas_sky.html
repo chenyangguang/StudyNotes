@@ -1,0 +1,57 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<title>Canvas_sky</title>
+	
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+	
+</body>
+<script type="text/javascript" charset="utf-8">
+	window.onload = function(){
+		var canvas = document.getElementById('canvas');
+		canvas.width = 800;
+		canvas.height = 800;
+
+		var ctx = canvas.getContext('2d');
+
+
+		ctx.fillStyle = 'black';
+		ctx.fillRect(0, 0, canvas.width, canvas.height);
+		for (var i = 0; i < 200; i++) {
+			var r = Math.random()*10+10;
+			var x = Math.random()*canvas.width;
+			var y = Math.random()*canvas.height;
+
+			var a = Math.random()*360;
+
+			drawStar(ctx, x, y, r, r/2.0, a);
+		};
+	}
+
+	function drawStar(ctx, x, y, outerR, interR, rot){
+		ctx.beginPath();
+		for (var i = 0; i < 5; i++) {
+			ctx.lineTo(Math.cos((18+i*72-rot)/180*Math.PI)*outerR+x, 
+						-Math.sin((18+i*72-rot)/180*Math.PI)*outerR+y);
+			ctx.lineTo(Math.cos((54+i*72-rot)/180*Math.PI)*interR+x, 
+						-Math.sin((54+i*72-rot)/180*Math.PI)*interR+y);
+		};
+		ctx.closePath();
+
+		ctx.fillStyle = '#fb3';
+		ctx.stokeStyle = '＃fb5';
+		ctx.lineWidth = '3';
+		ctx.lineJoin = 'round';
+
+		ctx.fill();
+		ctx.stroke();
+
+	}
+</script>
+</html>
+

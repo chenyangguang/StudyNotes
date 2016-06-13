@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<title>scale</title>
+	
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+	
+</body>
+<script type="text/javascript" charset="utf-8">
+	window.onload = function(){
+		var canvas = document.getElementById('canvas');
+		canvas.width = 800;
+		canvas.height = 800;
+
+		var ctx = canvas.getContext('2d');
+
+
+		ctx.save(); // 
+		ctx.scale(1,1);
+		ctx.fillRect(50,50,200,200);
+		ctx.restore();
+
+		ctx.save(); // 
+		ctx.scale(2,2);
+		ctx.fillRect(50,50,200,200);
+		ctx.restore();
+
+		ctx.save(); // 
+		ctx.scale(3,3);
+		ctx.fillRect(50,50,200,200);
+		ctx.restore();
+
+		ctx.stroke();
+	}
+
+</script>
+</html>
+

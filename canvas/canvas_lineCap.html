@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<title>Canvas_lineCap</title>
+	
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+	
+</body>
+<script type="text/javascript" charset="utf-8">
+	window.onload= function(){
+		var canvas = document.getElementById('canvas');
+		canvas.width = 1000;
+		canvas.height = 1000;
+
+		var ctx = canvas.getContext('2d');
+
+		ctx.lineWidth = 10;
+		ctx.strokeStyle= '#006689';
+
+		ctx.beginPath();
+		ctx.moveTo(100, 200);
+		ctx.lineTo(700, 200);
+		ctx.lineCap = 'butt';
+		ctx.stroke();
+
+		ctx.beginPath();
+		ctx.moveTo(100,400);
+		ctx.lineTo(700, 400);
+		ctx.lineCap = 'round';
+		ctx.stroke();
+
+		ctx.beginPath();
+		ctx.moveTo(100, 600);
+		ctx.lineTo(700, 600);
+		ctx.lineCap = 'square';
+		ctx.stroke();
+
+		ctx.lineWidth = 1;
+		ctx.strokeStyle = '#777';
+		ctx.moveTo(100,100);
+		ctx.lineTo(100,700);
+		ctx.moveTo(700,100);
+		ctx.lineTo(700,700);
+		ctx.stroke();
+
+	}
+</script>
+</html>

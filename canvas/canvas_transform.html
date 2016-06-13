@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	
+		<title>变换矩阵</title>
+		
+	</head>
+	<body>
+		<canvas id="canvas"></canvas>
+		
+	</body>
+	<script type="text/javascript" charset="utf-8">
+		var canvas = document.getElementById('canvas');
+
+		canvas.width = 800;
+		canvas.height = 800;
+
+		var ctx = canvas.getContext('2d');
+
+		ctx.fillStyle = 'red';
+		ctx.strokeStyle = '#058';
+		ctx.lineWidth = 5;
+
+		ctx.save();
+		ctx.transform(1,0.2,0.2,1,50,100); // 设置变换矩阵
+		ctx.transform(1,-0.2,0.2,1,0,100);
+		//ctx.setTransform(1,0,0,1,100,100); // 重新设置矩阵
+
+		ctx.fillRect(50,50,300,300);
+		ctx.strokeRect(50,50,300,300);
+
+		ctx.restore();
+	</script>
+</html>

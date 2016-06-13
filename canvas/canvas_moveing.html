@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<title>Canvas_moveing</title>
+	
+</head>
+<body onkeypress="moveBall()">
+	
+	<!--canvas-->
+	<canvas id="canvas" width="400px" height="300px" style="border:1px solid red;">
+	您的浏览器不支持canvas标签
+	</canvas>
+	
+	<script type="text/javascript" charset="utf-8">
+		
+		var canvas = document.getElementById('canvas');
+
+		function Ball (x, y, radius, speed) {
+			this.x = x || 10;
+			this.y = y || 10;
+			this.radius = radius || 10; // 默认值的另一种表示方法
+			this.speed = speed || 5;
+
+			// up
+			this.moveUp = function	(){
+				this.y -= this.speed;
+				if (this.y < this.radius) {
+					this.y = this.radius;
+				};
+			}
+
+			// move toward right
+			this.moveRight = function (){
+				this.x += this.speed;
+				var maxX = canvas.width - this.radius;
+				if (this.x>maxX) {this.x=maxX;};
+			}
+
+			this.moveLeft = function(){
+				this.x -= this.speed;
+				if (this.x < this.radius) {this.x = this.radius;};
+			}
+
+			//down
+			this.moveDown = function(){
+				this.y += this.speed;
+				var maxY = canvas.height - this.radius;
+				if (this.y > maxY) {this.y = maxY;};
+			}
+		}
+
+		function drawBall(ball){
+			if (typeof ctx !=  "undefined") {
+				ctx.beginPath();
+				ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI*2, false);
+				ctx.fill();
+			};
+		}
+
+		function clearCanvas(){
+			if (typeof ctx != "undefined") {
+				ctx.clearRect(0, 0, 400, 300);
+			};
+		}
+
+		var ball = new Ball();
+
+		if (canvas.getContext) {
+			var ctx = canvas.getContext("2d");
+			drawBall(ball);
+		};
+
+		function moveBall(event){
+			switch(event.keyCode) {
+				case '37':
+					ball.moveLeft();
+					break;
+				case '38':
+					ball.moveUp();
+					break;
+							
+				case '39':
+					ball.moveRight();
+					break;
+				case '40':
+					ball.moveDown();
+					break;
+				default:
+					return;
+			}
+
+			clearCanvas();
+			drawBall(ball);
+		}
+
+	</script>
+</body>
+</html>

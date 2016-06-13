@@ -1,0 +1,20 @@
+(setq m 100)
+(setq n 38)
+(format t "~% BITWISE AND of m and n is ~a" (logand m n))
+(format t "~% BITWISE INCLUSIVE OR of m and n is ~a" (logior m n))
+(format t "~% BITWISE EXCLUSIVE OR of m and n is ~a" (logxor m n))
+(format t "~% NOT N is ~a" (lognor m n))
+(format t "% M EQUIVALANCE N is ~a" (logeqv m n))
+
+(terpri)
+
+(setq x 10)
+(setq y 0)
+(setq z 40)
+(setq w 50)
+(format t "~% Result of BITWISE and operation on 10, 0, 40, 50 is ~a" (logand x y z w))
+(format t "~% Result of BITWISE or operation on 10, 0, 40, 50 is ~a" (logior x y z w))
+(format t "~% Result of BITWISE xor operation on 10, 0, 40, 50 is ~a" (logxor x y z w))
+(format t "~% Result of BITWISE xor operation on 10, 0, 40, 50 is ~a" (logxor x y z w))
+(format t "~% Result of BITWISE eqivalance operation on 10, 0, 40, 50 is ~a" (logeqv x y z w))
+

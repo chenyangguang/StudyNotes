@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	
+		<title>Canvas_func</title>
+		
+	</head>
+	<body>
+		<canvas id="canvas_func">
+		</canvas>
+		
+	</body>
+	<script type="text/javascript" charset="utf-8">
+		var canvas_func = document.getElementById('canvas_func');
+
+		canvas_func.width = 800;
+		canvas_func.height = 800;
+
+		var testCanvas = canvas_func.getContext('2d');
+
+		drawRect(testCanvas, 100, 100, 400, 400, 10, '#583', 'red');
+		drawRect_2(testCanvas, 300, 300, 400, 400, 10, '#583', 'blue');
+
+		function drawRect(kao, x, y, width, height, borderWidth, borderColor, fillColor){
+
+			kao.beginPath();
+			/*
+			kao.moveTo(x, y);
+			kao.lineTo(x+width, y);
+			kao.lineTo(x+width, y+height);
+			kao.lineTo(x, y+height);
+			*/
+			kao.rect(x, y, width, height); 
+			kao.closePath();
+
+			kao.lineWidth = borderWidth;
+			kao.fillStyle = fillColor;
+			kao.strokeStyle = borderColor;
+
+			kao.fill();
+			kao.stroke();
+		}
+
+		function drawRect_2(kao, x, y, width, height, borderWidth, borderColor, fillColor){
+			kao.lineWidth = borderWidth;
+			kao.fillStyle = fillColor;
+			kao.strokeStyle = borderColor;
+
+			kao.fillRect(x, y, width, height);
+			kao.strokeRect(x, y, width, height);
+		}
+	</script>
+</html>
