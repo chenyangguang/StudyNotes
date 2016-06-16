@@ -1188,138 +1188,101 @@ $row['username'] = str_replace($keywords, '<font color="red">'.$keywords.'</font
 
 *** 2015-05-06
 -----------
-(1) thrift强大～
-(2) php模糊查询
-索引有什么好处：
-如果按照某个条件去检索数据，如果这个条件没有建立索引，查询的时候是会遍历整张表，如果你建立了索引，查询的时候就会根据索引来查询，进而提高查询性能.
-mysql 查询
--- 精确查询， 有且只有一条 （用户注册、登录，单条数据更新）
--- 模糊查询， 返回的结果不确定。（站内搜索等）
-1. 使用sql匹配模式，不能使用操作符 = 或 ！=， 而是使用操作符like 或 not like
-2. 使用SQL匹配模式，MYSQL提供了2种通配符： 
-    % 表示任意数量的任意字符（其中包含0个）
-    _ (下划线)表示的任意单个字符
-    3. 使用SQL匹配模式，如果匹配模式中不包含以上2中通配符的任意一个，其查询的效果等同于 = 或 ！=
-    4. 使用 SQL 匹配模式忽略大小写
++ thrift强大～
++ php模糊查询
++ 索引有什么好处： 如果按照某个条件去检索数据，如果这个条件没有建立索引，查询的时候是会遍历整张表，如果你建立了索引，查询的时候就会根据索引来查询，进而提高查询性能.
++ mysql 查询
+  -- 精确查询， 有且只有一条 （用户注册、登录，单条数据更新）
+  -- 模糊查询， 返回的结果不确定。（站内搜索等）
+1) 使用sql匹配模式，不能使用操作符 = 或 ！=， 而是使用操作符like 或 not like
+2) 使用SQL匹配模式，MYSQL提供了2种通配符： 
+    + % 表示任意数量的任意字符（其中包含0个）
+    + _ (下划线)表示的任意单个字符
+3) 使用SQL匹配模式，如果匹配模式中不包含以上2中通配符的任意一个，其查询的效果等同于 = 或 ！=
+4) 使用 SQL 匹配模式忽略大小写
+  + 查询用户名以某个字符开头的用户 查询以 'l' 开头的用户名数据  -> 1%, eg: SELECT * FROM user WHERE username LIKE 'l%';
+  + 查询用户名以某个字符结尾的用户 查询以 ‘e’  结尾的用户名的数据 -> %e eg: SELECT * FROM user WHERE username LIKE '%e';
+  + 查询用户名包含某个字符的用户 -> %o% 查询用户名包含字符 ‘o’ 的用户 eg : SELECT * FROM user WHERE username LIKE '%o%';
+  + 查询用户名长度为3的用户数据 eg : SELECT *  FROM user WHERE username LIKE '___';
+  + %  与 _ 的结合 查询用户名中第二个字符为 ‘o’ 的用户数据 eg: SELECT * FROM user WHERE username LIKE '_o%';
+  + 正则表达式匹配模式(不建议使用)
+    a . ---> 匹配任意但个字符
+    b × ---> 匹配0个或多个在它前面的字符
+    c x* ---> 表示匹配任何数量的X字符
+    d [..] ---> 匹配中括号中的任意字符
+    d eg:
+      - [abc] 匹配 a, b, 或 c
+      - [a-z] a-z任意字符
+      - [0-9] 0-9任意字符
+      - [0-9]* 任意数字
+      - [a-z]* 任意小写字母
+      - ^ --> 开头
+      - $ --> 结尾
+  + 正则表达式匹配模式使用的操作符, 是REGEXP 或 NOT REGEXP ,有别于SQL模式 (任何位置满足正则表达式匹配到了模式，就是匹配到了，) 
+    - 查询用户名以l开始的用户 SELECT username FROM user WHERE username REGEXP '^l'; 
+    - 查询用户名正好是三个字符的用户 SELET * FROM user WHERE username REGEXP '...$'; //'.....$';
+    - 注意： 如果仅用通配符 . 来匹配， 有N个  . 就匹配大于等于N个
 
-      #查询用户名以某个字符开头的用户
-      查询以 'l' 开头的用户名数据  -> 1%
-      eg: SELECT * FROM user WHERE username LIKE 'l%';
-      #查询用户名以某个字符结尾的用户
-      查询以 ‘e’  结尾的用户名的数据 -> %e
-      eg: SELECT * FROM user WHERE username LIKE '%e';
-      #查询用户名包含某个字符的用户 -> %o%
-      查询用户名包含字符 ‘o’ 的用户
-      eg : SELECT * FROM user WHERE username LIKE '%o%';
++ 大公司，把业务精细化管理，技术团队能最大化完成这些划分的任务。看到服务器管理的同事的工作，才知道数据结构和算法才是王道。将武功比之：数据结构和算法才是内功，编程语言只是招法。
 
-      #查询用户名长度为3的用户数据
-      eg : SELECT *  FROM user WHERE username LIKE '___';
+*** 2015-05-05
+  ------------
+  大公司的生活压力很大，每天那么多人git push那么多次代码，就自己贡献最少。
+  ~Ctrl+shift+t~ 和 ~Ctrl+Alt+t~ 打开的终端不太一样。前者同窗口打开，后者另起窗口。
+  ~Ctrl+shift+v~ 直接将粘贴板的东西，粘贴到终端
 
-      # %  与 _ 的结合
-      查询用户名中第二个字符为 ‘o’ 的用户数据
-      eg: SELECT * FROM user WHERE username LIKE '_o%';
+*** 2015-05-02
+  -------------
+  (1)当前要务是分清主次，轻重缓急，长远的技术。在保证工作顺利的前提下，更新自己的it技能。
+  (2)逐个击破。各个技术点逐一学习，分化拿下。
 
-      #正则表达式匹配模式(不建议使用)
-      . ---> 匹配任意但个字符
-      × ---> 匹配0个或多个在它前面的字符
-      x* ---> 表示匹配任何数量的X字符
-      [..] ---> 匹配中括号中的任意字符
-      eg:
-      [abc] 匹配 a, b, 或 c
-      [a-z] a-z任意字符
-      [0-9] 0-9任意字符
-      [0-9]* 任意数字
-      [a-z]* 任意小写字母
-      ^ --> 开头
-      $ --> 结尾
-      #正则表达式匹配模式使用的操作符, 是REGEXP 或 NOT REGEXP ,有别于SQL模式
-      (任何位置满足正则表达式匹配到了模式，就是匹配到了，)
-      查询用户名以l开始的用户
-      SELECT username FROM user WHERE username REGEXP '^l';
-      查询用户名正好是三个字符的用户
-      SELET * FROM user WHERE username REGEXP '...$'; //'.....$';
-      注意：
-      如果仅用通配符 . 来匹配， 有N个  . 就匹配大于等于N个
+*** 2015-05-01
+  -------------
+  vim有一个插件可以用python实现vim中直接看hackernews -> /vim-hackernews/
 
-      (3) 大公司，把业务精细化管理，技术团队能最大化完成这些划分的任务。看到服务器管理的同事的工作，才知道数据结构和算法才是王道。将武功比之：数据结构和算法才是内功，编程语言只是招法。
+***  2015-04-30
+  --------------
+  + 前期的环境已经全部部署完毕， 五一前的准备工作， 已完成。 下一步，利用一天，熟悉全部常用的git命令; 用两天，熟悉 /phalcon/ 开发环境下的使用.
+  + mysql root密码忘记，可通过最简单的 ~/etc/mysql/debian.cnf~ 文件中的用户名和密码，
+  + mysql -udebian-sys-maint -p  
+    - Enter password: <输入[client]节的密码>  
+    - mysql> ~use mysql;~
+    - mysql> ~UPDATE user SET Password=PASSWORD(’newpassword’) where USER=’root’;~
+    - mysql> ~FLUSH PRIVILEGES;~
+    - mysql> ~quit~
+    - # mysql -uroot -p  
+    - Enter password: <输入新设的密码newpassword> 来修改。 ubuntu14.04上快速解决。
 
-      2015-05-05
-      ------------
-      大公司的生活压力很大，每天那么多人git push那么多次代码，就自己贡献最少。
-      Ctrl+shift+t 和Ctrl+Alt+t打开的终端不太一样。前者同窗口打开，后者另起窗口。
-      Ctrl+shift+v直接将粘贴板的东西，粘贴到终端
-      2015-05-02
-      -------------
-      (1)当前要务是分清主次，轻重缓急，长远的技术。在保证工作顺利的前提下，更新自己的it技能。
-      (2)逐个击破。各个技术点逐一学习，分化拿下。
-      2015-05-01
-      -------------
-      vim有一个插件可以用python实现vim中直接看hackernews -> vim-hackernews
-      2015-04-30
-      --------------
-      前期的环境已经全部部署完毕，加入tower邮箱团队。五一前的准备工作，已完成。
-      下一步，利用一天，熟悉全部常用的git命令;在用两天，熟悉phalcon开发环境下的使用，熟悉forbag源码.
+*** 2015-04-29
+  ---------------
+  (1) linux /scp/ , /ssl/, 这些命令要多用。
+  (2) /awk/, /sed/ 都是很常用的数据处理工具, 还有管道命令 /grep/ (选取)
 
-      mysql root密码忘记，可通过最简单的/etc/mysql/debian.cnf文件中的用户名和密码，
+*** 2015-04-28
+  ----------------
+  补充： linux的许多命令，今天那个叫开眼了。大神就是大神。总之就一句话：linux原来还可以这样玩～
+  tag一个，里程碑式的日子。
 
-      # mysql -udebian-sys-maint -p  
-      Enter password: <输入[client]节的密码>  
-      mysql>use mysql;
-      mysql> UPDATE user SET Password=PASSWORD(’newpassword’) where USER=’root’;  
-      mysql> FLUSH PRIVILEGES;  
-      mysql> quit  
-      # mysql -uroot -p  
-      Enter password: <输入新设的密码newpassword>  
-      来修改。
-      ubuntu14.04上快速解决。
-      2015-04-29
-      ---------------
-      （1）linux scp , ssl,这些命令要多用。
+*** 2015-04-28
+  -------------
+(1) [[http://www.thinkphp.cn/][thinkphp官网]] [[http://phalconphp.com][phalcon官网]]
+(2) [[http://requirejs.org/docs/api.html][requirejs]]
+(3) 安装git客户端，并熟悉git的使用方式
+(4) 安装node: [[http://nodejs.org/][node]] (注意下载它的二进制版本，注意机器的位数)
+(5) 安装对应的npm包
+  npm install bower -g
+  npm install grunt -g
+  npm install jsint -g
+  npm install requirejs -g
+  npm install uglify-js -g
+  npm install jshint -g
+  npm install opencc -g
+  npm install gulp -g
+(6) 用ssh-keygen生成密钥对，设置项目公钥信息
+(7) 安装phaltomjs:[[http://phantomjs.org/][ phaltomjs]]
+(8) php安装memache扩展，thrift扩展，composer
 
-      (2)awk, sed都是很常用的数据处理工具, 还有管道命令grep(选取)
-      2015-04-28
-      ----------------
-      补充： linux的许多命令，今天那个叫开眼了。大神就是大神。总之就一句话：linux原来还可以这样玩～
-      tag一个，里程碑式的日子。
-      2015-04-28
-      -------------
-      (1) [[http://www.thinkphp.cn/][thinkphp官网]]
-
-      [[http://phalconphp.com][phalcon官网]]
-
-      (2)[[http://requirejs.org/docs/api.html][requirejs]]
-
-      (3)安装git客户端，并熟悉git的使用方式
-
-      (4)安装node: [[http://nodejs.org/][node]] (注意下载它的二进制版本，注意机器的位数)
-
-      (5)安装对应的npm包
-
-      npm install bower -g
-
-      npm install grunt -g
-
-      npm install jsint -g
-
-      npm install requirejs -g
-
-      npm install uglify-js -g
-
-      npm install jshint -g
-
-      npm install opencc -g
-
-      npm install gulp -g
-
-      (6) 用ssh-keygen生成密钥对，设置项目公钥信息
-
-
-(11)安装phaltomjs:[[http://phantomjs.org/][ phaltomjs]]
-
-(12)php安装memache扩展，thrift扩展，composer
-
-
-2015-04-24
+*** 2015-04-24
 -------------
 面试三，这个面试一共四轮，三层技术, 一层hr
   + 列举五种设计模式，(单元素模式，工厂模式，观察者模式，命令链模式，策略模式，)
