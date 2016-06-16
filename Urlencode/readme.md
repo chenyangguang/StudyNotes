@@ -1,1 +1,0 @@
-urlencode($string, $str)
