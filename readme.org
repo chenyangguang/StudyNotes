@@ -1,13 +1,13 @@
-
+#+TODO: TODO IN_PROGRESS WAITING DONE
 * emacs大法好
 ** 一年之内，学成emacs这套刀法。
 *** 2016-06-16
 + org-mode tips
-  - *bold*, 
-  - /italic/, 
-  - _underlined_, 
+  - *bold*
+  - /italic/ 
+  - _underlined_ 
   - =code= 
-  - ~verbatim~, 
+  - ~verbatim~ 
   - +strike-through+
 *** 2016-06-06
 *****  查看网络掉包状况，ping google.com, 然后ctrl+c终止，看最后面几行。
