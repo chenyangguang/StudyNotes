@@ -364,7 +364,7 @@ laravel 的eloquent非常强大，　比phalcon强大太多了。
 + =php artisan make:middleware beforemiddleware= 前置操作的中间件
 + =php artisan make:middleware aftermiddleware= 后置操作的中间件
 
-vagrant up启动时， 启动virtualbox时报个错。
+~vagrant up~ 启动时， 启动virtualbox时报个错。
 "virtualbox failed to open a session for the virtual machine  "
 
 *** 2016-02-26
@@ -384,11 +384,11 @@ vagrant up启动时， 启动virtualbox时报个错。
   现在， 到墙外去耍去吧！前提是你的chome安装了switchysharp.1.10.5.crx或者别的代理
   这能帮到这里了～
 + laravel 这个最好还是设置下快捷方式
- - 将 _alias laravel='~/.composer/vendor/bin/laravel'_  放置到~/.zshrc最后， 
+ - 将 alias laravel='~/.composer/vendor/bin/laravel'  放置到~/.zshrc最后， 
  - 重新执行下这个文件 =source ~/.zshrc= , 这里的zshrc是和bash一样的工具, 就是更强大一下， 至于强大在哪些地方， 我也不知道。
 + 没有沉淀的输出如果传播出去， 很快就会消散, 消亡。
   怎么把项目弄到博客网站上去？这是个问题。 现在只是一个一个文件的放上去， 很不好。
-+ php artisan migrate 时发现自己的文件名改过了。可以 =composer dump-autoload= 一下, 再重新执行即可。laravel貌似比phalcon好用的多。
++ ~php artisan migrate~ 时发现自己的文件名改过了。可以 =composer dump-autoload= 一下, 再重新执行即可。laravel貌似比phalcon好用的多。
 + 今天被onclick坑死了！ <a onclick="method_dosth()"></a> onclick这个写法， 不知道是怎么回事， 到app的话调用了什么都是没有回调的～～， 必须携程onclick， 谁能解释一下？
 laravel 上手很快。下周可以用laravel来做博客的开发框架。
 
@@ -405,7 +405,7 @@ laravel 上手很快。下周可以用laravel来做博客的开发框架。
 
 *** 2016-02-23
 ----------------------------------------------------------------------
-9秒开机了！so sexy!ssd 大发好！x
+9秒开机了！so sexy! *ssd* 大发好！
 *** 2016-02-22
 ----------------------------------------------------------------------
 两种兵器对比着学。
@@ -431,7 +431,7 @@ laravel 上手很快。下周可以用laravel来做博客的开发框架。
 *** 2016-02-04
 ----------------------------------------------------------------------
 emacs 是个什么东西？
-用emacs -nw -q 不安装任何插件启动emacs
+用 ~emacs -nw -q~ 不安装任何插件启动emacs
 
 *** 2016-02-18
 ----------------------------------------------------------------------
@@ -447,48 +447,48 @@ emacs 是个什么东西？
 *** 2016-02-17
 ----------------------------------------------------------------------
 what a beauty day today ! emacs is coming! come on!
-+ m-d equal kill a word
-+ m-delete means backward-kill-world
-+ m-k kill-sentence
-+ c-k kill-line
-+ reset c-x u, c-/, c-_
-+ c-y means paste, but  c-y then m-y means next paste, like next register in vim, just like a circle
-+ c-u means n times to do 
-  examples like : c-u 6 c-k means delete three lines, not 6 lines!
-+ c-g(esc esc esc) keyboard-quit
-+ backspace        backward-delete-char
-+ c-d              delete-char
-+ c-x c-s              save
-+ move : 
-+ c-f next-char
-+ c-b prew-char
-+ c-p prew-line
-+ c-n next-line
-+ c-e end-of-line
-+ c-a ahead-of-line
-+ c-l  like h m l in vim(re center)
-+ m-f forward-word
-+ m-b backward-word
-+ m-a backward-sentence
-+ m-e forward-sentence
-+ c-v  scroll-up
-+ m-v  scroll-down
++ ~m-d~ equal kill a word
++ ~m-delete~ means backward-kill-world
++ ~m-k kill-sentence~
++ ~c-k kill-line~
++ reset ~c-x u~, ~c-/~, ~c-_~
++ c-y means paste, but  ~c-y~ then ~m-y~ means next paste, like next register in vim, just like a circle
++ ~c-u~ means n times to do 
+  examples like : ~c-u 6 c-k~ means delete three lines, not 6 lines!
++ ~c-g(esc esc esc)~ keyboard-quit
++ ~backspace~        backward-delete-char
++ ~c-d~              delete-char
++ ~c-x c-s~              save
+ move : 
++ ~c-f~ next-char
++ ~c-b~ prew-char
++ ~c-p~ prew-line
++ ~c-n~ next-line
++ ~c-e~ end-of-line
++ ~c-a~ ahead-of-line
++ ~c-l~  like h m l in vim(re center)
++ ~m-f~ forward-word
++ ~m-b~ backward-word
++ ~m-a~ backward-sentence
++ ~m-e~ forward-sentence
++ ~c-v~  scroll-up
++ ~m-v~  scroll-down
  search:
-+ c-s isearch forward
-+ c-r isearch backward
-+ esc c-s  isearch-forward-regexp
-+ esc c-r  isearch-backward-regexp
-+ m-%      waken replacement
-+ c-x c-f  find a file 
-+ c-x o  change window
-+ c-x 1  only one window, like :only in vim
-+ c-x c-b list all the buffer files
-+ c-x b 
-+ c-x k kill-buffer
-+ m-x describe-variable -> "enter" -> auto-mode-alist see all the mode , so sexy!
-+ m-x compile  woken the compile in linux
-+ c-\切换输入法
-+ c-x shell 进入shell模式, 然后c-x c-b 返回buffer
++ ~c-s~ isearch forward
++ ~c-r~ isearch backward
++ ~esc c-s~  isearch-forward-regexp
++ ~esc c-r~  isearch-backward-regexp
++ ~m-%~      waken replacement
++ ~c-x c-f~  find a file 
++ ~c-x o~  change window
++ ~c-x 1~  only one window, like :only in vim
++ ~c-x c-b~ list all the buffer files
++ ~c-x b~ 
++ ~c-x k~ kill-buffer
++ ~m-x~ describe-variable -> "enter" -> auto-mode-alist see all the mode , so sexy!
++ ~m-x~ compile  woken the compile in linux
++ ~c-\~ 切换输入法
++ ~c-x shell~ 进入shell模式, 然后c-x c-b 返回buffer
 
 *** 2016-02-16
 ----------------------------------------------------------------------
@@ -542,7 +542,7 @@ install phpbrew to control  version of php. [[https://github.com/phpbrew/phpbrew
 
 *** 2016-01-16
 ------------------------------------------------------------------------
-+ vim 中直接!clisp %执行当前lisp文件，　无须退出。
++ vim 中直接! ~clisp %~ 执行当前lisp文件, 无须退出。
 + ~ssh key~
 + ssh-keygen -t rsa -c 'email'
 
@@ -586,13 +586,13 @@ lisp是什么样的语言？这个们进去会怎么样？看了《黑客与画�
 
 *** 2016-01-10
 ------------------------------------------------------------------------
-from today , use deepin system for my own computer system
-use english everyday 
+From today , use deepin system for my own computer system.
+use english everyday.
 
-good beginning!
+Good beginning!
 deepin install php7.0.2   by "[[http://blog.sina.com.cn/s/blog_40bb2de40102w718.html][deepin下安装php7]]"
 
-sleep well tonight, tomorrow sun will still rises
+sleep well tonight, tomorrow sun will still rises.
 
 gtkhash
 ubuntu下校验文件的hash值工具
@@ -1871,29 +1871,23 @@ d.能够用于系统运维成本的预算
 
 *** 2015-03-11
 
-=== PHP性能问题的具体分析
-工具:XHPorf(源自FaceBook的PHP性能呢分析工具)
-实践：
-通过分析Wordpress程序，进行分析
++ PHP性能问题的具体分析
+  - 工具: ~XHPorf~ (源自FaceBook的PHP性能呢分析工具)
+  - 实践:
+  - 通过分析Wordpress程序，进行分析
+  - php.ini -> [xhprof] extension=xhprof.so; xhprof.output_dir=/tmp/xhprof
+    1) xhprof_enable(XHPROF_FLAGG_CPU+XHPROF_FLAGS_MEMORY) 开启xhprof
+    2) $data = xhprof_disable();
+    3) include_once "xhprof_lib/utils/xhprof_lib.php";  
+    4) include_once "xhprof_lib/utils/xhprof_runs.php";  
+    5) $objXhprofRun = new XHProfRuns_Default(); // 数据会保存在 *php.ini* 中xhprof.output_dir设置的目录去中 
 
-php.ini -> [xhprof] extension=xhprof.so; xhprof.output_dir=/tmp/xhprof
-
-xhprof_enable(XHPROF_FLAGG_CPU+XHPROF_FLAGS_MEMORY) 开启xhprof
-
-$data = xhprof_disable();
-
-include_once "xhprof_lib/utils/xhprof_lib.php";  
-include_once "xhprof_lib/utils/xhprof_runs.php";  
-$objXhprofRun = new XHProfRuns_Default();//数据会保存在php.ini中xhprof.output_dir设置的目录去中 
-
-=== PHP性能瓶颈解决方法
-做到极致
++ PHP性能瓶颈解决方法
+  - 做到极致
 (1) Opcode Cache: PHP扩展APC
 扩展实现：通过PHP扩展替代原php代码中高频逻辑
 Runtime优化，HHVM （smarty模板渲染可以用HHVM实现）
-
 smarty caching 设置成true启用缓存机制
-
 重叠时间窗口思想
 串行：
 Process1 -> Process2 -> Process3 -> Process4
@@ -1943,7 +1937,7 @@ process4
 
 + 优化
   - 减少文件类操作。
-    1) 常见PHP场景的开销：读写磁盘，读写数据库，读写内存，读写网络数据。
+    1) 常见PHP场景的开销： *读写磁盘* , *读写数据库*, *读写内存*, *读写网络数据* .
     2) 速度比较： 读写内存 << 读写数据库(基于读写磁盘) < 读写磁盘 < 读写网络数据(也是读写磁盘, 网络有隐性因素，)
   - 优化网络请求(读写内存是最快的)
   - 网络请求的坑
@@ -1967,7 +1961,7 @@ process4
        + 什么情况下做输出内容的缓存？
        + 多次请求，内容不变情况
 + 流程 ： 
-  - x.php -> Cache -> Nocache -> 计算，数据处理 -> cache -> chached
+  - /x.php -> Cache -> Nocache -> 计算，数据处理 -> cache -> chached/
 
 *** 2015-03-09
 
@@ -1988,7 +1982,7 @@ process4
 
 + 压力测试工具
    - apache benchmark(ab)(linux下)
-   - ./ab -n1000   -c100 http://www.baidu.com
+   - ~./ab -n1000  -c100 http://www.baidu.com~
    - -n请求数 -c 并发数 url目标压测地址
 
    - 提高每秒请求次数(Request per second); 优化到每次请求越多越好
@@ -2024,7 +2018,7 @@ process4
   - 静态缓存
   - memecer
   - redis
-+ xml节点不能是数字//<0>4</0>
++ xml节点不能是数字 // ~<0>4</0>~
 + php生成缓存，获取缓存，删除缓存
 *** 2015-02-09
 php面向对象 
@@ -2059,11 +2053,11 @@ Phalcon比laravel的性能还要高出十倍。
     2) zend引擎（ZE）用以将源文件转换成机器语言，然后在虚拟机上运行它；
     3) 扩展层是一组函数、类库和流，PHP使用它们来执行一些特定的操作，比如：我们需要mysql扩展来连接mysql数据库；
   - 当ZE执行程序时可能会需要连接若干扩展，这时ZE将控制权交给扩展，等处理完特定任务后再返还；最后，ZE将程序运行结果返回给PHP内核，它再将结果传送给SAPI层（服务器应用程序编程接口），最终输出到浏览器上。 简单来说，整个运行过程即： 启动apache，PHP解释程序也随之启动； 其中php的启动主要包括两部分
-    1） 初始化一些环境变量，这将在整个SAPI生命周期中发生作用。PHP调用各个扩展（php.ini文件中打开的扩展）的MINIT方法（MINIT的意思是模块初始化，各个模块都定义了一组函数、类库等用以处理其他请求），从而使这些扩展切换到可用状态
-    2） 生成只针对当前请求的一些变量设置。当一个页面请求发生时，SAPI层将控制权交给PHP层，于是php设置了用于回复本次请求所需的环境变量，同时，它还建立一个变量表，用来存放执行过程中产生的变量名和值；PHP调用各个模块的RINIT方法，即“请求初始化”，一个经典的例子是session模块的RINIT，如果在php.ini中启用了session模块，那在调用该模块的RINIT时就会初始化$_SESSION变量，并将相关内容读入。2． PHP关闭
+    1) 初始化一些环境变量，这将在整个SAPI生命周期中发生作用。PHP调用各个扩展（php.ini文件中打开的扩展）的MINIT方法（MINIT的意思是模块初始化，各个模块都定义了一组函数、类库等用以处理其他请求），从而使这些扩展切换到可用状态
+    2) 生成只针对当前请求的一些变量设置。当一个页面请求发生时，SAPI层将控制权交给PHP层，于是php设置了用于回复本次请求所需的环境变量，同时，它还建立一个变量表，用来存放执行过程中产生的变量名和值；PHP调用各个模块的RINIT方法，即“请求初始化”，一个经典的例子是session模块的RINIT，如果在php.ini中启用了session模块，那在调用该模块的RINIT时就会初始化$_SESSION变量，并将相关内容读入。2． PHP关闭
   - 关闭也分两步
-    1） 一旦页面执行完毕（无论是执行到了文件末尾还是用exit或die函数终止），php就会启动清理程序，它会按顺序调用各个模块的RSHUTDOWN方法，RSHUTDOWN用以清除程序运行时产生的符号表，也就是对每个变量调用unset函数。
-    2） PHP调用每个扩展的MSHUTDOWN方法，这是各个模块最后一次释放内存的机会。这样，整个PHP生命周期就结束了。
+    1) 一旦页面执行完毕（无论是执行到了文件末尾还是用exit或die函数终止），php就会启动清理程序，它会按顺序调用各个模块的RSHUTDOWN方法，RSHUTDOWN用以清除程序运行时产生的符号表，也就是对每个变量调用unset函数。 
+    2) PHP调用每个扩展的MSHUTDOWN方法，这是各个模块最后一次释放内存的机会。这样，整个PHP生命周期就结束了。
 + PHP运行机制
   - 首先，讲一下apache，它是目前使用最为广泛的一种web server，优点是跨平台、高效和稳定，缺点是越来越重
   - Apache组件逻辑, Apache是基于模块化设计的，总体上看起来代码的可读性高于php的代码，它的核心代码并不多，大多数的功能都被分散到各个模块中，各个模块在系统启动的时候按需载入。
@@ -2093,8 +2087,8 @@ Study_Note
 围棋和编程存在一个很有趣的共通点:)都讲究计算式思维。我在这方面还很不足。
 所以，我有空多下棋，对编程是有很大的帮助的。Ok，就这么愉快的决定了。
 + 什么是知识。
-  a.陈述式知识;
-  b.过程式知识。
+  - 陈述式知识;
+  - 过程式知识。
 + 计算机的核心是：
   在一些基本指令上建立程序实现目的理念，然后才是一系列控制流。
 + 程序的内涵
@@ -2102,12 +2096,12 @@ Study_Note
 + 正确的指令
   六条基本的指令就可以主宰世界。
   一种语言能行的，另一种语言也可以。语言没有最好的，只有更好的。语言只是一种表单思想的工具。我对vim投入过于执着了。
-+
-  a.高级语言;
-  b.广泛型应用还是特定型应用;
-  c.解释型语言，编译型语言
++ language choose
+  - 高级语言;
+  - 广泛型应用还是特定型应用;
+  - 解释型语言，编译型语言
 + 在碰到问题是，将问题细化成计算步骤，转化成计算机能够执行的一串指令
-+对于一门语言，要了解它的基本组成部分，语法，语义。
++ 对于一门语言，要了解它的基本组成部分，语法，语义。
   静态语义：表示什么程序是有意义的。
   完整语义：运行程序会产生什么样的结果。
   注册了百度云域名，空间，正在准备备案材料。等备案下来，我的Laravel框架写的自己的博客也就开始上线了。以后代码放github托管，页面和数据就放自己的网站上。
