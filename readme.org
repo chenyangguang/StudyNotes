@@ -1265,11 +1265,11 @@ $row['username'] = str_replace($keywords, '<font color="red">'.$keywords.'</font
 
 *** 2015-04-28
   -------------
-(1) [[http://www.thinkphp.cn/][thinkphp官网]] [[http://phalconphp.com][phalcon官网]]
-(2) [[http://requirejs.org/docs/api.html][requirejs]]
-(3) 安装git客户端，并熟悉git的使用方式
-(4) 安装node: [[http://nodejs.org/][node]] (注意下载它的二进制版本，注意机器的位数)
-(5) 安装对应的npm包
+1) [[http://www.thinkphp.cn/][thinkphp官网]] [[http://phalconphp.com][phalcon官网]]
+2) [[http://requirejs.org/docs/api.html][requirejs]]
+3) 安装git客户端，并熟悉git的使用方式
+4) 安装node: [[http://nodejs.org/][node]] (注意下载它的二进制版本，注意机器的位数)
+5) 安装对应的npm包
   npm install bower -g
   npm install grunt -g
   npm install jsint -g
@@ -1278,9 +1278,9 @@ $row['username'] = str_replace($keywords, '<font color="red">'.$keywords.'</font
   npm install jshint -g
   npm install opencc -g
   npm install gulp -g
-(6) 用ssh-keygen生成密钥对，设置项目公钥信息
-(7) 安装phaltomjs:[[http://phantomjs.org/][ phaltomjs]]
-(8) php安装memache扩展，thrift扩展，composer
+6) 用ssh-keygen生成密钥对，设置项目公钥信息
+7) 安装phaltomjs:[[http://phantomjs.org/][ phaltomjs]]
+8) php安装memache扩展，thrift扩展，composer
 
 *** 2015-04-24
 -------------
