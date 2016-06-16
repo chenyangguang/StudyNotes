@@ -1,21 +1,29 @@
 
 * emacs大法好
 ** 一年之内，学成emacs这套刀法。
+*** 2016-06-16
++ org-mode tips
+  - *bold*, 
+  - /italic/, 
+  - _underlined_, 
+  - =code= 
+  - ~verbatim~, 
+  - +strike-through+
 *** 2016-06-06
 *****  查看网络掉包状况，ping google.com, 然后ctrl+c终止，看最后面几行。
 + 比如: --- google.com ping statistics --- 5 packets transmitted, 0 received, 100% packet loss, time 3999ms, 这是严重丢包了。
-+ 在比如: sudo fping hao123.com, ...... --- hao123.com ping statistics --- 5 packets transmitted, 5 received, 0% packet loss, time 4005ms, 这个网络还可以。
++ 在比如: =sudo fping hao123.com=, ...... --- hao123.com ping statistics --- 5 packets transmitted, 5 received, 0% packet loss, time 4005ms, 这个网络还可以。
 + 没有止步的空间，不忘初心。
 *** 2016-06-03
 + another way of swap Ctrl and Caps Lock is [[https://www.emacswiki.org/emacs/MovingTheCtrlKey][xmodmap]] 
-+ vim ~/.xmodmap
++ =vim ~/.xmodmap=
   remove Lock = Caps_Lock
   remove Control = Control_L
   keysym Control_L = Caps_Lock
   keysym Caps_Lock = Control_L
   add Lock = Caps_Lock
   add Control = Control_L
-+ nohup xmodmap ~/.xmodmap  &
++ =nohup xmodmap ~/.xmodmap  &=
 + phper solve problem level, [[http://rango.swoole.com/archives/340][here]] is a referance.
 + lv0 
   - open php.ini error_reporting level to E_ALL
@@ -45,8 +53,8 @@
 
 *** 2016-06-01 
 + swap the Ctrl and Caps Lock for ubuntu14.04 or later version by the method below:
-+ sudo apt-get install gnome-tweak-tool
-+ then run the command by gnome-tweak-tool
++ =sudo apt-get install gnome-tweak-tool=
++ then run the command by =gnome-tweak-tool=
 + select the ctrl Typing -> Ctrl key position -> Swap ctrl and caps lock
 done
 *** 2016-05-30 
@@ -108,10 +116,10 @@ emacs org-mode is so power!
 ----------------------------------------------------------------------
 + telnet部分快捷键
   - ctrl+]退出当前
-  - close 关闭telnet
+  - =close= 关闭telnet
   - ？帮助
-  - quit直接退出
-  - netcat -u 
+  - =quit= 直接退出
+  - =netcat -u= 
 
 *** 2016-05-23
 ----------------------------------------------------------------------
@@ -122,22 +130,20 @@ ctrl + w 是删除当前行。我觉得，只要是我自己想学的，怎么�
 
 *** 2016-05-21
 ----------------------------------------------------------------------
-
 又重装了系统。晕屎。
 ss-qt5图形化界面下运行不起来了。[[https://github.com/shadowsocks/shadowsocks-qt5/issues/312][ss-qt5翻墙]]
 看github里面的issues， 不少人安装了ubuntu16.04LTS, 而且都是些喜欢翻墙的人。
 只能启动命令行了。
-
 安装：
-+ sudo apt-get install python-pip
-+ sudo pip install shadowsocks
-+ sudo apt install shadowsocksm
++ =sudo apt-get install python-pip=
++ =sudo pip install shadowsocks=
++ =sudo apt install shadowsocksm=
 
-+ man sslocal 查看 sslocal用法
++ =man sslocal= 查看 sslocal用法
 
-+ touch ~/config.json 
-+ vim ~/config.json
-  {
++ =touch ~/config.json=
++ =vim ~/config.json=
++ {
   "server":"xxxxxx.xxxx.net",
   "server_port":10000,
   "local_port":1080,
@@ -145,9 +151,8 @@ ss-qt5图形化界面下运行不起来了。[[https://github.com/shadowsocks/sh
   "method": "aes-256-cfb",
   "timeout":600
   }
-
- + backend work
-  - nohup sslocal -c ~/config.json  &  
++ backend work
+    - =nohup sslocal -c ~/config.json  &=
 
 *** 2016-05-20
 ----------------------------------------------------------------------
@@ -156,15 +161,15 @@ ss-qt5图形化界面下运行不起来了。[[https://github.com/shadowsocks/sh
 
 *** 2016-05-17
 ----------------------------------------------------------------------
-+ du dirname
-+ du sm * -h
-+ du sm log -h | sort -n 
-+ du sm log -h | sort -n | less
-+ du sm log -h | sort -M | less | grep G          ; sort by month and page up/down and find result by size G
-+ du sm log -h | sort -n | less | grep 2016-05-17 ; filter by date
-+ du sm logs -h --time | sort -n | less | grep G 
-+ du -sh dirname/* | sort -rn | grep G| tail 
-+ du -sh dirname/* | sort -rn | grep 2015-05-17| tail 
++ =du dirname=
++ =du sm * -h=
++ =du sm log -h | sort -n=
++ =du sm log -h | sort -n | less=
++ =du sm log -h | sort -M | less | grep G=          ; sort by month and page up/down and find result by size G
++ =du sm log -h | sort -n | less | grep 2016-05-17= ; filter by date
++ =du sm logs -h --time | sort -n | less | grep G= 
++ =du -sh dirname/* | sort -rn | grep G| tail= 
++ =du -sh dirname/* | sort -rn | grep 2015-05-17| tail=
 
 *** 2016-05-14
 ----------------------------------------------------------------------
@@ -197,22 +202,22 @@ phalcon2.1.x已经开始支持php7了，　哈哈哈！已经正确运行demo, �
 *** 2016-04-24
 sed命令相当的牛逼，　一定要学会，　sed -i 直接可以编辑文件，当一个文件很大时，用sed比vim要更方便
 ----------------------------------------------------------------------
-+ nl 
-+ sed
-+ awk
++ *nl* 
++ *sed*
++ *awk*
 三个命令行非常有用
 
 *** 2016-04-23
 ----------------------------------------------------------------------
 + 升级到ubuntu16.04之后，发现php也更新了。但是mysql没更新。重新布置下环境：　
-  1) sudo apt-get install php7.0-fpm php7.0-mysql
-  2) sudo vim /etc/nginx/sites-available/default 添加index.php
+  1) =sudo apt-get install php7.0-fpm php7.0-mysql=
+  2) =sudo vim /etc/nginx/sites-available/default= 添加index.php
   3) 将这行注释去掉，fastcgi_pass unix:/run/php/php7.0-fpm.sock;
   4) include snippets/fastcgi-php.conf;这样放出来
-  5) sudo nano /etc/php/7.0/fpm/php.ini , 将cgi.fix_pathinfo=0
-  6) sudo service php7.0-fpm reload 成功了
+  5) =sudo nano /etc/php/7.0/fpm/php.ini= , 将cgi.fix_pathinfo=0
+  6) =sudo service php7.0-fpm reload= 成功了
   7) laravel 的spark需要在php7.0的基础上安装mbstring扩展
-  8) sudo apt install php7.0-mbstring
+  8) =sudo apt install php7.0-mbstring=
 
 *** 2016-04-11
 ----------------------------------------------------------------------
@@ -224,14 +229,12 @@ sed命令相当的牛逼，　一定要学会，　sed -i 直接可以编辑文�
   - 需要开启querylog 
   - db::connection()->enablequerylog();
   - dd(db::getgetquerylog());
-
 *** 2016-04-09
 ----------------------------------------------------------------------
 + ubuntu14.04 默认的nodejs太老了，　
-  - sudo add-apt-repository ppa:chris-lea/node.js
-  - sudo apt-get update
-  - sudo apt-get install nodejs
-
+  - =sudo add-apt-repository ppa:chris-lea/node.js=
+  - =sudo apt-get update=
+  - =sudo apt-get install nodejs=
 *** 2016-04-06
 + mysql去除重复的数值
   - select  b.id, b.status, b.name,  case  when f.id is null then 0 else 1 end is_tag
@@ -256,8 +259,8 @@ mysql查看保存的字段长度: select  length(str) from test_table;
 
 *** 2016-03-25
 ----------------------------------------------------------------------
-+ dpkg -l | grep jdk 
-+ dpkg -l 查看linux下安装文件路径
++ =dpkg -l | grep jdk=
++ =dpkg -l= 查看linux下安装文件路径
 *** 2016-03-25
 ----------------------------------------------------------------------
 请解释下strtotime(),time(),microtime(),date()的区别。。。。。。
@@ -270,12 +273,12 @@ mysql查看保存的字段长度: select  length(str) from test_table;
 ----------------------------------------------------------------------
 + 今天学了两个牛逼的命令：
   - 一个是vim 中的多文件替换 
-    1):args dirname/**/*.php 
-    2):argdo %s/test1/test2/ge | update
+    1) =args dirname/**/*.php=
+    2) =argdo %s/test1/test2/ge | update=
   - 二是：linux终端 grep -rl need_replace_word dirname | xargs sed -i 's/test1/test2/g'
 
 + 查看内存
-  cat /proc/meminfo
+  *cat /proc/meminfo*
 
 *** 2016-03-16
 ----------------------------------------------------------------------
@@ -320,7 +323,7 @@ gulp 依赖比较新的npm, npm需升级到5.7.1.
 
 *** 2016-03-09
 ----------------------------------------------------------------------
-df 查看硬盘使用情况, du -sm * -h 查看磁盘空间   -h human
+=df= 查看硬盘使用情况, =du -sm * -h= 查看磁盘空间   *-h human*
 
 *** 2016-03-07
 ----------------------------------------------------------------------
@@ -328,24 +331,24 @@ df 查看硬盘使用情况, du -sm * -h 查看磁盘空间   -h human
 
 *** 2016-03-05
 ----------------------------------------------------------------------
-时间，精力，钱被撕的四分五裂，这样下去什么事情也弄不成。
+*时间*, *精力*, *钱* 被撕的四分五裂，这样下去什么事情也弄不成。
 
 *** 2016-03-03
 ----------------------------------------------------------------------
-将早上的一点时间抽出来。积累起来做点事情。还有坐车的时间。
-所有的事物都可以看成是数据。他们都有最小的单元结构，不同的次序组成了他们的运行的流程。要知道他们之间的关系，必须熟悉他们的结构和组织形式，以及他们运行的次序。
+将 *早上的一点时间抽出来* 。积累起来做点事情。还有坐车的时间。
+所有的事物都可以看成是 *数据* 。他们都有最小的单元结构，不同的 *次序* 组成了他们的运行的流程。要知道他们之间的关系，必须熟悉他们的结构和组织形式，以及他们运行的次序。
 
 *** 2016-03-03
 ----------------------------------------------------------------------
 我的时间都用在哪里了？
 今天安装nvm, 用于node.js版本管理。
 (1) git 下载creationix下的nvm到本地，
-(2) 进入目录，执行./install.sh
-(3) 启用source ./nvm.sh
+(2) 进入目录，执行 =./install.sh=
+(3) 启用 =source ./nvm.sh=
 (4) 将变量写到.zshrc里面去，　开机启动
-(5) nvm -v
-(6) nvm help 开始玩吧
-用简单的思维来总结网络的事物，　我的理解是：数据, 结构, 次序的集合。
+(5) =nvm -v=
+(6) =nvm help= 开始玩吧
+用简单的思维来总结网络的事物，　我的理解是： /数据/ , /结构/ , /次序的集合/ 。
 
 *** 2016-03-01
 ----------------------------------------------------------------------
@@ -360,13 +363,11 @@ laravel 的eloquent非常强大，　比phalcon强大太多了。
 *** 2016-02-27
 ----------------------------------------------------------------------
 导出查询结果到一个文件里面。
-mysql -uname -h hostname -p psw -e"use dbname; select * from table" > /temp/test.xls
-
+=mysql -uname -h hostname -p psw -e"use dbname; select * from table" > /temp/test.xls=
 还是一句话：天下武功， 唯快不破.
-
-+ php artisan make:middleware oldmiddleware  
-+ php artisan make:middleware beforemiddleware 前置操作的中间件
-+ php artisan make:middleware aftermiddleware 后置操作的中间件
++ =php artisan make:middleware oldmiddleware=
++ =php artisan make:middleware beforemiddleware= 前置操作的中间件
++ =php artisan make:middleware aftermiddleware= 后置操作的中间件
 
 vagrant up启动时， 启动virtualbox时报个错。
 "virtualbox failed to open a session for the virtual machine  "
@@ -374,25 +375,25 @@ vagrant up启动时， 启动virtualbox时报个错。
 *** 2016-02-26
 ----------------------------------------------------------------------
 + shadowsocks-go翻墙
-  1) sudo apt-get install golang
-  2) git clone https://github.com/shadowsocks/shadowsocks-go
-  3) echo $golang 查看go路径, 比如是~/gocode什么的, 然后进去, 一直到src下面, 新建文件夹golnag.org/x, 下载加密crypto,命令为git clone https://github.com/golang/crypto
+  1) =sudo apt-get install golang=
+  2) =git clone https://github.com/shadowsocks/shadowsocks-go=
+  3) =echo $golang= 查看go路径, 比如是~/gocode什么的, 然后进去, 一直到src下面, 新建文件夹golnag.org/x, 下载加密crypto,命令为git clone https://github.com/golang/crypto
   4) 现在可以安装go-server了
-    - go get github.com/shadowsocks/shadowsocks-go/cmd/shadowsocks-server 再就是客户端
-    - go get github.com/shadowsocks/shadowsocks-go/cmd/shadowsocks-local 这就安装大工告成了！
+    - =go get github.com/shadowsocks/shadowsocks-go/cmd/shadowsocks-server= 再就是客户端
+    - =go get github.com/shadowsocks/shadowsocks-go/cmd/shadowsocks-local= 这就安装大工告成了！
   5) 放心， 你怎么输入google都不会有反应的。不用着急， 还没完, 启动啊，
   可以放到后台去， 免得占用我的终端
-    - cd ~/go路径/bin, 执行
-    - nohup .shadowsocks-server  &
-    - nohup .shadowsocks-local  &
+    - =cd ~/go= 路径/bin, 执行
+    - =nohup .shadowsocks-server  &=
+    - =nohup .shadowsocks-local  &=
   现在， 到墙外去耍去吧！前提是你的chome安装了switchysharp.1.10.5.crx或者别的代理
   这能帮到这里了～
 + laravel 这个最好还是设置下快捷方式
- - 将alias laravel='~/.composer/vendor/bin/laravel'  放置到~/.zshrc最后， 
- - 重新执行下这个文件source ~/.zshrc, 这里的zshrc是和bash一样的工具, 就是更强大一下， 至于强大在哪些地方， 我也不知道。
+ - 将 _alias laravel='~/.composer/vendor/bin/laravel'_  放置到~/.zshrc最后， 
+ - 重新执行下这个文件 =source ~/.zshrc= , 这里的zshrc是和bash一样的工具, 就是更强大一下， 至于强大在哪些地方， 我也不知道。
 + 没有沉淀的输出如果传播出去， 很快就会消散, 消亡。
   怎么把项目弄到博客网站上去？这是个问题。 现在只是一个一个文件的放上去， 很不好。
-+ php artisan migrate 时发现自己的文件名改过了。可以 composer dump-autoload一下, 再重新执行即可。laravel貌似比phalcon好用的多。
++ php artisan migrate 时发现自己的文件名改过了。可以 =composer dump-autoload= 一下, 再重新执行即可。laravel貌似比phalcon好用的多。
 + 今天被onclick坑死了！ <a onclick="method_dosth()"></a> onclick这个写法， 不知道是怎么回事， 到app的话调用了什么都是没有回调的～～， 必须携程onclick， 谁能解释一下？
 laravel 上手很快。下周可以用laravel来做博客的开发框架。
 
@@ -440,13 +441,13 @@ emacs 是个什么东西？
 *** 2016-02-18
 ----------------------------------------------------------------------
 进入帮助文档内部
-+ c-h i
-+ c-h t
-+ c-h w
-+ m-x tetris 玩俄罗斯方块
-+ emacs -nw --color=no  不需要颜色
-+ emacs --daemon 作为守护进程运行
-+ emacsclient -t 桌面环境下打开命令行版的emacs
++ =c-h i=
++ =c-h t=
++ =c-h w=
++ =m-x tetris= 玩俄罗斯方块
++ =emacs -nw --color=no=  不需要颜色
++ =emacs --daemon= 作为守护进程运行
++ =emacsclient -t= 桌面环境下打开命令行版的emacs
 
 *** 2016-02-17
 ----------------------------------------------------------------------
