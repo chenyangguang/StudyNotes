@@ -1,24 +1,16 @@
-
-
-
-* TODO Fixed bug[50%]
+*** TODO [#B] Report bugs of spacemacs and swoole[10%]
 DEADLINE: <2016-12-30 Fri>
-* TODO Exercise(Smimming, Running, Basketball)[40%] 
+*** TODO [#A] Exercise(Smimming, Running, Basketball)[40%] 
 SCHEDULED: <2016-07-01 Fri>
-
-* TODO Earn money                                                     :money:
+*** TODO [#B] Earn some money[10%]
 SCHEDULED: <2016-06-30 Thu>
-do some thing
-CLOSED: [2016-12-30 Mon 11:01]
-
-<2016-12-30 Mon 11:59>
-- [-] step one 
-  - [X] step one one 
-  - [ ] step one two
-- [-] step two
-  - [X] Step two one
-  - [test] Step two two
-  - [ ] Step three
-  - [] C-c C-s setting scheduled date for plan
-  - [ ] C-c C-d setting deadline date for plan
++ step one 
+  - step one one 
+  - step one two
++ step two
+  - Step two one
+  - Step two two
+  - Step three
+  - C-c C-s setting scheduled date for plan
+  - C-c C-d setting deadline date for plan
 
