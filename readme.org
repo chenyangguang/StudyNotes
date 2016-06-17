@@ -911,7 +911,7 @@ canvas画股票分时图
 
 + 查询今天的注册记录
   - ~SELECT COUNT(*) FROM table_test WHERE DATE_FORMAT(FROM_UNIXTIME(create_time, '%y%m%d'))=DATE_FORMAT(now(), '%y%m%d');~
-  - ~SELECT COUNT(*) FROM table_test WHERE create_time >= unix_timestamp('2015-09-16 00:00:00') and CREATE_TIME <= UNIX_TIMESTAMP('2015-09-16 23:59:59');~
+  - ~SELECT COUNT(*) FROM table_test WHERE create_time >= UNIX_TIMESTAMP('2015-09-16 00:00:00') and CREATE_TIME <= UNIX_TIMESTAMP('2015-09-16 23:59:59');~
   - ~UPDATE table_test SET update_time= date_add(create_time, interval 30 day) WHERE uid=1008618 limit 1;~
 
 + php 升级：　[[https://wiki.php.net/phpng][这里]] ， 还有[[http://jcutrer.com/howto/linux/how-to-compile-php7-on-ubuntu-14-04][还有这里]]
@@ -975,16 +975,16 @@ how to use it!
 sometimes "git grep" is even faster
 in the quickfix window, you can use:
 
-+ /e/  to open file and close the quickfix windows
-+ /o/  to open (same as enter)
-+ /go/ to preview file(open but maintain focus on ag.vim results)
-+ /t/  to open in new tab
-+ /t/ to open in new tab silently
-+ /h/  to open in horizontal split
-+ /h/  to open in horizontal split silently
-+ /v/  to open in vertical split
-+ /gv/ to open in vertical split silently
-+ /q/  to close the quickfix window
++ /e/    to open file and close the quickfix windows
++ /o/    to open (same as enter)
++ /go/   to preview file(open but maintain focus on ag.vim results)
++ /t/    to open in new tab
++ /t/    to open in new tab silently
++ /h/    to open in horizontal split
++ /h/    to open in horizontal split silently
++ /v/    to open in vertical split
++ /gv/   to open in vertical split silently
++ /q/    to close the quickfix window
 
 *** 2015-08-19
 notice:
@@ -992,37 +992,19 @@ notice:
 还是那句话：稳住阵脚，冷静观察，沉着应付！
 
 *** 2015-08-08
-(1) vim plugin -> surround
-description
-surround.vim is all about "surroundings": parentheses, brackets, quotes, xml tags, and more.  the plugin provides mappings to easily delete, change and add such surroundings in pairs.  while it works under vim 6, much of the functionality requires vim 7. 
-examples follow.  it is difficult to provide good examples in the variable width font of this site; check the documentation for more. 
-press cs"' (that's c, s, double quote, single quote) inside 
-"hello world!" 
-to change it to 
-'hello world!' 
-now press cs'<q> to change it to 
-<q>hello world!</q> 
-to go full circle, press cst" to get 
-"hello world!" 
-to remove the delimiters entirely, press ds" . 
-hello world! 
-now with the cursor on "hello", press ysiw] (iw is a text object). 
-[hello] world! 
-let's make that braces and add some space (use "}" instead of "{" for no space): cs]{ 
-{ hello } world! 
-now wrap the entire line in parentheses with yssb or yss) . 
-({ hello } world!) 
-revert to the original text: ds{ds) 
-hello world! 
-emphasize hello: ysiw<em> 
-<em>hello</em> world! 
-finally, let's try out visual mode. press a capital v (for linewise visual mode) 
-followed by s<p>. 
-<p> 
-hello world! 
-</p> 
-this plugin is very powerful for html and xml editing, a niche which currently seems underfilled in vim land.  (as opposed to html/xml *inserting*, for which many plugins are available).  adding, changing, and removing pairs of tags simultaneously is a breeze. 
-the "." command will work with ds, cs, and yss if you install repeat.vim, vimscript #2136. 
++ vim plugin *surround.vim* is all about "surroundings": parentheses, brackets, quotes, xml tags, and more.  the plugin provides mappings to easily delete, change and add such surroundings in pairs.  while it works under vim 6, much of the functionality requires vim 7. 
+  - examples follow.  it is difficult to provide good examples in the variable width font of this site; check the documentation for more. 
+  - press cs"' (that's c, s, double quote, single quote) inside, "hello world!" to change it to 'hello world!' now press ~cs'<q>~ to change it to <q>hello world!</q> 
+  - to go full circle, press cst" to get "hello world!" 
+  - to remove the delimiters entirely, press ds" . hello world! now with the cursor on "hello", press ~ysiw]~ (/iw/ is a text object).   [hello] world! 
+  - let's make that braces and add some space (use "}" instead of "{" for no space): ~cs]{~ { hello } world! 
+  - now wrap the entire line in parentheses with yssb or ~yss)~ , ({ hello } world!) 
+  - revert to the original text: ~ds{ds)~ hello world! 
+  - emphasize hello: ~ysiw<em>~ <em>hello</em> world! 
+  - finally, let's try out visual mode. press a capital v (for linewise visual mode) 
+  - followed by ~s<p>~ <p> hello world! </p> 
++ this plugin is very powerful for html and xml editing, a niche which currently seems underfilled in vim land.  (as opposed to html/xml *inserting*, for which many plugins are available).  adding, changing, and removing pairs of tags simultaneously is a breeze. 
+the ~.~ command will work with ~ds~, ~cs~, and ~yss~ if you install repeat.vim, vimscript #2136. 
 
 *** 2015-08-07
 + ~help grep~
