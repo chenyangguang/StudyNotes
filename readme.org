@@ -1153,7 +1153,7 @@ lnmp环境居然没安装成功。
   + mysql -udebian-sys-maint -p  
     - Enter password: <输入[client]节的密码>  
     - mysql> ~use mysql;~
-    - mysql> ~UPDATE user SET Password=PASSWORD(’newpassword’) where USER=’root’;~
+    - mysql> ~UPDATE user SET Password=PASSWORD(’newpassword’) WHERE USER=’root’;~
     - mysql> ~FLUSH PRIVILEGES;~
     - mysql> ~quit~
     - # mysql -uroot -p  
