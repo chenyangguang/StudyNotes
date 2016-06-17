@@ -903,16 +903,16 @@ canvas画股票分时图
 *** 2015-09-13
 --------------------------------------------------------------------------
 1) mysql 两个函数
-  + ~from_unixtime(time_stamp)~ -> 将时间戳转换成日期
-  + ~unix_timestamp(date)~      -> 将指定的日期或者日期字符串转换成时间
+  + ~FROM_UNIXTIME(time_stamp)~ -> 将时间戳转换成日期
+  + ~UNIX_TIMESTAMP(date)~      -> 将指定的日期或者日期字符串转换成时间
 
-  - ~select from_unixtime(1382544000);~
-  - ~select unix_timestamp(date('2015-09-15'));~
+  - ~SELECT FROM_UNIXTIME(1382544000);~
+  - ~SELECT UNIX_TIMESTAMP(date('2015-09-15'));~
 
 + 查询今天的注册记录
-  - ~select count(*) from table_test where date_format(from_unixtime(create_time, '%y%m%d'))=date_format(now(), '%y%m%d');~
-  - ~select count(*) from table_test where create_time >= unix_timestamp('2015-09-16 00:00:00') and create_time <= unix_timestamp('2015-09-16 23:59:59');~
-  - ~update table_test set update_time= date_add(create_time, interval 30 day) where uid=1008618 limit 1;~
+  - ~SELECT COUNT(*) FROM table_test WHERE DATE_FORMAT(FROM_UNIXTIME(create_time, '%y%m%d'))=DATE_FORMAT(now(), '%y%m%d');~
+  - ~SELECT COUNT(*) FROM table_test WHERE create_time >= unix_timestamp('2015-09-16 00:00:00') and CREATE_TIME <= UNIX_TIMESTAMP('2015-09-16 23:59:59');~
+  - ~UPDATE table_test SET update_time= date_add(create_time, interval 30 day) WHERE uid=1008618 limit 1;~
 
 + php 升级：　[[https://wiki.php.net/phpng][这里]] ， 还有[[http://jcutrer.com/howto/linux/how-to-compile-php7-on-ubuntu-14-04][还有这里]]
 + php7 is so super！ change vim background "solarized" , add solarized.sh , chmod + x solarized.sh, then ./solarized.sh dark, 这样就可以让ubuntu14.04的vim 运行起solarized，并且和官网的颜色一样了． 原因是ubuntu14.04终端本身没有solarized的配色
@@ -927,9 +927,10 @@ canvas画股票分时图
 
 *** 2015-09-12
 --------------------------------------------------------------------------
-~array_multisort()~
-~usort()~
-these two function of php is so cute!!! 
++ ~array_multisort()~
++ ~usort()~
+
+these functions are so cute!
 
 --------------------------------------------------------------------------
 
