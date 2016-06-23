@@ -1,6 +1,8 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
 * emacs大法好
 ** 一年之内，学成emacs这套刀法。
+*** 2016-06-23
++ healthy is the most inportant thing for our life
 *** 2016-06-16
 + org-mode tips
   - *bold*
