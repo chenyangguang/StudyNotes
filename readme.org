@@ -861,29 +861,28 @@ flash + h5(input(file)) 上传
 
 *** 2015-10-10
 --------------------------------------------------------------------------
-lla 可以显示ll -a 的结果
+~lla~ 可以显示ll -a 的结果
 *** 2015-10-02
 --------------------------------------------------------------------------
-+sql注入
++ sql注入
   -正确的过滤
   -使用合理的字符集
   -宽字节注入
 + xss类型
   -反射型
 + php 职业规划-> 职业生涯乃至人生, 持续性.
-+ 薪资<->title
++ 薪资title
 + 犯下的错误和花去的时间不能重来．
 + 如果你找不到人生的意义，那么可以先累积money．等你找到意义的时候，一定会用得上的, 喵～
 + 提升架构能力的两个基本原则
-  - don't repeat yourself~
-  - 正交性
-+ 很多时候，技术提升的瓶颈是因为对业务理解的不够透彻．
+  - *don't repeat yourself*
+  - *正交性*
++ 很多时候，技术提升的瓶颈是因为对 *业务理解* 的不够透彻．
 
 *** 2015-10-01
 --------------------------------------------------------------------------
-
-vimium 使用时，网页中复制有个比较笨的方法就是先用 /搜索选中要复制的内容的前几个字符，然后shift+右方向键选择复制内容，ctrl+c就可以复制了。
-或者进入visual模式，然后shift+向右键
+*vimium* 使用时，网页中复制有个比较笨的方法就是先用 ~/~ 搜索选中要复制的内容的前几个字符，然后 ~shift+->~ 选择复制内容, ~ctrl+c~ 就可以复制了。
+或者进入 /visual/ 模式，然后 ~shift+向右键~
 机械键盘，敲起来，果然是飞一般的感觉．
 
 *** 2015-09-30
@@ -892,7 +891,7 @@ vimium 使用时，网页中复制有个比较笨的方法就是先用 /搜索�
 
 *** 2015-09-29
 --------------------------------------------------------------------------
-ctags -r -f .tags
+~ctags -r -f .tags~
 
 --------------------------------------------------------------------------
 *** 2015-09-20
@@ -905,281 +904,188 @@ canvas画股票分时图
 
 *** 2015-09-13
 --------------------------------------------------------------------------
-(1) mysql 两个函数
-  + ~from_unixtime(time_stamp)~ -> 将时间戳转换成日期
-  + ~unix_timestamp(date)~      -> 将指定的日期或者日期字符串转换成时间
+1) mysql 两个函数
+  + ~FROM_UNIXTIME(time_stamp)~ -> 将时间戳转换成日期
+  + ~UNIX_TIMESTAMP(date)~      -> 将指定的日期或者日期字符串转换成时间
 
-  - ~select from_unixtime(1382544000);~
-  - ~select unix_timestamp(date('2015-09-15'));~
+  - ~SELECT FROM_UNIXTIME(1382544000);~
+  - ~SELECT UNIX_TIMESTAMP(date('2015-09-15'));~
 
 + 查询今天的注册记录
-  - ~select count(*) from table_test where date_format(from_unixtime(create_time, '%y%m%d'))=date_format(now(), '%y%m%d');~
-  - ~select count(*) from table_test where create_time >= unix_timestamp('2015-09-16 00:00:00') and create_time <= unix_timestamp('2015-09-16 23:59:59');~
-  - ~update table_test set update_time= date_add(create_time, interval 30 day) where uid=1008618 limit 1;~
---------------------------------------------------------------------------
-*** 2015-09-13
---------------------------------------------------------------------------
-1) php 升级：　[[https://wiki.php.net/phpng][这里]] ， 还有[[http://jcutrer.com/howto/linux/how-to-compile-php7-on-ubuntu-14-04][还有这里]]
-2) php7 is so super！ change vim background "solarized" , add solarized.sh , chmod + x solarized.sh, then ./solarized.sh dark, 这样就可以让ubuntu14.04的vim 运行起solarized，并且和官网的颜色一样了． 原因是ubuntu14.04终端本身没有solarized的配色
-3) nginx conf  [[https://www.digitalocean.com/community/tutorials/how-to-set-up-nginx-server-blocks-virtual-hosts-on-ubuntu-14-04-lts][nginx conf 配置参考]]
-4) 迁移代码到/web/
---------------------------------------------------------------------------
-5) 验证码的用处
+  - ~SELECT COUNT(*) FROM table_test WHERE DATE_FORMAT(FROM_UNIXTIME(create_time, '%y%m%d'))=DATE_FORMAT(now(), '%y%m%d');~
+  - ~SELECT COUNT(*) FROM table_test WHERE create_time >= UNIX_TIMESTAMP('2015-09-16 00:00:00') and CREATE_TIME <= UNIX_TIMESTAMP('2015-09-16 23:59:59');~
+  - ~UPDATE table_test SET update_time= date_add(create_time, interval 30 day) WHERE uid=1008618 limit 1;~
+
++ php 升级：　[[https://wiki.php.net/phpng][这里]] ， 还有[[http://jcutrer.com/howto/linux/how-to-compile-php7-on-ubuntu-14-04][还有这里]]
++ php7 is so super！ change vim background "solarized" , add solarized.sh , chmod + x solarized.sh, then ./solarized.sh dark, 这样就可以让ubuntu14.04的vim 运行起solarized，并且和官网的颜色一样了． 原因是ubuntu14.04终端本身没有solarized的配色
++ nginx conf  [[https://www.digitalocean.com/community/tutorials/how-to-set-up-nginx-server-blocks-virtual-hosts-on-ubuntu-14-04-lts][nginx conf 配置参考]]
++ 迁移代码到/web/
++ 验证码的用处
   - 一般服务器端业务中, 写请求的消耗远大于读请求, 作用, 区分机器／人的请求, 技术要点：
     + 底图的实现，并且添加干扰元素
     + 生成验证内容
     + 验证内容保存在服务器端
     + 验证内容的检验
 
---------------------------------------------------------------------------
 *** 2015-09-12
 --------------------------------------------------------------------------
-~array_multisort()~
-~usort()~
++ ~array_multisort()~
++ ~usort()~
 
-these two function of php is so cute!!! 
+these functions are so cute!
 
 --------------------------------------------------------------------------
-*** 2015-09-09
---------------------------------------------------------------------------
-test
 
 *** 2015-09-07
-
-:%s/([\u4e00-\u9fa5]+)/{{ ___('\1') }}/g
+~:%s/([\u4e00-\u9fa5]+)/{{ ___('\1') }}/g~
 
 *** 2015-09-03
-
 目前搜索引擎对div的友好程度比table好一些
-
 how to install the latest git version? here is the way under ubuntu system
-
-sudo add-apt-reposotory ppa:git-core/ppa
-sudo apt-get update
-sudo apt-get install git
-
-done!
-git --version
-git version 2.5.1
-
-
-scp -r /home/administrator/test/ root@192.168.1.100:/root/    --> (copy location dir to remote ip dir)
-scp /home/administrator/desktop/old/driver/test/test.txt root@192.168.1.100:/root/   --> (copy only one file co remote ip dir)
-scp -r root@192.168.62.10:/root/ /home/administrator/desktop/new/                    --> (copy remote dir to location address)
++ ~sudo add-apt-reposotory ppa:git-core/ppa~
++ ~sudo apt-get update~
++ ~sudo apt-get install git~
+  done!
++ ~git --version~
++ ~git version 2.5.1~
++ ~scp -r /home/administrator/test/ root@192.168.1.100:/root/    --> (copy location dir to remote ip dir)~
++ ~scp /home/dirname/test.txt root@192.1.1.100:/home/user/~   --> (copy only one file co remote ip dir)
++ ~scp -r username@110.110.110.110:/username/ /home/~                    --> (copy remote dir to location address)
 
 *** 2015-09-02
-
-
-ctrl+;  历史输入补全
+~ctrl+;~  历史输入补全
 
 *** 2015-09-01
 effortless ctags with git 
 in vim, to use ctags super sex
 
 *** 2015-08-31
-
-
-ctrl-s在linux里面，是锁死屏幕的快捷键，ctrl-q解锁。
+~ctrl-s~ 在linux里面，是锁死屏幕的快捷键, ~ctrl-q~ 解锁。
 
 *** 2015-08-30
-
-
 study_note:
 today learn how to install && use php7
 to start with this command : /opt/php7/bin/php -s 0.0.0.0:9009
 url visit by http://0.0.0.0:9009
-
 so hot 
+
 *** 2015-08-22
-
-
-notice:
-add ag plugin today 
+add *ag* plugin today 
 how to use it!
-:ag [options] {patterns} [{directory}]
------------------------------------------
+~:ag [options] {patterns} [{directory}]~
+
 sometimes "git grep" is even faster
-----keyboard shortcuts---
 in the quickfix window, you can use:
-e  to open file and close the quickfix windows
-o  to open (same as enter)
-go to preview file(open but maintain focus on ag.vim results)
-t  to open in new tab
-t  to open in new tab silently
-h  to open in horizontal split
-h  to open in horizontal split silently
-v  to open in vertical split
-gv to open in vertical split silently
-q  to close the quickfix window
+
++ /e/    to open file and close the quickfix windows
++ /o/    to open (same as enter)
++ /go/   to preview file(open but maintain focus on ag.vim results)
++ /t/    to open in new tab
++ /t/    to open in new tab silently
++ /h/    to open in horizontal split
++ /h/    to open in horizontal split silently
++ /v/    to open in vertical split
++ /gv/   to open in vertical split silently
++ /q/    to close the quickfix window
 
 *** 2015-08-19
-
 notice:
 这几天扛下来，功力大涨！任何时候都不要害怕问题。要硬着头皮迎上去!
 还是那句话：稳住阵脚，冷静观察，沉着应付！
 
 *** 2015-08-08
-
-
-(1) vim plugin -> surround
-
-description
-surround.vim is all about "surroundings": parentheses, brackets, quotes, xml tags, and more.  the plugin provides mappings to easily delete, change and add such surroundings in pairs.  while it works under vim 6, much of the functionality requires vim 7. 
-
-examples follow.  it is difficult to provide good examples in the variable width font of this site; check the documentation for more. 
-
-press cs"' (that's c, s, double quote, single quote) inside 
-
-"hello world!" 
-
-to change it to 
-
-'hello world!' 
-
-now press cs'<q> to change it to 
-
-<q>hello world!</q> 
-
-to go full circle, press cst" to get 
-
-"hello world!" 
-
-to remove the delimiters entirely, press ds" . 
-
-hello world! 
-
-now with the cursor on "hello", press ysiw] (iw is a text object). 
-
-[hello] world! 
-
-let's make that braces and add some space (use "}" instead of "{" for no space): cs]{ 
-
-{ hello } world! 
-
-now wrap the entire line in parentheses with yssb or yss) . 
-
-({ hello } world!) 
-
-revert to the original text: ds{ds) 
-
-hello world! 
-
-emphasize hello: ysiw<em> 
-
-<em>hello</em> world! 
-
-finally, let's try out visual mode. press a capital v (for linewise visual mode) 
-followed by s<p>. 
-
-<p> 
-hello world! 
-</p> 
-this plugin is very powerful for html and xml editing, a niche which currently seems underfilled in vim land.  (as opposed to html/xml *inserting*, for which many plugins are available).  adding, changing, and removing pairs of tags simultaneously is a breeze. 
-the "." command will work with ds, cs, and yss if you install repeat.vim, vimscript #2136. 
++ vim plugin *surround.vim* is all about "surroundings": parentheses, brackets, quotes, xml tags, and more.  the plugin provides mappings to easily delete, change and add such surroundings in pairs.  while it works under vim 6, much of the functionality requires vim 7. 
+  - examples follow.  it is difficult to provide good examples in the variable width font of this site; check the documentation for more. 
+  - press cs"' (that's c, s, double quote, single quote) inside, "hello world!" to change it to 'hello world!' now press ~cs'<q>~ to change it to <q>hello world!</q> 
+  - to go full circle, press cst" to get "hello world!" 
+  - to remove the delimiters entirely, press ds" . hello world! now with the cursor on "hello", press ~ysiw]~ (/iw/ is a text object).   [hello] world! 
+  - let's make that braces and add some space (use "}" instead of "{" for no space): ~cs]{~ { hello } world! 
+  - now wrap the entire line in parentheses with yssb or ~yss)~ , ({ hello } world!) 
+  - revert to the original text: ~ds{ds)~ hello world! 
+  - emphasize hello: ~ysiw<em>~ <em>hello</em> world! 
+  - finally, let's try out visual mode. press a capital v (for linewise visual mode) 
+  - followed by ~s<p>~ <p> hello world! </p> 
++ this plugin is very powerful for html and xml editing, a niche which currently seems underfilled in vim land.  (as opposed to html/xml *inserting*, for which many plugins are available).  adding, changing, and removing pairs of tags simultaneously is a breeze. 
+the ~.~ command will work with ~ds~, ~cs~, and ~yss~ if you install repeat.vim, vimscript #2136. 
 
 *** 2015-08-07
-+ :help grep 
++ ~help grep~
   open a buffer containing the search results in linked form. the :silient command may be usedt osuppress the default full screen grep output. the ":grep!" form of the :grep command doesn't jump to the first match automatically. these commmands can be combined to create a newgrep command:
-+ :copen
-+ :lopen
-+ :lgrep
++ ~copen~
++ ~lopen~
++ ~lgrep~
+
 *** 2014-08-06
-+ sudo apt-get install zsh
-+ chsh /bin/zsh
-+ sudo apt-get install oh-my-zsh
-
++ ~sudo apt-get install zsh~
++ ~chsh /bin/zsh~
++ ~sudo apt-get install oh-my-zsh~
 强大的工具。zsh比bash还好玩，而且和bash无缝切换。
-
-在vim 中想用命令行命令的话： ctry_+z  ，会使vim进入后台工作，fg 恢复vim工作，bg
-
-或者:!sh&
+在vim 中想用命令行命令的话： ~ctry_+z~ , 会使vim进入后台工作, ~fg~ 恢复vim工作 ~bg~
+或者: ~!sh&~
 
 *** 2015-08-03
-
-
 节奏突然加快了。
 
 *** 2015-07-24
 安装了php7测试
+
 *** 2015-07-14
 真心难难
+
 *** 2015-07-09
 上线的程序真是提心吊胆～
 
 *** 2015-07-08	
-
-
-告别长城了。say goodbye to firewall!
-vim : set autochdir 自动切换当前目录为当前文件所在文件目录
+告别长城了. say goodbye to firewall!
+~set autochdir~ 自动切换当前目录为当前文件所在文件目录
 *** 2015-07-06
-
-
-(1) 假以时日，必成大器。
+1) 假以时日，必成大器。
 *** 2015-07-05
-
-
-(1) 重装了系统。换成ubuntu14.04lts版本。又要配置一些其他的配置。
-
+1) 重装了系统。换成ubuntu14.04lts版本。又要配置一些其他的配置。
 *** 2015-06-11
-
-
 不要什么对往版本库推送
 *** 2015-06-02
-
-
 昨晚发高烧，还好听过来了。感冒药对我失去效力。以后不能轻易感冒。
-nginx配置
-*** 2015-06-01
 
-
-hosts配置 
 *** 2015-05-29
-
 phalcon.so  -> /usr/lib/php5/20121212
-
 *** 2015-05-18
 日志也不对啊。。。。。。
 *** 2015-05-17
 lnmp环境居然没安装成功。
 *** 2015-05-14
 单向散列加密是指通过不同输入长度的信息进行散列计算，得到固定长度的输出， 这个散列计算过程是单向的，即不能对固定长度的输出进行计算而获得输出信息
-对称加密
-非对称加密 分公钥和私钥
-明文 -> 加密算法(salt)  -> 密文 -> 解密算法(密钥) -> 明文
++ 对称加密
++ 非对称加密(分公钥和私钥)
++ 明文 -> 加密算法(salt)  -> 密文 -> 解密算法(密钥) -> 明文
 
 *** 2015-05-13
 刚上线项目。git太吊了～
-
 加密形式：
-md5() 加密算法
-crypt() 加密算法
-sha1() 加密
-url编码加密
-base64编码加密
++ md5() 加密算法
++ crypt() 加密算法
++ sha1() 加密
++ url编码加密
++ base64编码加密
+
 *** 2015-05-09
 全文索引
 ------------
 全文索引在绝大部分的网站中是不会用到的，
 但在数据量巨大（百万级以上）的时候，
-这时候通过php模糊查询技术，like效率是比较低的，而且也比较消耗性能。
-使用全文索引搜索时注意： 
-1）数据表引擎必须是myisam,
-2)不支持中文;如果需要支持中文需要通过特殊的处理
+这时候通过php模糊查询技术， /like/ 效率是比较低的，而且也比较消耗性能。
+使用全文索引搜索时注意:
+1) 数据表引擎必须是myisam,
+2) 不支持中文;如果需要支持中文需要通过特殊的处理
 ------------
 专注才能学的快。
 
 *** 2015-05-08
 ----------
-(1) 第一次提测，出现了后台c++方面的问题。ip和端口访问出现了问题。
-(2) error_reporting(); 
-$keywords  = isset($_get['keywords']) ? trim($_get['keywords']) : '';
-
-(3)搜索结果的关键词高亮显示
-
-技术点： 利用php的字符串替换功能， str_replace();
-
-$row['username'] = str_replace($keywords, '<font color="red">'.$keywords.'</font>', $row['username'], 
-
+1) 第一次提测，出现了后台c++方面的问题。ip和端口访问出现了问题。
+2) error_reporting(); $keywords  = isset($_get['keywords']) ? trim($_get['keywords']) : '';
+3)搜索结果的关键词高亮显示
+技术点： 利用php的字符串替换功能， str_replace(); $row['username'] = str_replace($keywords, '<font color="red">'.$keywords.'</font>', $row['username'], 
 学习知识点用熟悉它的应用场景
 
 *** 2015-05-07
@@ -1235,21 +1141,21 @@ $row['username'] = str_replace($keywords, '<font color="red">'.$keywords.'</font
 
 *** 2015-05-02
   -------------
-  (1)当前要务是分清主次，轻重缓急，长远的技术。在保证工作顺利的前提下，更新自己的it技能。
-  (2)逐个击破。各个技术点逐一学习，分化拿下。
+1) 当前要务是分清主次，轻重缓急，长远的技术。在保证工作顺利的前提下，更新自己的it技能。
+2) 逐个击破。各个技术点逐一学习，分化拿下。
 
 *** 2015-05-01
   -------------
   vim有一个插件可以用python实现vim中直接看hackernews -> /vim-hackernews/
 
-***  2015-04-30
+*** 2015-04-30
   --------------
   + 前期的环境已经全部部署完毕， 五一前的准备工作， 已完成。 下一步，利用一天，熟悉全部常用的git命令; 用两天，熟悉 /phalcon/ 开发环境下的使用.
   + mysql root密码忘记，可通过最简单的 ~/etc/mysql/debian.cnf~ 文件中的用户名和密码，
   + mysql -udebian-sys-maint -p  
     - Enter password: <输入[client]节的密码>  
     - mysql> ~use mysql;~
-    - mysql> ~UPDATE user SET Password=PASSWORD(’newpassword’) where USER=’root’;~
+    - mysql> ~UPDATE user SET Password=PASSWORD(’newpassword’) WHERE USER=’root’;~
     - mysql> ~FLUSH PRIVILEGES;~
     - mysql> ~quit~
     - # mysql -uroot -p  
@@ -1257,21 +1163,18 @@ $row['username'] = str_replace($keywords, '<font color="red">'.$keywords.'</font
 
 *** 2015-04-29
   ---------------
-  (1) linux /scp/ , /ssl/, 这些命令要多用。
-  (2) /awk/, /sed/ 都是很常用的数据处理工具, 还有管道命令 /grep/ (选取)
+  1) linux /scp/ , /ssl/, 这些命令要多用。
+  2) /awk/, /sed/ 都是很常用的数据处理工具, 还有管道命令 /grep/ (选取)
 
 *** 2015-04-28
   ----------------
   补充： linux的许多命令，今天那个叫开眼了。大神就是大神。总之就一句话：linux原来还可以这样玩～
   tag一个，里程碑式的日子。
-
-*** 2015-04-28
-  -------------
-(1) [[http://www.thinkphp.cn/][thinkphp官网]] [[http://phalconphp.com][phalcon官网]]
-(2) [[http://requirejs.org/docs/api.html][requirejs]]
-(3) 安装git客户端，并熟悉git的使用方式
-(4) 安装node: [[http://nodejs.org/][node]] (注意下载它的二进制版本，注意机器的位数)
-(5) 安装对应的npm包
+1) [[http://www.thinkphp.cn/][thinkphp官网]] [[http://phalconphp.com][phalcon官网]]
+2) [[http://requirejs.org/docs/api.html][requirejs]]
+3) 安装git客户端，并熟悉git的使用方式
+4) 安装node: [[http://nodejs.org/][node]] (注意下载它的二进制版本，注意机器的位数)
+5) 安装对应的npm包
   npm install bower -g
   npm install grunt -g
   npm install jsint -g
@@ -1280,9 +1183,9 @@ $row['username'] = str_replace($keywords, '<font color="red">'.$keywords.'</font
   npm install jshint -g
   npm install opencc -g
   npm install gulp -g
-(6) 用ssh-keygen生成密钥对，设置项目公钥信息
-(7) 安装phaltomjs:[[http://phantomjs.org/][ phaltomjs]]
-(8) php安装memache扩展，thrift扩展，composer
+6) 用ssh-keygen生成密钥对，设置项目公钥信息
+7) 安装phaltomjs:[[http://phantomjs.org/][ phaltomjs]]
+8) php安装memache扩展，thrift扩展，composer
 
 *** 2015-04-24
 -------------
