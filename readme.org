@@ -1,6 +1,13 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
 * emacs大法好
 ** 一年之内，学成emacs这套刀法。
+*** 2016-06-24
+slowly when the start is very big (1000000, eg)
++ select * from test limit start, count;
++ select id from test limit start, count;
+quicker way (id is the primary key)
++ select * from test where id >= (select id from test limit bigStart, 1) limit count;
++ select * from test AS x JOIN (select id from test limit bigStart, count) AS y ON x.ID=y.id;
 *** 2016-06-23
 + healthy is the most inportant thing for our life
 *** 2016-06-16
