@@ -3,6 +3,8 @@
 ** 一年之内，学成emacs这套刀法。
 *** 2016-07-02 
 + determine to write a set of web go game
+*** 2016-06-28
++ you must have your own ideas, Particularly in the field of computers.
 *** 2016-06-24
 slowly when the start is very big (1000000, eg)
 + select * from test limit start, count;
