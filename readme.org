@@ -1,4 +1,6 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE * emacs大法好 ** 一年之内，学成emacs这套刀法。
+*** 2016-07-05
+ + -- life 
 *** 
     2016-07-02
     + 历史上多少个瞬间都是本可以成为合作伙伴的，最后竟成了对手。
