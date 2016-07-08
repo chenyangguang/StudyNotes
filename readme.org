@@ -1,4 +1,6 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE * emacs大法好 ** 一年之内，学成emacs这套刀法。
+*** 2016-07-08
+ + vim-easyalign插件对齐， 选中:EasyAlign=
 *** 2016-07-05
  + -- life 
 *** 
