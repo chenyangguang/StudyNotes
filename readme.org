@@ -1,6 +1,7 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE * emacs大法好 ** 一年之内，学成emacs这套刀法。
 *** 2016-07-12 
 Time fly and things change. 
+一段段精小细致的代码就是一道道死活题。个人项目的练习要针对项目中遇到的问题展开。这样才会产生前后次序的联系。这种效率是最高的，速度也是最快的。
 *** 2016-07-08
  + vim-easy-align插件对齐， 选中:EasyAlign=
 *** 2016-07-05
