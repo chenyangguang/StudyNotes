@@ -1,4 +1,6 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE * emacs大法好 ** 一年之内，学成emacs这套刀法。
+*** 2016-07-19
+   终端里面使用!command 然后tab查找最近的命令历史比ctrl+r还快
 *** 2016-07-15 
    composer config secure-http false
 *** 2016-07-12 
