@@ -1,4 +1,7 @@
-#+TODO: TODO IN_PROGRESS WAITING DONE * emacs大法好 ** 一年之内，学成emacs这套刀法。y
+#+TODO: TODO IN_PROGRESS WAITING DONE * emacs大法好 
+** 一年之内，学成emacs这套刀法。
+*** 2016-07-26 
+I will use emacs and vim in a year.
 *** 2016-07-24
    原来php底层用了很多c语言的函数，比如strcat, strcmp, strcpy,等等, 认识事物，就是要追它的根源。
 *** 2016-07-21
