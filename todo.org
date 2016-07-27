@@ -1,9 +1,10 @@
-*** TODO [#B] Report bugs of spacemacs and swoole[10%]
-DEADLINE: <2016-12-30 Fri>
-*** TODO [#A] Exercise(Smimming, Running, Basketball)[40%] 
-SCHEDULED: <2016-07-01 Fri>
-*** TODO [#B] Earn some money[10%]
-SCHEDULED: <2016-06-30 Thu>
+#+TODO: TODO IN_PROGRESS WAITING DONE 
+*** DONE [#B] Report bugs of spacemacs and swoole[10%]
+CLOSED: [2016-07-27 Wed 08:55] DEADLINE: <2016-12-30 Fri>
+*** DONE [#A] Exercise(Smimming, Running, Basketball)[40%] 
+CLOSED: [2016-07-27 Wed 08:55] SCHEDULED: <2016-07-01 Fri>
+*** DONE [#B] Earn some money[10%]
+CLOSED: [2016-07-27 Wed 08:55] SCHEDULED: <2016-06-30 Thu>
 + step one 
   - step one one 
   - step one two
@@ -14,3 +15,6 @@ SCHEDULED: <2016-06-30 Thu>
   - C-c C-s setting scheduled date for plan
   - C-c C-d setting deadline date for plan
 
+*** TODO study python  
+*** TODO study c 
+*** TODO read 30 books at least in 2016 
