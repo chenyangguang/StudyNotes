@@ -1,6 +1,6 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE * emacs大法好 
 ** 一年之内，学成emacs这套刀法。
-[[https://github.com/chenyangguang/demos/photos/black-horse.jpg]]
+[[./photos/black_bird.jpg]]
 
 *** 2016-07-26 
 I will use emacs and vim in a year.
