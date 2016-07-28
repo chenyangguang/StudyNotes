@@ -9,6 +9,7 @@
  + if i want to  show number everytime emacs start, set (global-linum-mode 1) in .emacs init file
  + Select a text, then call copy-to-register 【Ctrl+x r s】, then type 3. This will store the text in register “3”.
  + To paste, call insert-register 【Ctrl+x r i】, then type the register name.
+ + Call fill-paragraph *Alt+q* to break a long line into multiple lines
 *** 2016-07-27 
 [[./todo.org][试一下相对路径能否解析]]
 *** 2016-07-26 
