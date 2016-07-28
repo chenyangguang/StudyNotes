@@ -4,9 +4,9 @@
 
 *** 2016-07-28 
  + [[http://ergoemacs.org/emacs/emacs.html][emacs技巧]]
- + *=linum-mode=* show number in current buffer like =set nu= in *vim* 
- + *=global-linum-mode=* show number all buffer 
- + if i want to  show number everytime emacs start, set =(global-linum-mode 1)= in .emacs init file  
+ + *linum-mode* show number in current buffer like =set nu= in *vim* 
+ + *global-linum-mode* show number all buffer 
+ + if i want to  show number everytime emacs start, set (global-linum-mode 1) in .emacs init file  
 *** 2016-07-27 
 [[./todo.org][试一下相对路径能否解析]]
 *** 2016-07-26 
