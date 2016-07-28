@@ -17,6 +17,6 @@ CLOSED: [2016-07-27 Wed 08:55] SCHEDULED: <2016-06-30 Thu>
 
 *** TODO study python  
 *** TODO study c 
-*** TODO read 30 books at least in 2016 
+*** TODO read [[./books.org]30 books] at least in 2016 
 *** TODO use python to create a robot to analysis stock datas 
 *** TODO webgo 
