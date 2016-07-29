@@ -40,7 +40,7 @@
     | /clear-rectangle/        | *Ctrl+x r c*     | replace with space                                                 |
     | /open-rectangle/         | *Ctrl+x r o*     | Insert space to the rectangle.(shifting text to the right )        |
     | /copy-rectangle-as-kill/ | *Ctrl+x r Alt+w* | similar /to kill-rectangle/ but doesn't delete                  |
-***** [[https://github.com/pahen/madge][madge]] 
+ + [[https://github.com/pahen/madge][madge]] 
    
 *** 2016-07-28 
  + [[http://ergoemacs.org/emacs/emacs.html][emacs技巧]]
