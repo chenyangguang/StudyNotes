@@ -1,7 +1,38 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE * emacs大法好 
 ** 一年之内，学成emacs这套刀法
 [[./photos/black_bird.jpg]]
-
+*** 2016-07-29
+***** kill-rectangle
+1. Put your cursor before somewords.
+2. Call /set-mark-command/ C-space.
+3. Move cursor to end of somewhere you want.
+4. Call /kill-rectangle/ by *C-x r k*
+***** replace-retangle 
+1. Put your cursor before somewords.
+2. Call set-mark-command *C-space*.
+3. Move cursor to end of somewhere you want.
+4. Call /replace-rectangle/ *C-x r t*
+***** paste Rectangle 
+*C-x r y* 
+***** insert a Column  of Numbers 
+1. Put your cursor before somewords.
+2. Call /set-mark-command/ *C-space*.
+3. Move cursor to end of somewhere you want.
+4. Call /replace-rectangle/ *C-x r N*
+***** insert A to Z   
+A Put your cursor before somewords.
+B Call /set-mark-command/ *C-space*.
+C Move cursor to end of somewhere you want.
+D Call /replace-rectangle/ *C-u*
+E Now call /rectangle-number-lines/. It will prompt you to enter arguments
+F Type 65 (Letter *A* has Unicode codepoint =65=. *a* is =97=).
+G Remove the default *%2d*, type *%c*(the "%c" is for character format)
+***** More Rectangle  Commands 
+| Command                  | Key              | Purpose                                                            |
+| /delete-rectangle/       | *Ctrl+x r d*     | similar to /kill-rectangle/, but doesn't save to a special clipboard |
+| /clear-rectangle/        | *Ctrl+x r c*     | replace with space                                                 |
+| /open-rectangle/         | *Ctrl+x r o*     | Insert space to the rectangle.(shifting text to the right )        |
+| /copy-rectangle-as-kill/ | *Ctrl+x r Alt+w* | similar /to kill-rectangle/ but doesn't delete                       |
 *** 2016-07-28 
  + [[http://ergoemacs.org/emacs/emacs.html][emacs技巧]]
  + *linum-mode* show number in current buffer like =set nu= in *vim* 
