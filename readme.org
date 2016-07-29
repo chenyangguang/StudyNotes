@@ -2,18 +2,18 @@
 ** 一年之内，学成emacs这套刀法
 [[./photos/black_bird.jpg]]
 *** 2016-07-29
-***** kill-rectangle
+***** Kill-rectangle
     1. Put your cursor before somewords.
     2. Call /set-mark-command/ C-space.
     3. Move cursor to end of somewhere you want.
     4. Call /kill-rectangle/ by *C-x r k*
-***** replace-retangle 
+***** Keplace-retangle 
     1. Put your cursor before somewords.
     2. Call set-mark-command *C-space*.
     3. Move cursor to end of somewhere you want.
     4. Call /replace-rectangle/ *C-x r t*
-***** paste Rectangle 
-    *C-x r y* 
+***** Paste Rectangle 
+    1. C-x r y 
 ***** Insert a Column  of Numbers 
     1. Put your cursor before somewords.
     2. Call /set-mark-command/ *C-space*.
