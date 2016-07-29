@@ -13,26 +13,26 @@
 3. Move cursor to end of somewhere you want.
 4. Call /replace-rectangle/ *C-x r t*
 ***** paste Rectangle 
-*C-x r y* 
+    *C-x r y* 
 ***** insert a Column  of Numbers 
 1. Put your cursor before somewords.
 2. Call /set-mark-command/ *C-space*.
 3. Move cursor to end of somewhere you want.
 4. Call /replace-rectangle/ *C-x r N*
 ***** insert A to Z   
-A Put your cursor before somewords.
-
-B Call /set-mark-command/ *C-space*.
-
-C Move cursor to end of somewhere you want.
-
-D Call /replace-rectangle/ *C-u*
-
-E Now call /rectangle-number-lines/. It will prompt you to enter arguments
-
-F Type 65 (Letter *A* has Unicode codepoint =65=. *a* is =97=).
-
-G Remove the default *%2d*, type *%c*(the "%c" is for character format)
+   A Put your cursor before somewords.
+   
+   B Call /set-mark-command/ *C-space*.
+   
+   C Move cursor to end of somewhere you want.
+   
+   D Call /replace-rectangle/ *C-u*
+   
+   E Now call /rectangle-number-lines/. It will prompt you to enter arguments
+   
+   F Type 65 (Letter *A* has Unicode codepoint =65=. *a* is =97=).
+   
+   G Remove the default *%2d*, type *%c*(the "%c" is for character format)
 
 ***** More Rectangle  Commands 
 | Command                  | Key              | Purpose                                                            |
