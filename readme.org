@@ -7,13 +7,13 @@
     2. Call /set-mark-command/ C-space.
     3. Move cursor to end of somewhere you want.
     4. Call /kill-rectangle/ by *C-x r k*
-***** Keplace-retangle 
+***** Replace-retangle 
     1. Put your cursor before somewords.
     2. Call set-mark-command *C-space*.
     3. Move cursor to end of somewhere you want.
     4. Call /replace-rectangle/ *C-x r t*
 ***** Paste Rectangle 
-    1. C-x r y 
+    1. *C-x r y*
 ***** Insert a Column  of Numbers 
     1. Put your cursor before somewords.
     2. Call /set-mark-command/ *C-space*.
@@ -21,7 +21,7 @@
     4. Call /replace-rectangle/ *C-x r N*
 ***** Insert A to Z   
        + put your cursor before somewords.
-       
+
        + call /set-mark-command/ *C-space*.
        
        + move cursor to end of somewhere you want.
