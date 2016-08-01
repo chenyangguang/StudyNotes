@@ -1,6 +1,8 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE * emacs大法好 
 ** 一年之内，学成emacs这套刀法
 [[./photos/black_bird.jpg]]
+*** 2016-08-01 
++ *select-editor* command can change crontab default editor 
 *** 2016-07-29
 ***** Kill-rectangle
     1. Put your cursor before somewords.
