@@ -1,6 +1,8 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE * emacs大法好 
 ** 一年之内，学成emacs这套刀法
 [[./photos/black_bird.jpg]]
+*** 2016-08-03 
++ 像知识这种东西，如果不使用，就永远发挥不出它的作用来。emacs技巧也是一样，越不使用，越疏远。但若加以使用，力量便会源源不绝地涌出来。
 *** 2016-08-01 
 + *select-editor* command can change crontab default editor 
 + use *crontab -e* command to edit crontab jobs, call to change crontab in /var/spool/cron dir, another way is edit /etc/crontab file.
