@@ -38,3 +38,5 @@
 ***** 16. DONE [#A] 《Web 安全深度剖析》 安全漏洞，攻防测试。 DEADLINE: <2016-06-15 Wed>[100%]
 CLOSED: [2016-06-16 Thu 15:54]
 ***** IN_PROGRESS [#A] 17. C程序设计（第4版）
+***** IN_PROGRESS [#A] 18. python绝技:运用python成为顶级黑客
+***** IN_PROGRESS [#B] 19. 玄玄棋经
