@@ -1,6 +1,8 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE * emacs大法好 
 ** 一年之内，学成emacs这套刀法
 [[./photos/black_bird.jpg]]
+*** 2016-08-14
++ 不可贪胜
 *** 2016-08-13
     + 止戈
 *** 2016-08-11
