@@ -1,6 +1,9 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE * emacs大法好 
 ** 一年之内，学成emacs这套刀法
 [[./photos/black_bird.jpg]]
+*** 2016-08-26 
++ 删除固定日期以前的文件
+   *find logs -type f -mtime +5 -exec rm {  } \;*
 *** 2016-08-14
 + 不可贪胜
 *** 2016-08-13
