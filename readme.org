@@ -1,4 +1,78 @@
-#+TODO: TODO IN_PROGRESS WAITING DONE * emacs大法好 ** 一年之内，学成emacs这套刀法。y
+#+TODO: TODO IN_PROGRESS WAITING DONE * emacs大法好 
+** 一年之内，学成emacs这套刀法
+[[./photos/black_bird.jpg]]
+*** 2016-08-26 
++ 删除固定日期以前的文件
+   *find logs -type f -mtime +5 -exec rm {  } \;*
++ emacs 中 *C-i* 等同于 *tab* , 用于 *eww* 模式中的下一个链接跳转
+*** 2016-08-14
++ 不可贪胜
+*** 2016-08-13
+    + 止戈
+*** 2016-08-11
++ 身体健康至关重要！
+*** 2016-08-03 
++ 像知识这种东西，如果不使用，就永远发挥不出它的作用来。emacs技巧也是一样，越不使用，越疏远。但若加以使用，力量便会源源不绝地涌出来。
+*** 2016-08-01 
++ *select-editor* command can change crontab default editor 
++ use *crontab -e* command to edit crontab jobs, call to change crontab in /var/spool/cron dir, another way is edit /etc/crontab file.
++ emacs align text(select the text, *Alt+x* command to call *align-regexp* then give "=")
+*** 2016-07-29
+***** Kill-rectangle
+    1. Put your cursor before somewords.
+    2. Call /set-mark-command/ C-space.
+    3. Move cursor to end of somewhere you want.
+    4. Call /kill-rectangle/ by *C-x r k*
+***** Replace-retangle 
+    1. Put your cursor before somewords.
+    2. Call set-mark-command *C-space*.
+    3. Move cursor to end of somewhere you want.
+    4. Call /replace-rectangle/ *C-x r t*
+***** Paste Rectangle 
+    1. *C-x r y*
+***** Insert a Column  of Numbers 
+    1. Put your cursor before somewords.
+    2. Call /set-mark-command/ *C-space*.
+    3. Move cursor to end of somewhere you want.
+    4. Call /replace-rectangle/ *C-x r N*
+***** Insert A to Z   
+       + put your cursor before somewords.
+
+       + call /set-mark-command/ *C-space*.
+       
+       + move cursor to end of somewhere you want.
+       
+       + call /replace-rectangle/ *C-u*
+       
+       + now call /rectangle-number-lines/. It will prompt you to enter arguments
+       
+       + type 65 (Letter *A* has Unicode codepoint =65=. *a* is =97=).
+       
+       + remove the default *%2d*, type *%c*(the "%c" is for character format)
+
+***** More Rectangle  Commands 
+    | Command                  | Key              | Purpose                                                            |
+    | /delete-rectangle/       | *Ctrl+x r d*     | similar to /kill-rectangle/, but doesn't save to a special clipboard |
+    | /clear-rectangle/        | *Ctrl+x r c*     | replace with space                                                 |
+    | /open-rectangle/         | *Ctrl+x r o*     | Insert space to the rectangle.(shifting text to the right )        |
+    | /copy-rectangle-as-kill/ | *Ctrl+x r Alt+w* | similar /to kill-rectangle/ but doesn't delete                  |
+ + [[https://github.com/pahen/madge][madge]] 
+   
+*** 2016-07-28 
+ + [[http://ergoemacs.org/emacs/emacs.html][emacs技巧]]
+ + *linum-mode* show numbers in current buffer like =set nu= in *vim* 
+ + *global-linum-mode* show numbers all buffer 
+ + if i want to  show numbers everytime emacs start, set (global-linum-mode 1) in .emacs init file
+ + Select a text, then call copy-to-register 【Ctrl+x r s】, then type 3. This will store the text in register “3”.
+ + To paste, call insert-register 【Ctrl+x r i】, then type the register name.
+ + Call fill-paragraph *Alt+q* to break a long line into multiple lines
+ + *Ctrl+x f* to set the max characters per line used by “fill” commands.
+
+*** 2016-07-27 
+[[./todo.org][试一下相对路径能否解析]]
+*** 2016-07-26 
+I will use emacs and vim in a year.
+对比着学东西，就像吃不同味道的食物。更有食欲。既然指针比较有嚼劲， 我先吃点python水果。
 *** 2016-07-24
    原来php底层用了很多c语言的函数，比如strcat, strcmp, strcpy,等等, 认识事物，就是要追它的根源。
 *** 2016-07-21
@@ -592,7 +666,7 @@ install phpbrew to control  version of php. [[https://github.com/phpbrew/phpbrew
 
 *** 2016-01-12
 ------------------------------------------------------------------------
-lisp是什么样的语言？这个们进去会怎么样？看了《黑客与画家》， 很有冲动， 想钻进这道门里去。在知乎，百度，google， 各种途径里面去找它的点点滴滴， 迫切想找一个入口。
+lisp是什么样的语言？这个门进去会怎么样？看了《黑客与画家》， 很有冲动， 想钻进这道门里去。在知乎，百度，google， 各种途径里面去找它的点点滴滴， 迫切想找一个入口。
 这两天的事物很有冲击力：虾米的大气音乐， deepin系统的使用， 对lisp的着迷， 。。。。。。
 脑子充血了，反正。不管是什么路了。我冲下去了！
 
