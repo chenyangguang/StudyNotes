@@ -1,6 +1,5 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE * emacs大法好 
 ** 一年之内，学成emacs这套刀法
-[[./photos/black_bird.jpg]]
 
 *** 2016-09-05
 + 维护一份文档需要相当的时间精力
@@ -1826,3 +1825,5 @@ symfony框架也是相当犀利！
 横向扩展的能力
 数据库的优化
 尽量让一台机器能够承载更多的用户请求
+
+[[./photos/black_bird.jpg]]
