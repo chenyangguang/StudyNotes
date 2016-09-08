@@ -1,6 +1,11 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE * emacs大法好 
 ** 一年之内，学成emacs这套刀法
 ***** need to to learn [[https://github.com/reeze/tipi][TIPI]](PHP core)
+***** emacs Macro Operation 
+| key   | target             |
+| C-x ( | Defining kbd macro |
+| C-x ) | kbd macro defined  |
+| C-x e | use the maro       |
 *** 2016-09-05
 + 维护一份文档需要相当的时间精力
 *** 2016-08-26 
