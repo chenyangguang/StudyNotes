@@ -1,5 +1,7 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE * emacs大法好 
 ** 一年之内，学成emacs这套刀法
+*** 2016-09-09 
++ 大脑管理的主要工作是尽可能高效的利用知识存储
 *** 2016-09-08
 ***** emacs快速工程内搜索
 + 一种是安装 [[https://github.com/syohex/emacs-helm-ag][heml-ag]] 调起的快捷键很多，比如 *M-m s a p* , 不得不多说，emacs真的是有很多快捷键，而且提示很人性。文档一流。
