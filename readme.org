@@ -1,4 +1,4 @@
-#+TODO: TODO IN_PROGRESS WAITING DONE * emacs大法好 
+#+TODO: TODO IN_PROGRESS WAITING DONE 
 ** 一年之内，学成emacs这套刀法
 *** 2016-09-10 
 + 先定一个小目标,比如看一遍<深入理解php内核>，先屠他一条大龙。哦，已经两个小目标了。。。。。。
