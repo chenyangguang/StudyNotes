@@ -2,3 +2,7 @@ INFO: loading config from /home/v/config.json
 2016-09-10 11:00:35 INFO     loading libcrypto from libcrypto.so.1.0.0
 2016-09-10 11:00:35 INFO     starting local at 127.0.0.1:1080
 2016-09-10 11:00:35 ERROR    [Errno 98] Address already in use
+INFO: loading config from /home/v/config.json
+2016-09-10 11:05:51 INFO     loading libcrypto from libcrypto.so.1.0.0
+2016-09-10 11:05:51 INFO     starting local at 127.0.0.1:1080
+2016-09-10 11:05:51 ERROR    [Errno 98] Address already in use
