@@ -2,7 +2,7 @@
 ** 一年之内，学成emacs这套刀法
 *** 2016-09-13 
 
-+ 闲来 ubuntu14 下升级 vim 至 vim8.0
++ 闲来 ubuntu 下升级 vim 至 vim8.0
 + =git clone https://github.com/vim/vim.git=
 + 查看readme.md 知道install 相关在src目录下INSTALL有说明
 + =make=
@@ -10,10 +10,14 @@
 + =vim ~/.zshrc=
 + 添加  alias vim='/usr/local/bin/vim'
 + =source ~/.zshrc=
-+ 收工,重启
++ 收工, 查看vim 版本已经使用升级的版本
 + =vim --serion= 
- - VIM - Vi IMproved 8.0 (2016 Sep 12, compiled Sep 13 2016 10:14:12) Included patches: 1-3
-...
+  VIM - Vi IMproved 8.0 (2016 Sep 12, compiled Sep 13 2016 10:14:12) Included patches: 1-3
++ 有些gif图画弄一下会形成比较直观的说明，需要自己制作一些gif图片
+    - sudo apt install ffmpeg imagemagick
+    - =ffmpeg -h= 查看帮助文档，知道可以截取并压缩video视频，=convert -h= 调出帮助命令，发现可以利用多个文件生成一个gif, 做两个test
+    - ffmpeg -ss 00:03:50 -i Vim-2-iTerm-Vimrc-and-Syntax-Highlighting.mp4  -to 00:04:00  vim.gif, [[./photos/vim.gif][果然]]
+    - convert -delay 300 -loop 0 *.jpg test.gif
 *** 2016-09-10 
 + 先定一个小目标,比如看一遍<深入理解php内核>，先屠他一条大龙。哦，已经两个小目标了。。。。。。
 *** 2016-09-09 
