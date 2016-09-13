@@ -1,5 +1,10 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE 
 ** 一年之内，学成emacs这套刀法
+*** ubuntu下自己录制视频　
++ 安装karam
++ 启动karam
++ 可以设置声音来源为sound from speakers or microphone,倒计时读秒，然后选择Capture开始录制，中途可以stop,或者finish
++ 这样就可以录制自己的视频了。结合ffmpeg可以生成代码过程的gif
 *** 2016-09-13 
 
 + 闲来 ubuntu 下升级 vim 至 vim8.0
