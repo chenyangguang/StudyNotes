@@ -1,9 +1,10 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE 
 ** 一年之内，学成emacs这套刀法
 *** 2016-09-13 
+
 + 闲来 ubuntu14 下升级 vim 至 vim8.0
 + =git clone https://github.com/vim/vim.git=
-+ 查看 readme.md 知道 install 相关在 src 目录下 INSTALL 有说明
++ 查看readme.md 知道install 相关在src目录下INSTALL有说明
 + =make=
 + =make install=
 + =vim ~/.zshrc=
