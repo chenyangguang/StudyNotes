@@ -7,7 +7,7 @@
 + =make=
 + =make install=
 + =vim ~/.zshrc=
-+ 添加  *alias vim='/usr/local/bin/vim'*
++ 添加  alias vim='/usr/local/bin/vim'
 + =source ~/.zshrc=
 + 收工,重启
 + =vim --serion= 
