@@ -4,8 +4,8 @@
 + 安装karam
 + 启动karam
 + 可以设置声音来源为 sound from speakers or microphone,倒计时读秒，然后选择 Capture 开始录制，中途可以 stop,或者 finish
-+ 这样就可以录制自己的视频了。结合 =ffmpeg= (=ffmpeg -ss 00:00:00 -i test.mp4  -to 00:04:00  from_capture.gif=
-)的命令 可以生成代码过程的 [[./photos/from_capture.gif][gif]]
++ 这样就可以录制自己的视频了。结合 =ffmpeg= (=ffmpeg -ss 00:00:00 -i test.mp4  -to 00:04:00  a.gif=
+)的命令 可以生成代码过程的 [[./photos/a.gif][gif]]
 
 *** 2016-09-13 
 + 闲来 ubuntu 下升级 vim 至 vim8.0
