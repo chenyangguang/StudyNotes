@@ -23,7 +23,7 @@
 + =make=
 + =make install=
 + =vim ~/.zshrc=
-+ 添加  alias vim='/usr/local/bin/vim'
++ 添加  alias vim='/usr/local/bin/vim' (或者 alias vim='/usr/bin/vim')
 + =source ~/.zshrc=
 + 收工, 查看vim 版本已经使用升级的版本
 + =vim --serion= 
