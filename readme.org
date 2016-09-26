@@ -165,6 +165,7 @@ quicker way (id is the primary key)
   - 在比如: =sudo fping hao123.com=, ...... --- hao123.com ping statistics --- 5 packets transmitted, 5 received, 0% packet loss, time 4005ms, 这个网络还可以。
   - 没有止步的空间，不忘初心。
 *** 2016-06-03
++ the other way of swap *Ctrl* and *CaplLock* key in ubuntu by : =setxkbmap -layout us -option ctrl:nocaps=
 + another way of swap Ctrl and Caps Lock is [[https://www.emacswiki.org/emacs/MovingTheCtrlKey][xmodmap]] 
 + =vim ~/.xmodmap=
   - remove Lock = Caps_Lock
