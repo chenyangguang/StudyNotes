@@ -1,5 +1,5 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE 
-** emacs
+* Emacs
 *** 升级 pip 
  + =pip install -U pip=
 *** 阿里事件对我的冲击
