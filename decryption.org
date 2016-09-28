@@ -32,8 +32,6 @@ XDY1XDc2XDY5XDZjXDYzXDZmXDczXDQwXDY3XDZkXDYxXDY5XDZjXDJlXDYzXDZmXDZk
     b. XD 是共有的
     c. 加密后组成有大、小写字母和数字
 + 什么东西可以加密成大、小写字母和数字? 或者说大, 小写字母和数字可以代表什么?
-
-
 | 加密后 | chr | Oct | Hx | Dec |
 | XDY1   |     |     |    |     |
 | XDc2   |     |     |    |     |
@@ -53,5 +51,9 @@ XDY1XDc2XDY5XDZjXDYzXDZmXDczXDQwXDY3XDZkXDYxXDY5XDZjXDJlXDYzXDZmXDZk
 | XDZm   | o   | 157 | 6F | 111 |
 | XDZk   | m   | 155 | 6D | 109 |
 
-+ Zj = 108, Zk = 109, Zm = 111 or Zj = 154, Zk = 155, Zm = 157
++ Zj = 108, Zk = 109, Zm = 111 or Zj = 154, Zk = 155, Zm = 157?
++ so 
+  - Y1 = ?
+  - c2 = ?
+  - cz = ? 
 + 
