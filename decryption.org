@@ -32,6 +32,10 @@ XDY1XDc2XDY5XDZjXDYzXDZmXDczXDQwXDY3XDZkXDYxXDY5XDZjXDJlXDYzXDZmXDZk
     b. XD 是共有的
     c. 加密后组成有大、小写字母和数字
 + 什么东西可以加密成大、小写字母和数字? 或者说大, 小写字母和数字可以代表什么?
++ ASICC 
+[[./photos/asicc.GIF]]
+
++ @ 排在点号之前 
 | 加密后 | chr | Oct | Hx | Dec |
 | XDY1   |     |     |    |     |
 | XDc2   |     |     |    |     |
