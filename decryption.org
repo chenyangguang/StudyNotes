@@ -64,33 +64,34 @@ XDY1XDc2XDY5XDZjXDYzXDZmXDczXDQwXDY3XDZkXDYxXDY5XDZjXDJlXDYzXDZmXDZk
 
 
 
-解法： 一个加密邮箱地址
-加密后 前   ASICC
-XDY1 
-XDc2 
-XDY5 
-XDZj 
-XDYz 
-XDZm   o    
-XDcz 
-XDQw   @
-XDY3 
-XDZk   m
-XDYx 
-XDY5 
-XDZj 
-XDJl   .
-XDYz   c
-XDZm   o
-XDZk   m
+** 解法：
+*** 一个加密邮箱地址
+| 加密后 | chr | Oct | Hx | Dec |
+| XDY1   |     |     |    |     |
+| XDc2   |     |     |    |     |
+| XDY5   | i   |     |    |     |
+| XDZj   | l   |     |    |     |
+| XDYz   | c   |     |    |     |
+| XDZm   | o   |     |    |     |
+| XDcz   |     |     |    |     |
+| XDQw   | @   |     |    |  64 |
+| XDY3   | g   |     |    |     |
+| XDZk   | m   |     |    |     |
+| XDYx   | a   |     |    |     |
+| XDY5   | i   |     |    |     |
+| XDZj   | l   |     |    |     |
+| XDJl   | .   |     |    |  46 |
+| XDYz   | c   |     |    |  99 |
+| XDZm   | o   |     |    | 111 |
+| XDZk   | m   |     |    | 109 |
 
-分析思路： 
-(1) 常规邮箱一定含有 @ 和 . 这个字符
-(2) 最后都是统一由字母输出， 那么说明这个加密邮箱地址是从单个asicc码加密而成。
+*** 分析思路： 
++ 常规邮箱一定含有 @ 和 . 这个字符
++ 最后都是统一由字母输出， 那么说明这个加密邮箱地址是从单个asicc码加密而成。
 
-(3) 加密后的规律: 
++ 加密后的规律: 
     a. 没四个字母代表了一个符号，字母或者数字
     b. XD 是共有的
     c. 组成有大、小写字母和数字
-(4) 什么东西可以加密成大、小写字母和数字？ 或者说大、小写字母和数字可以代表什么？
++ 什么东西可以加密成大、小写字母和数字？ 或者说大、小写字母和数字可以代表什么？
 
