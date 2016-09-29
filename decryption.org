@@ -57,16 +57,16 @@ XDY1XDc2XDY5XDZjXDYzXDZmXDczXDQwXDY3XDZkXDYxXDY5XDZjXDJlXDYzXDZmXDZk
 
 + Zj = 108, Zk = 109, Zm = 111 or Zj = 154, Zk = 155, Zm = 157?
 + so 
-  - Y1 = ? because Y5 = 105, Y3 = 103 , so Y1 = 101 , and Y1 = e 
+  - Y1 = ? because Y5 = 105, Y3 = 103 , so Y1 = 101 , and Y1 = 'e '
 
 | 加密后 | chr | Oct | Hx | Dec |
 | XDY1   | e   | 145 | 65 | 101 |
-| XDc2   |     |     |    |     |
+| XDc2   | (?) |     |    |     |
 | XDY5   | i   | 151 | 69 | 105 |
 | XDZj   | l   | 154 | 6C | 108 |
 | XDYz   | c   | 143 | 63 |  99 |
 | XDZm   | o   | 157 | 6F | 111 |
-| XDcz   |     |     |    |     |
+| XDcz   | (?) |     |    |     |
 | XDQw   | @   | 100 | 40 |  64 |
 | XDY3   | g   | 147 | 67 | 103 |
 | XDZk   | m   | 155 | 6D | 109 |
@@ -96,7 +96,9 @@ XDY1XDc2XDY5XDZjXDYzXDZmXDczXDQwXDY3XDZkXDYxXDY5XDZjXDJlXDYzXDZmXDZk
 | cz |   ? |
 
 + Yx = 97, Yz = 99 so Yy = 98, and Y1 = 101, Y3 = 103, Y5 = 105 so have Y0=100, 这说明字母个位上 
-  x < y < z < 0 < 1 < 3 < 5 , 而且x + 1 = y, y + 1 = z, z + 2 = 1, 十位上 J < Q < Y < Z 
+  x < y < z < 0 < 1 < 3 < 5 , 而且x + 1 = y, y + 1 = z, z + 2 = '1', 十位上 J < Q < Y < Z 
+
++ 由Y1, Y3, Y5 分别 = 101,103,105说明个位数字是直接加上去的 , Y -> Z 什么关系? 
 
 | Yy |  98 |
 | Y0 | 100 |
