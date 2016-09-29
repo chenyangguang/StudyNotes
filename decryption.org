@@ -105,3 +105,23 @@ XDY1XDc2XDY5XDZjXDYzXDZmXDczXDQwXDY3XDZkXDYxXDY5XDZjXDJlXDYzXDZmXDZk
 
 + XD 有什么用?
 + 0~127 
++ 别问我怎么知道的, 结果是 : 
+
+| 加密后 | chr | Oct | Hx | Dec |
+| XDY1   | e   | 145 | 65 | 101 |
+| XDc2   | v   | 166 | 76 | 118 |
+| XDY5   | i   | 151 | 69 | 105 |
+| XDZj   | l   | 154 | 6C | 108 |
+| XDYz   | c   | 143 | 63 |  99 |
+| XDZm   | o   | 157 | 6F | 111 |
+| XDcz   | s   | 163 | 73 | 115 |
+| XDQw   | @   | 100 | 40 |  64 |
+| XDY3   | g   | 147 | 67 | 103 |
+| XDZk   | m   | 155 | 6D | 109 |
+| XDYx   | a   | 141 | 61 |  97 |
+| XDY5   | i   | 151 | 69 | 105 |
+| XDZj   | l   | 154 | 6C | 108 |
+| XDJl   | .   | 056 | 2E |  46 |
+| XDYz   | c   | 143 | 63 |  99 |
+| XDZm   | o   | 157 | 6F | 111 |
+| XDZk   | m   | 155 | 6D | 109 |
