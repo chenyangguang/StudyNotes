@@ -58,6 +58,7 @@ XDY1XDc2XDY5XDZjXDYzXDZmXDczXDQwXDY3XDZkXDYxXDY5XDZjXDJlXDYzXDZmXDZk
 + Zj = 108, Zk = 109, Zm = 111 or Zj = 154, Zk = 155, Zm = 157?
 + so 
   - Y1 = ? because Y5 = 105, Y3 = 103 , so Y1 = 101 , and Y1 = e 
+
 | 加密后 | chr | Oct | Hx | Dec |
 | XDY1   | e   | 145 | 65 | 101 |
 | XDc2   |     |     |    |     |
@@ -76,6 +77,20 @@ XDY1XDc2XDY5XDZjXDYzXDZmXDczXDQwXDY3XDZkXDYxXDY5XDZjXDJlXDYzXDZmXDZk
 | XDYz   | c   | 143 | 63 |  99 |
 | XDZm   | o   | 157 | 6F | 111 |
 | XDZk   | m   | 155 | 6D | 109 |
+  
   - c2 = ?
   - cz = ? 
-+ 
++ simple 
+
+| Jl |  46 |
+| Qw |  64 |
+| Yx |  97 |
+| Yz |  99 |
+| Y1 | 101 |
+| Y3 | 103 |
+| Y5 | 105 |
+| Zj | 108 |
+| Zk | 109 |
+| Zm | 111 |
+| c2 |   ? |
+| cz |   ? |
