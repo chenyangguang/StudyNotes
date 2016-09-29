@@ -94,3 +94,12 @@ XDY1XDc2XDY5XDZjXDYzXDZmXDczXDQwXDY3XDZkXDYxXDY5XDZjXDJlXDYzXDZmXDZk
 | Zm | 111 |
 | c2 |   ? |
 | cz |   ? |
+
++ Yx = 97, Yz = 99 so Yy = 98, and Y1 = 101, Y3 = 103, Y5 = 105 so have Y0=100, 这说明字母个位上 
+  x < y < z < 0 < 1 < 3 < 5 , 而且x + 1 = y, y + 1 = z, z + 2 = 1, 十位上 J < Q < Y < Z 
+
+| Yy |  98 |
+| Y0 | 100 |
+
++ XD 有什么用?
++ 0~127 
