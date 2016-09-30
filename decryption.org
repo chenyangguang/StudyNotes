@@ -1,0 +1,130 @@
+* 专破密码  
+** 天下密码，唯快不破
+*** 一个加密邮箱地址  
+XDY1XDc2XDY5XDZjXDYzXDZmXDczXDQwXDY3XDZkXDYxXDY5XDZjXDJlXDYzXDZmXDZk
+
+** 解法：
+*** 一个加密邮箱地址
+| 加密后 | chr | Oct | Hx | Dec |
+| XDY1   |     |     |    |     |
+| XDc2   |     |     |    |     |
+| XDY5   |     |     |    |     |
+| XDZj   |     |     |    |     |
+| XDYz   | c   | 143 | 63 |  99 |
+| XDZm   | o   | 157 | 6F | 111 |
+| XDcz   |     |     |    |     |
+| XDQw   |     |     |    |     |
+| XDY3   |     |     |    |     |
+| XDZk   |     |     |    |     |
+| XDYx   |     |     |    |     |
+| XDY5   |     |     |    |     |
+| XDZj   |     |     |    |     |
+| XDJl   | .   | 056 | 2E |  46 |
+| XDYz   | c   | 143 | 63 |  99 |
+| XDZm   | o   | 156 | 6F | 111 |
+| XDZk   | m   | 155 | 6D | 109 |
+
+*** 分析思路： 
++ 常规邮箱一定含有 @ 和 . 这两个字符, 可包含数字, 字母或者数字
++ 最后都是统一由字母输出， 那么说明这个加密邮箱地址都是从可以由单个asicc码加密而成。
++ 加密后的规律: 
+    a. 每四个字母代表了一个符号, 字母或者数字
+    b. XD 是共有的
+    c. 加密后组成有大、小写字母和数字
++ 什么东西可以加密成大、小写字母和数字? 或者说大, 小写字母和数字可以代表什么?
++ ASICC 
+[[./photos/asicc.GIF]]
+
++ @ 排在点号之前 
+| 加密后 | chr | Oct | Hx | Dec |
+| XDY1   |     |     |    |     |
+| XDc2   |     |     |    |     |
+| XDY5   | i   | 151 | 69 | 105 |
+| XDZj   | l   | 154 | 6C | 108 |
+| XDYz   | c   | 143 | 63 |  99 |
+| XDZm   | o   | 157 | 6F | 111 |
+| XDcz   |     |     |    |     |
+| XDQw   | @   | 100 | 40 |  64 |
+| XDY3   | g   | 147 | 67 | 103 |
+| XDZk   | m   | 155 | 6D | 109 |
+| XDYx   | a   | 141 | 61 |  97 |
+| XDY5   | i   | 151 | 69 | 105 |
+| XDZj   | l   | 154 | 6C | 108 |
+| XDJl   | .   | 056 | 2E |  46 |
+| XDYz   | c   | 143 | 63 |  99 |
+| XDZm   | o   | 157 | 6F | 111 |
+| XDZk   | m   | 155 | 6D | 109 |
+
++ Zj = 108, Zk = 109, Zm = 111 or Zj = 154, Zk = 155, Zm = 157?
++ so 
+  - Y1 = ? because Y5 = 105, Y3 = 103 , so Y1 = 101 , and Y1 = 'e '
+
+| 加密后 | chr | Oct | Hx | Dec |
+| XDY1   | e   | 145 | 65 | 101 |
+| XDc2   | (?) |     |    |     |
+| XDY5   | i   | 151 | 69 | 105 |
+| XDZj   | l   | 154 | 6C | 108 |
+| XDYz   | c   | 143 | 63 |  99 |
+| XDZm   | o   | 157 | 6F | 111 |
+| XDcz   | (?) |     |    |     |
+| XDQw   | @   | 100 | 40 |  64 |
+| XDY3   | g   | 147 | 67 | 103 |
+| XDZk   | m   | 155 | 6D | 109 |
+| XDYx   | a   | 141 | 61 |  97 |
+| XDY5   | i   | 151 | 69 | 105 |
+| XDZj   | l   | 154 | 6C | 108 |
+| XDJl   | .   | 056 | 2E |  46 |
+| XDYz   | c   | 143 | 63 |  99 |
+| XDZm   | o   | 157 | 6F | 111 |
+| XDZk   | m   | 155 | 6D | 109 |
+  
+  - c2 = ?
+  - cz = ? 
++ simple 
+
+| Jl |  46 |
+| Qw |  64 |
+| Yx |  97 |
+| Yz |  99 |
+| Y1 | 101 |
+| Y3 | 103 |
+| Y5 | 105 |
+| Zj | 108 |
+| Zk | 109 |
+| Zm | 111 |
+| c2 |   ? |
+| cz |   ? |
+
++ Yx = 97, Yz = 99 so Yy = 98, and Y1 = 101, Y3 = 103, Y5 = 105 so have Y0=100, 这说明字母个位上 
+  x < y < z < 0 < 1 < 3 < 5 , 而且x + 1 = y, y + 1 = z, z + 2 = '1', 十位上 J < Q < Y < Z 
+
++ 由Y1, Y3, Y5 分别 = 101,103,105说明个位数字是直接加上去的 , Y -> Z 什么关系? 
+
+| Yy |  98 |
+| Y0 | 100 |
+
++ XD 有什么用?
++ 0~127 
++ 别问我怎么知道的, 结果是 : 
+
+| 加密后 | chr | Oct | Hx | Dec |
+| XDY1   | e   | 145 | 65 | 101 |
+| XDc2   | v   | 166 | 76 | 118 |
+| XDY5   | i   | 151 | 69 | 105 |
+| XDZj   | l   | 154 | 6C | 108 |
+| XDYz   | c   | 143 | 63 |  99 |
+| XDZm   | o   | 157 | 6F | 111 |
+| XDcz   | s   | 163 | 73 | 115 |
+| XDQw   | @   | 100 | 40 |  64 |
+| XDY3   | g   | 147 | 67 | 103 |
+| XDZk   | m   | 155 | 6D | 109 |
+| XDYx   | a   | 141 | 61 |  97 |
+| XDY5   | i   | 151 | 69 | 105 |
+| XDZj   | l   | 154 | 6C | 108 |
+| XDJl   | .   | 056 | 2E |  46 |
+| XDYz   | c   | 143 | 63 |  99 |
+| XDZm   | o   | 157 | 6F | 111 |
+| XDZk   | m   | 155 | 6D | 109 |
+
++ XDY1XDc2XDY5XDZjXDYzXDZmXDczXDQwXDY3XDZkXDYxXDY5XDZjXDJlXDYzXDZmXDZk=evilcos@gmail.com  
+*** [[./php/Captcha/decryption.php][php solution]]

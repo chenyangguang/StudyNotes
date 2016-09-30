@@ -1,5 +1,8 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE 
 * Emacs
+*** point 
++ mysql =show processlist;=
++ emacs commentary by =M-;=
 *** 升级 pip 
  + =pip install -U pip=
 *** 阿里事件对我的冲击
