@@ -17,7 +17,7 @@
         $origin_arr = str_split($str);
         $encry_str  = '';
         foreach ($origin_arr as $v) {
-            $encry_str .= base64_encode(dechex(ord($v)));
+            $encry_str .= base64_encode('\\'.dechex(ord($v)));
         }
 
         return $encry_str;
