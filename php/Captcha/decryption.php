@@ -18,7 +18,6 @@ function encrypt($str)
     $origin_arr = str_split($str);
     $encry_str  = '';
     foreach ($origin_arr as $v) {
-        echo base64_encode('\\'.dechex(ord($v))) . "\n";
         $encry_str .= base64_encode(dechex(ord($v)));
     }
 
