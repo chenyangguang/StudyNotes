@@ -4,7 +4,6 @@
     {
         $real_email      = '';
 
-        $arr = explode('\\', base64_decode($decry_email));
         $decry_email_arr = explode('\\', base64_decode($decry_email));
 
         foreach ($decry_email_arr as $val) {
