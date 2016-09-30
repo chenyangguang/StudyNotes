@@ -3,9 +3,12 @@
     function decryption($decry_email)
     {
         $real_email      = '';
-        $decry_email_arr = array_shift(explode('\\', base64_decode($decry_email)));
+
+        $arr = explode('\\', base64_decode($decry_email));
+        $decry_email_arr = explode('\\', base64_decode($decry_email));
 
         foreach ($decry_email_arr as $val) {
+            if($val == '') continue;
             $real_email .= chr(hexdec($val));
         }
 
