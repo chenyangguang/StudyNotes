@@ -1,5 +1,7 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE 
 * Emacs
+*** 异常
++ 瞎折腾，又手贱，去升级内核。结果google-chrome启动不了了。又没有错误日志。怎么排错？卸载重装，还是启不来。虚拟机也挂了。只能跑到烂柯去下棋了。将代理开启到firefox里面，莫名其妙的，居然看youtube一点不卡。乐死宝宝了。冬天快到了，又可以看动物世界了。
 *** point 
 + mysql =show processlist;=
 + emacs commentary by =M-;=
