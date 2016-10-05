@@ -1,5 +1,6 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE 
 * Emacs
+*** 书是好东西
 *** [[https://www.youtube.com/watch?v=2Q0MhOR59u8 ][Learn Emacs in 21 days]] 
 *** 迷失
 + 过多的选择，开始迷失。当下，应该专注下来。
