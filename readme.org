@@ -38,7 +38,7 @@
 + 闲来 ubuntu 下升级 vim 至 vim8.0
 + =git clone https://github.com/vim/vim.git=
 + 查看readme.md 知道install 相关在src目录下INSTALL有说明
-+ =make=
++ =make= (最好编译时同时支持 python2, python3 ./configure --enable-pythoninterp=yes --enable-python3interp=yes)
 + =make install=
 + =vim ~/.zshrc=
 + 添加  alias vim='/usr/local/bin/vim' (或者 alias vim='/usr/bin/vim')
