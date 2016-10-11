@@ -1,5 +1,6 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE 
 * Emacs
+*** 安装不同版本的 phalcon　还是用 github 资源好, 想切换哪个版本就切哪个编译, 其它工具类似。
 *** ubuntu 装 smartgit 
     + sudo apt-get update
     + sudo apt-get install gdebi
