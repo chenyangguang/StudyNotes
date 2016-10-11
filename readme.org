@@ -1,7 +1,9 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE 
 * Emacs
-*** 丢失
-    + 重装系统之后，才发现最大的损失不是花时间重新布置开发环境，而是丢失了几万字的工作笔记。
+*** ubuntu 装 smartgit 
+    + sudo apt-get update
+    + sudo apt-get install gdebi
+    + wget http://www.syntevo.com/static/smart/download/smartgit/smartgit-8_0_2.deb  
 *** 习惯
 + 从一个小习惯开始
 *** 小森林
