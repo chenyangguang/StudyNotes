@@ -1,5 +1,6 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE 
 * Emacs
+*** 输多了，赢多了，剩下的就是计算力了。或许技术最后都成了经验？
 *** 比赛　
 + 烂柯平台围棋比赛，拿了个小组第一。开心ing。奖金虽然只有150。
 ***  version 
