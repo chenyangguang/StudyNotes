@@ -1,6 +1,9 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE 
+
 *** 不经意之间
 + 有些悬而未解的难题，不妨放一放。某个不经意间，轻而易举就解决了。emacs 里面也可以翻墙了。利用终端的shadowsocks + eww, nice! 好吧， 我手机也可以翻墙了。。。。。。
++ 我所遇到的问题，好像基本上google上面都有人遇到过。而且80%都有切实可行的实现方式。
++ Emacs 安装了 ag 搜索之后，完美解决了函数跳转到定义处的问题。 =spc + m + g + g=, 这个简直 *爽* 歪了！
 *** 爬虫
 + 开始使用phpspider爬取数据
 + Large amounts of data can do a lot of things.
