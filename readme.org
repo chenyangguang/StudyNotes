@@ -1,7 +1,7 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE 
 *** Youtube 视频下载
 + youtube 上面的视频清晰度相当高, 虽然他们开始限制下载了。但还是有 [[http://flvcode.com/][下载]] 的办法。
-+ emacs 使用 =M x= 安装 *php-extras-generate-eldoc* 之后，编辑 php 文件时，光标下的　php 函数都有函数参数提示
++ emacs 使用 =M x= 调起 =package-install= 安装 *php-extras-generate-eldoc* 之后，编辑 php 文件时，光标下的　php 函数都有函数参数提示
 
 *** 游戏
 + 这周玩了下以前玩过的一款游戏－－真三国无双。和罗宗说的一样： 一款游戏，偶尔玩下，就是你玩游戏; 沉迷进去的，就是被游戏玩了。游戏为什么吸引人呢？特别是竞技性的游戏。我觉得他们提供了一个让人挥洒精力和时间的交流平台。以配合技能的团队方式，能有效的组织起众人的战斗激情。升级的模式符合打斗场景的预设 以及大众游戏玩家的心理需求。　
