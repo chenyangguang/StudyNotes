@@ -1,4 +1,6 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE 
+*** 连击
++ 从今天开始，看能连击多少天
 *** Youtube 视频下载
 + youtube 上面的视频清晰度相当高, 虽然他们开始限制下载了。但还是有 [[http://flvcode.com/][下载]] 的办法。
 + emacs 使用 =M x= 调起 =package-install= 安装 *php-extras-generate-eldoc* 之后，编辑 php 文件时，光标下的　php 函数都有函数参数提示
