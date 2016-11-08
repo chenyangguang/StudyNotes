@@ -33,7 +33,7 @@ XDY1XDc2XDY5XDZjXDYzXDZmXDczXDQwXDY3XDZkXDYxXDY5XDZjXDJlXDYzXDZmXDZk
     c. 加密后组成有大、小写字母和数字
 + 什么东西可以加密成大、小写字母和数字? 或者说大, 小写字母和数字可以代表什么?
 + ASICC 
-[[./photos/asicc.GIF]]
+[[../photos/asicc.GIF]]
 
 + @ 排在点号之前 
 | 加密后 | chr | Oct | Hx | Dec |
@@ -127,4 +127,4 @@ XDY1XDc2XDY5XDZjXDYzXDZmXDczXDQwXDY3XDZkXDYxXDY5XDZjXDJlXDYzXDZmXDZk
 | XDZk   | m   | 155 | 6D | 109 |
 
 + XDY1XDc2XDY5XDZjXDYzXDZmXDczXDQwXDY3XDZkXDYxXDY5XDZjXDJlXDYzXDZmXDZk=evilcos@gmail.com  
-*** [[./php/Captcha/decryption.php][php solution]]
+*** [[../php/Captcha/decryption.php][php solution]]
