@@ -1,4 +1,5 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE 
+** test some things to do 
 *** DONE [#B] Report bugs of spacemacs and swoole[10%]
 CLOSED: [2016-07-27 Wed 08:55] DEADLINE: <2016-12-30 Fri>
 *** DONE [#A] Exercise(Smimming, Running, Basketball)[40%] 
