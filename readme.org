@@ -28,7 +28,7 @@
     + sudo apt-get install gdebi
     + wget http://www.syntevo.com/static/smart/download/smartgit/smartgit-8_0_2.deb  
 *** 习惯
-+ 从一个小习惯开始
++ 从一个小习惯开始, 
 *** 小森林
 + 大地微弱生灵,刚毅朝向天际。一棵植物上要长得茂盛，还是不能有太多的芽。还是回到起点的圆圈了吗？地一旦荒废了，要再恢复成耕地真是太难了。
 *** 电视剧
