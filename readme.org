@@ -1,7 +1,17 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
+*** PHP 性能分析 工具 *xhprof* 和 *graphviz* 
++ =wget https://github.com/facebook/xhprof/archive/master.zip=
++ =unzip master.zip=
++ =cd xhprof-master/extension/=
++ =phpize=
++ =./configure=
++ =make=
++ =sudo make install=
++ sudo apt-get install graphviz
+***** 安装性能图形化工具 graphviz 
 *** 疯魔 
 + 真是疯魔的一周
-+ [[http://stackoverflow.com/questions/10972289/how-to-change-smartgits-licensing-option-after-30-days-of-commercial-use-on-ubu][smartgit 30天限制解除]]    
++ [[http://stackoverflow.com/questions/10972289/how-to-change-smartgits-licensing-option-after-30-days-of-commercial-use-on-ubu][smartgit 30天限制解除]]
 *** 释放
 + 空间总是有限的, 无论是内存还是心灵。和数组占用内存一样。大压力过后，一定需要找个方式释放掉。
 *** 分页理念
