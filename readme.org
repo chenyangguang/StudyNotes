@@ -35,6 +35,7 @@
     + sudo apt-get update
     + sudo apt-get install gdebi
     + wget http://www.syntevo.com/static/smart/download/smartgit/smartgit-8_0_2.deb  
+    + sudo su -c "gdebi $HOME/Downloads/smartgit*.deb"
 *** 习惯
 + 从一个小习惯开始, 
 *** 小森林
