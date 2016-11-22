@@ -1,8 +1,26 @@
-#+TODO: TODO IN_PROGRESS WAITING DONE 
-*** 压力
+#+TODO: TODO IN_PROGRESS WAITING DONE
+*** PHP 性能分析 工具 *xhprof* 和 *graphviz* 
++ =wget https://github.com/facebook/xhprof/archive/master.zip=
++ =unzip master.zip=
++ =cd xhprof-master/extension/=
++ =phpize=
++ =./configure=
++ =make=
++ =sudo make install=
++ sudo apt-get install graphviz
+***** 安装性能图形化工具 graphviz 
+*** 疯魔 
++ 真是疯魔的一周
++ [[http://stackoverflow.com/questions/10972289/how-to-change-smartgits-licensing-option-after-30-days-of-commercial-use-on-ubu][smartgit 30天限制解除]]
+*** 释放压力
 + 遇上很大的压力的时候，过了之后，一定要把这个压力卸掉。就像内存的释放一样。
-*** 分页
++ 空间总是有限的, 无论是内存还是心灵。和数组占用内存一样。大压力过后，一定需要找个方式释放掉。
+*** 分页理念
++ 其实迄今为止，感受最深的、影响最大的就是分页的思想。分页，就是将一个不能或者不方便一次性实现的目标, 切割成一个个细小的可以轻易达成的重复步骤。不管是瓦解对手，还是赚钱，或者番茄工作法的时间利用。无处不透着分页的思想。
 + 分化目标。将目标分解成一个个可以轻松达到的小目标。
+*** 陶笛
++ 去张家界的时候，买了个陶笛。我想尝试一下学个新鲜的东西。
++ 从今天起，开源节流。十年磨一剑。早日实现财务自由。
 *** 还是稍微小结一下
 + 走玻璃桥的感觉是: 心里怕, 它就脆，你不怕，它就踏实。 
 ***  有梦
