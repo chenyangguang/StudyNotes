@@ -1,4 +1,8 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
+*** emacs 工程内快速的操作
++ spacemacs 最快速度查找函数使用的地方包括定义出处(目前没有之一,已经够快了!):选择该函数(evil 模式下可以使用 =*= 简单粗暴), 然后 =/=， 列出所有工程内使用了这个函数的出处...
++ phalcon 框架使用了大量的 php 函数
++ emacs 切换到前后 buffer 的方法： Spc + b p 或者 Spc + b n
 *** PHP 性能分析 工具 *xhprof* 和 *graphviz* 
 + =wget https://github.com/facebook/xhprof/archive/master.zip=
 + =unzip master.zip=
