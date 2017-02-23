@@ -1,4 +1,6 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
+*** 工具
+哪有那么多时间去捣鼓工具，与其继续捣鼓工具，不如深入去学内核相关的东西。
 *** 重新弄下 vim 
 + 弄个开发插件比较齐全的[[https://github.com/spf13/spf13-vim][spf13-vim]]
 - 执行 =sh <(curl https://j.mp/spf13-vim3 -L)=, 一键安装了。不少好东东
