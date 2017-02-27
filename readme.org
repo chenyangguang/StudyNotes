@@ -1,5 +1,6 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
-*** 更好玩的虚拟技术 [[https://www.docker.com/][docker]] [[https://docs.docker.com/engine/installation/linux/ubuntu/][安装]]
+*** 更好玩的虚拟技术 [[https://www.docker.com/][
++ docker]] [[https://docs.docker.com/engine/installation/linux/ubuntu/][安装]]
 *** Xpath 
 + [[http://plasmasturm.org/log/xpath101/][像Xpath一样思考]]
 *** 底牌
