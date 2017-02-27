@@ -1,4 +1,6 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
+*** Xpath 
++ [[http://plasmasturm.org/log/xpath101/][像Xpath一样思考]]
 *** 底牌
 + 没到最后关头，不要亮出底牌。
 *** 就绪
