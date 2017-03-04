@@ -1,4 +1,7 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
+
+*** 英语
++ 这一年来，英语单词虽说是长进了一点，但是距离自由的阅读英文资料还是有一段距离。争取今年再上一个台阶。
 *** 更好玩的虚拟技术
 + [[https://www.docker.com/][docker]] [[https://docs.docker.com/engine/installation/linux/ubuntu/][安装]]
 *** Xpath 
