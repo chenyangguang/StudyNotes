@@ -1,10 +1,12 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE 
 ** 2016 Books Lists
 ***** profession books lists
-| name                 | brief | core ideas | time        | book review                   |
-|----------------------+-------+------------+-------------+-------------------------------|
-| Hacker And Painter   | emacs | freedom    | 2016-06-05  | emacs is a super power editor |
-| Pratical Common Lisp | Lisp  | freedom    | 2016-06-30~ | english is important          |
+| name                                               | brief | core ideas                   | time                  | book review                   |
+|----------------------------------------------------+-------+------------------------------+-----------------------+-------------------------------|
+| Hacker And Painter                                 | emacs | freedom                      | 2016-06-05            | emacs is a super power editor |
+| Pratical Common Lisp                               | Lisp  | freedom                      | 2016-06-30~           | english is important          |
+|----------------------------------------------------+-------+------------------------------+-----------------------+-------------------------------|
+| The Pragmatic Programmer:From Journeyman to Master | -     | how to become a master coder | 2017-03-05~2017-03-30 |need read much times    |
 
 ***** DONE 1. 提早六小时下班的高效工作术 (2015-10-19)
 ***** DONE 2. 效率是整理出来的(2015-10-20)
@@ -183,6 +185,7 @@
 + 一扇破窗户，只要有那么一段时间不修理，就会渐渐给建筑的居民带来一种废弃感。
 + 要持续不断地观察周围发生变化的事情，而不只是你自己在做的事情。
 + 不要因为过度修饰和过于求精而毁损完好的程序。
++ 是否在某个项目中使用这些技术，或者是否把它们放入你的简历，这并不重要。学习的过程将扩展你的思维，使你向着新的可能性和新的做事方式扩展。
 + tips: 
   - Care About Your Craft.(关注你的技艺。)
   - Think!About Your Work.(思考！你的工作。)
@@ -190,4 +193,5 @@
   - Don't Live with Broken Windows.(不要容忍破窗户)
   - Be a Catalyst for Change. (做变化的催化剂)
   - Remember the Big Picture.(记住大的图景)
+  - Invest Regularly in Your Knowledge Portfolio.(定期为你的知识资产投资)
 ***** TODO 29.《图解茶经》(2017-02-26)

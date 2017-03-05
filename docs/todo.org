@@ -21,3 +21,13 @@ CLOSED: [2016-07-27 Wed 08:55] SCHEDULED: <2016-06-30 Thu>
 *** TODO read [[./book.org][30 book]] at least in 2016 
 *** TODO use python to create a robot to analysis stock datas 
 *** TODO webgo 
+*** Target
+**** 每年至少学习一种新语言
+**** 每季度阅读一本技术书籍
+**** 也要阅读非技术书籍
+**** 上课
+**** 参加本地用户活动
+**** 实验不同的环境
+**** 跟上潮流
+**** 科学上网
+
