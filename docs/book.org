@@ -189,6 +189,13 @@
 + 是否在某个项目中使用这些技术，或者是否把它们放入你的简历，这并不重要。学习的过程将扩展你的思维，使你向着新的可能性和新的做事方式扩展。
 + 所有阅读和研究都需呀时间，而时间已经很短缺。所以你需要预先规划。让自己在空闲的片刻时间里总有东西可读。
 + 批判地思考你读到的和听到的。不要受到供应商或者媒体炒作的影响。
++ 编码
+  - 让你的代码保持解耦
+  - 避免使用全局数据
+  - 避免编写相似的函数
++ 养成不断地批判对待自己的代码的习惯。寻找任何重新进行组织、以改善其结构和正交性的机会。
++ 要实现某种东西，总有不止一种方式，而且通常有不止一家供应商可以提供第三方产品。
++ 如果某个想法是你唯一的想法，再没有什么比这更危险的事情了。
 + tips: 
   - Care About Your Craft.(关注你的技艺。)
   - Think!About Your Work.(思考！你的工作。)
@@ -198,4 +205,8 @@
   - Remember the Big Picture.(记住大的图景)
   - Invest Regularly in Your Knowledge Portfolio.(定期为你的知识资产投资)
   - Critically Analyze What You Read and Hear.(批判地分析你读到的和听到的)
+  - DRY - Don't Repeat Yourself.(不要重复你自己)
+  - Make It Easy to Reuse.(让复用变得容易)
+  - Eliminate Effects Between Unrelated Things.(消除无关事物之间的影响)
+  - 
 ***** TODO 29.《图解茶经》(2017-02-26)
