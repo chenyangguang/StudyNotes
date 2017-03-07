@@ -224,3 +224,4 @@
   - If It Can't Happen, Use Assertions to Ensure That it Won't. (如果它不可能发生, 用断言确保它不会发生。)
   - Finish What You Start.
 ***** TODO 29.《图解茶经》(2017-02-26)
+**** [[../photos/tea.jpg]]
