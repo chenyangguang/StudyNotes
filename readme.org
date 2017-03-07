@@ -1,6 +1,7 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
 *** About Test
 + Code without tests is broken by design.
++ 目前为止，Emacs 里面使用最频繁的是的　Magit 和 Org-mode 这两个神器。
 *** 读书笔记的好处
 + 将读书过程中的要点做个笔记，会加深对书中知识的理解，同时方便侧重点的温故知新。所以今后还是多做读书笔记吧。多少年之后，说不定还会回来看，或者别人也可以看到呢。
 *** 关于深度学习
