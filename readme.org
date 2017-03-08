@@ -1,4 +1,6 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
+*** elisp 
++ Emacs Lisp Easy to Study in [[smacs.github.io/elisp][shuimushequ]]
 *** About Test
 + Code without tests is broken by design.
 + 目前为止，Emacs 里面使用最频繁的是的　Magit 和 Org-mode 这两个神器。
