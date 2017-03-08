@@ -234,6 +234,9 @@
         - 不要试图在重构的同时增加新功能。
         - 在开始重构之前，确保你拥有良好的测试。
         - 采取短小、深思熟虑的步骤。
+      + 找出用户为何要做特定事情的原因、而不只是他们目前做这件事情的方式，这很重要。到最后，你的开发必须解决他们的商业问题，而不只是满足他们陈述的需求。用文档记载需求背后的原因将在每天进行实现决策时给你的团队带来无价的信息。
+      + 在项目启动之前把这些关键问题解决好，你就能更好地避免“分析瘫痪”（analysis paralysis）, 并实际开始你的成功项目。
+      + 完美，不是在没有什么需要增加、而是在没有什么需要去掉时达到的。
       + tips:
         - Crash Early.(早崩溃。)
         - Care About Your Craft.(关注你的技艺。)
@@ -266,6 +269,7 @@
         - Test Your Software, or Your Users Will.
         - Don't Use Wizard Code You Don't Understand.
         - Refactor Early, Refactor Often.(早重构，常重构。)
+        - Work with a User to Think Like a User.(与用户一起工作，像用户一样思考)
 *** TODO 29.《图解茶经》(2017-02-26)
 **** [[../photos/tea.jpg]]
 **** 饼茶品质好坏的鉴别
