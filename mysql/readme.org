@@ -7,4 +7,6 @@
 + sum 使用的时候注意先将需要必要的字段分组, 否则将sum(money)计算表内这个字段的总数
 + select sum(money) from in_come group by member_id;
 *** 分区分表
-+ [[http://haitian299.github.io/2016/05/26/mysql-partitioning/][mysql partition]]
+    + [[http://haitian299.github.io/2016/05/26/mysql-partitioning/][mysql partition]]
+*** mysql 之 binlog
+    + 太可怕了，一定要记得开启 [[http://www.cnblogs.com/martinzhang/p/3454358.html][binlog]]
