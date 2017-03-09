@@ -252,6 +252,9 @@
         - Crash Early.(早崩溃。)
         - Test early. Test Often. Test Automatically.
         - Code Ain't Done 'Til All the Tests Run.(要到通过全部测试，编码才算完成。)
+        - Use Saboteurs to Test Your Testing. (通过“蓄意破坏”测试你的测试)
+        - Test State Coverage, Not Code Coverage.(测试状态覆盖，而不是代码覆盖)
+        - Find Bugs Once (一个 bug 只抓一次)
         - Don't Be a Slave to Formal Method.
         - Expensive Tools Do Not Produce Better Designs.
         - Organize Around Functionality, Not Job Functions.
