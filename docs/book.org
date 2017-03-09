@@ -237,8 +237,20 @@
       + 找出用户为何要做特定事情的原因、而不只是他们目前做这件事情的方式，这很重要。到最后，你的开发必须解决他们的商业问题，而不只是满足他们陈述的需求。用文档记载需求背后的原因将在每天进行实现决策时给你的团队带来无价的信息。
       + 在项目启动之前把这些关键问题解决好，你就能更好地避免“分析瘫痪”（analysis paralysis）, 并实际开始你的成功项目。
       + 完美，不是在没有什么需要增加、而是在没有什么需要去掉时达到的。
+      + 成功的工具会适应使用他们的双手。
+      + 真正的用例是具有层次结构和交叉链接的文字描述。
+      + 需求不是架构。需求不是设计，也不是用户界面。需求是需要。
+      + 在面对棘手的问题时，列出所有你面前的可能途径。不要排除任何东西，不管它听起来有多无用活愚蠢。列出检查列表中的每一项，并解释为何不能采用某个特定的途径。
+      + 先确定最为严格的约束。然后再考虑其余的约束。
+      + 编写程序规范就是把需求归约到程序员能够接管的程度的过程。这是一个交流活动，旨在解释并澄清系统的需求，比如消除主要的歧义。除了与最初实现的开发者交谈以外，规范还是留给未来进行代码维护和增强的几批程序员的记录。规范也是与用户的约定。
+      + 倾向于把需求、设计、以及实现视为同一个过程--交付高质量的系统--的不同方面。要设法采用无缝的方法：规范和实现不过是同一个过程--设法捕捉和编撰需求--的不同方面。
+      + 把技术和方法放进开发实践和能力的语境中。
+      + 批判地看待方法学，并从各种方法学中提取精华，融合成每个月都在变得更好的一套工作习惯。不断努力提炼和改善你的开发过程。绝不要把方法学的呆板限制当做你的世界的边界。
       + tips:
         - Crash Early.(早崩溃。)
+        - Don't Be a Slave to Formal Method.
+        - Expensive Tools Do Not Produce Better Designs.
+        - Organize Around Functionality, Not Job Functions.
         - Care About Your Craft.(关注你的技艺。)
         - Don't Assume it - Prove It.(不要假定，要证明。)
         - Learn a Text Manipulation Language.(学习一种文本操纵语言。)
@@ -270,6 +282,12 @@
         - Don't Use Wizard Code You Don't Understand.
         - Refactor Early, Refactor Often.(早重构，常重构。)
         - Work with a User to Think Like a User.(与用户一起工作，像用户一样思考)
+        - Abstractions Live Longer than Details.(抽象比细节活得更长久。)
+        - Use a Project Glossary.
+        - Don't Think Outside the Box-Find the Box.
+        - Listen to Nagging Doubts-Start When You're Ready.
+        - Some Things Are Better Done than Described.
+
 *** TODO 29.《图解茶经》(2017-02-26)
 **** [[../photos/tea.jpg]]
 **** 饼茶品质好坏的鉴别
