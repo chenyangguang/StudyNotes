@@ -1,6 +1,6 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
 *** pytorch 
-+ [[https://github.com/pytorch/pytorch][pytorch ]]这个货出来以后, 据说，python 快要跨步进人工智能语言头把交椅了。[[pytorch.org/about][官方]]文档说有两个很牛的特色。看到第二特色，忍不住 fork 这个库了。
++ [[https://github.com/pytorch/pytorch][pytorch ]]这个货出来以后, 据说，python 快要跨步进人工智能语言头把交椅了。[[http://pytorch.org/about][官方]] 文档说有两个很牛的特色。看到第二特色，忍不住 fork 这个库了。
   - Tensor computation(like numpy) with strong GPU acceleration.
   - Deep Neural Networks built on a tape-based autograd system. 
 *** elisp 
