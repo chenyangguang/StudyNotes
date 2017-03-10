@@ -31,4 +31,5 @@ CLOSED: [2016-07-27 Wed 08:55] SCHEDULED: <2016-06-30 Thu>
 **** 跟上潮流
 **** 科学上网
 **** 2017 年挣够并储蓄 2018 年的基本开支
+*** TODO Read 豆瓣top250 排名前面的[[./book.org][50 books]] at least in 2017 
 
