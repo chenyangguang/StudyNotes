@@ -247,7 +247,17 @@
         - 性能测试
         - 可用性测试
         - 等等
-      + 
+      + 把文档当作整个开发过程的完整组成部分加以接受。不进行重复劳动，不浪费时间，并且把文档放在手边－－如果可能就放在代码本身当中，文档的撰写就可以变得更容易。
+      + 代码已经说明了它是怎样完成的。注释应该讨论为何要做某事、它的目的和目标。
+        - 简单的模块级头注释
+        - 关于重要数据于类型声明的注释
+        - 给每个类和每个方法所加的简要头注释
+        - 用以描述函数的方法和任何不明了的事情
+        - 变量名应该精心选择，并且有意义
+      + 要设法让你的用户惊讶。但注意，不是惊吓他们，而是要让他们高兴。给他们的东西要比他们期望的多一点。（这个是否是乌合之众的心理学里面的观点？是否迎合了老板对广大下属员工、将领对士兵们居高临下的心态？）
+      + 你愉悦我们已经足够长久。－－《傲慢与偏见》
+      + 不会逃避责任。乐于接受挑战，乐于分享，乐于使我们的专业知识广为人知。（这样哪怕出错，就会有人帮忙指正）
+      + 一个 *注重实效的程序员*
       + tips:
         - Crash Early.(早崩溃。)
         - Test early. Test Often. Test Automatically.
@@ -255,6 +265,8 @@
         - Use Saboteurs to Test Your Testing. (通过“蓄意破坏”测试你的测试)
         - Test State Coverage, Not Code Coverage.(测试状态覆盖，而不是代码覆盖)
         - Find Bugs Once (一个 bug 只抓一次)
+        - Treat English as just Another Programmiing Language.(把英语当作又一种编程语言。)
+        - Build Documentation In, Don't Bolt It On.(大概意思是：应该把文档建在代码内部，而不是硬扣挂上去。)
         - Don't Be a Slave to Formal Method.
         - Expensive Tools Do Not Produce Better Designs.
         - Organize Around Functionality, Not Job Functions.
@@ -294,6 +306,8 @@
         - Don't Think Outside the Box-Find the Box.
         - Listen to Nagging Doubts-Start When You're Ready.
         - Some Things Are Better Done than Described.
+        - Gently Exceed Your Users'Expectations.(温和地超出用户的期望)
+        - Sign Your Work.
 
 *** TODO 29.《图解茶经》(2017-02-26)
 **** [[../photos/tea.jpg]]
