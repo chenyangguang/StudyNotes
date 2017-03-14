@@ -53,7 +53,7 @@
 ** 2017 Year Books
 *** IN_PROGRESS [#B] 22. 官子大全 
 *** IN_PROGRESS [#A] 23. [[./The-Crownd.org][《乌合之众》]] (推荐)
-*** IN_PROGRESS [#B] 24. 《哲学家都做了些什么》
+*** IN_PROGRESS [#B] 24. [[./What-Did-Philosophers-do.org][哲学家都做了些什么》]]
 *** IN_PROGRESS [#A] 25. [[./Out-of-Control.org][《失控》]] (这本强烈推荐)
 *** DONE 26. 《三体》三部
     CLOSED: [2017-03-12 Sun 08:33]
