@@ -58,6 +58,6 @@
 *** DONE 26. 《三体》三部
     CLOSED: [2017-03-12 Sun 08:33]
 *** IN_PROGRESS 27.《如何读懂音乐》(2017-02-22-)
-*** DONE 28. [[./The-Pragmatic-Programmer.org]《程序员修炼之道》]] (2017-02-26~2017-03-11)
+*** DONE 28. [[./The-Pragmatic-Programmer.org][《程序员修炼之道》]] (2017-02-26~2017-03-11)
     CLOSED: [2017-03-11 Sat 22:12]
 *** IN_PROGRESS 29.[[./The-Classic-on-Tea.org][《图解茶经》]](2017-02-26)
