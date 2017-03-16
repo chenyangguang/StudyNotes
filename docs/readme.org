@@ -1,0 +1,63 @@
+#+TODO: TODO IN_PROGRESS WAITING DONE 
+* 读书笔记
+** 2016 Books Lists
+*** profession books lists
+| name                                               | brief | core ideas                   | time                  | book review                   |
+|----------------------------------------------------+-------+------------------------------+-----------------------+-------------------------------|
+| Hacker And Painter                                 | emacs | freedom                      | 2016-06-05            | emacs is a super power editor |
+| Pratical Common Lisp                               | Lisp  | freedom                      | 2016-06-30~           | english is important          |
+|----------------------------------------------------+-------+------------------------------+-----------------------+-------------------------------|
+| The Pragmatic Programmer:From Journeyman to Master | -     | how to become a master coder | 2017-03-05~2017-03-30 |need read much times    |
+
+*** DONE 1. 提早六小时下班的高效工作术 (2015-10-19)
+*** DONE 2. 效率是整理出来的(2015-10-20)
+*** DONE 3. 秦时明月五万里长城(2015-10-21)
+*** DONE 4. 零压力工作法(2015-10-2
+*** DONE 5. 内心强大的力量(读尼采哲理2015-10-22)
+    + 内心强大很重要. 
+*** DONE 6. 秦时明月六焚书坑儒(2015-10-23)
+    + 读小说, 和看视频是两种体验.视频是经过再创作的过程.有的小说比视频好看, 而有的视频比原著精彩. 雨和彩虹各有各的精彩. 一个是诗, 一个是远方.
+*** DONE 7. 优秀员工的良好工作习惯(2015-10-23)
+	  + 认真的习惯
+*** DONE 8. 内心强大的力量(2015-10-24, 看完)
+*** DONE 9. 优秀员工的良好工作习惯(2015-10-24)
+*** DONE 10. 5个图表解决工作中的12大难题(2015-10-24)
+	  + notice:  用五种图-> 
+			- 流程图,
+      - 圆饼图,
+      - 树形图,
+      - 点图,
+      - 行列图
+*** DONE 11. 高效程序员的45个习惯(敏捷开发修炼之道) (2015-11-05)
+	  + 不管路走了多远,错了就要重新返回. -- 土耳其谚语
+*** DONE 12. 《黑客与画家》(2016-01-16)
+	  + 对Lisp语言，以及编程语言有着非常独到的见解,是一本像孙子兵法那样的书籍
+*** IN_PROGRESS [#B] 13.  开始看Pratical Common Lisp (all English, a big challenge)
+*** DONE 14. 《尼采内心的八度定律》 
+      + 一切从了解自己开始， 找到自己的价值；
+      + 爱自己， 新鲜，充实自己；
+      + 坚持自己的梦想
+      + 承认自己的局限，不断进步；
+      + 历练磨难，凝聚力量；
+      + 坦然面对迷惑，坚持自己的判断；
+      + 每天克制自己的一件小事，自制； 
+      + 每天进步一点点。 
+*** DONE 15.《坂田攻击法》　剃刀手，电子计算机。攻击前，一定要选准要害。  
+*** DONE [#A] 16.《Web 安全深度剖析》 安全漏洞，攻防测试。 
+    CLOSED: [2016-06-16 Thu 15:54]
+*** IN_PROGRESS [#A] 17. C程序设计（第4版）
+*** DONE [#A] 18.《python绝技》(运用python成为顶级黑客)
+*** IN_PROGRESS [#B] 19.《玄玄棋经》
+*** 20. [[./Distant-Savior.org][《遥远的救世主》]] 
+*** 21. [[./Spiritual-of-Center.org][《中的精神》]] 
+** 2017 Year Books
+*** IN_PROGRESS [#B] 22. 官子大全 
+*** IN_PROGRESS [#A] 23. [[./The-Crownd.org][《乌合之众》]] (推荐)
+*** IN_PROGRESS [#B] 24. [[./What-did-Philosophers-do.org][《哲学家都做了些什么》]]
+*** IN_PROGRESS [#A] 25. [[./Out-of-Control.org][《失控》]] (这本强烈推荐)
+*** DONE 26. 《三体》三部
+    CLOSED: [2017-03-12 Sun 08:33]
+*** IN_PROGRESS 27.《如何读懂音乐》(2017-02-22-)
+*** DONE 28. [[./The-Pragmatic-Programmer.org][《程序员修炼之道》]] (2017-02-26~2017-03-11)
+    CLOSED: [2017-03-11 Sat 22:12]
+*** IN_PROGRESS 29.[[./The-Classic-on-Tea.org][《图解茶经》]](2017-02-26)
