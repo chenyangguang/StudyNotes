@@ -1,4 +1,6 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
+*** airmon-ng 
+    + Hack for funny!
 *** magit 添加文件追踪的问题
     + 一开始有一个问题一直没有解决掉： Emacs 内部调用 Magit 没发现可以直接 =git add= 的功能的操作命令。今天终于搞明白了。对于没有进入暂存区的文件，当执行 =magit-status= 的时候，看到 /unstaged/ 状态的文件，移动到这个文件上面去， =s= 一下就可添加进 *暂存区* 了。这样就可以顺利的连同修改、删除的文件一起提交 =magit-commit= 了。
     + 世界太大，东西太多，学不过来，用不过来, 怎么办？怎么抉择？
