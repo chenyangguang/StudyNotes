@@ -1,5 +1,5 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
-*** airmon-ng 
+*** aircrack-ng 
     + Hack for funny! 
     + question: =ls: cannot access '/sys/class/ieee80211/': No such file or directory=
     + [[https://www.youtube.com/watch?v=6zDbYSIlSGk][question fix]]
