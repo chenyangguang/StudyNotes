@@ -1,4 +1,5 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
+* 
 *** 日常
     + 日常里面应该多做一些改善当前工作，学习的东西。减少和当前工作切入点关联太远的事情。
 *** aircrack-ng 
