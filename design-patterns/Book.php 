@@ -1,0 +1,16 @@
+<?php
+
+namespace Acme;
+
+class Book implements BookInterface {
+
+    public function open()
+    {
+        var_dump('Opening the pager book.');
+    }
+
+    public function turnPage()
+    {
+        var_dump('turning the page of the paper book.');
+    }
+} 
