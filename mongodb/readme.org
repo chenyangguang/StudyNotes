@@ -1,0 +1,75 @@
+# 显示已有数据库
+show dbs
+
+# 创建数据库或者使用已有的数据库
+use spiders 
+
+# 删除数据库
+db.dropDatabase()
+
+# 删除集合 
+db.collection.drop()
+# es: db.col.drop()
+
+# 查看数据语法
+db.COLLECTION_NAME.find() 
+db.col.find({key1:value1, key2:value2}).pretty()
+# or
+db.col.find({$or: [{key1: value1}, {key2:value2}]}).pretty()
+db.col.find({"likes": {$gt:50}, $or: [{"by": "菜鸟教程"},{"title": "MongoDB 教程"}]}).pretty()
+# $lt(<), $lte(<=), $gt(>), $gte(>=), $ne(!=) 
+
+# 查一条
+db.col.findOne()
+
+# exmaple
+db.col.find()
+
+# 插入数据
+db.col.insert({
+title: 'lagou',
+desc: 'lagou web site',
+})
+
+document={title: '58', desc: '58同城 web site'};
+db.col.insert(document)
+
+# 修改 单条
+db.col.update({'title': '58'}, {$set:{'title': 'google'}})
+# 修改多条
+db.col.update({'title': '58'}, {$set:{'title': 'google'}}, {multi:true})
+
+# 相当于 mysql的\G
+db.col.find().pretty()
+
+
+# 根据条件删除数据
+db.col.remove({'title':'MongoDB 教程'})
+# 删一条找到的数据
+db.COLLECTION_NAME.remove(DELETION_CRITERIA, 1)
+# 清空全部数据 比如 sql 里的 truncate
+db.col.remove({})
+
+
+# limit 
+db.COLLECTION_NAME.find().limit(NUMBER)
+db.col.find().limit(2)
+# skip 跳过指定数量的 data, skip()默认参数是0
+db.COLLECTION_NAME.find().limit(NUMBER).skip(NUMBER)
+db.col.find().limit(2).skip(1)
+
+# 排序, 1 是升序， -1 是降序排列
+db.COLLECTION_NAME.find().sort({KEY:1})
+db.col.find().sort({'desc': -1})
+
+# 创建索引
+db.DOLLECTION_NAME.ensureIndex({KEY:1})
+db.col.ensureIndex({'title':1})
+
+# 聚合
+db.COLLECTION_NAME.aggregate(AGGREGATE_OPERATION)
+db.col.aggregate([{$group : {_id : "$by_user", num_tutorial : {$sum : 1}}}])
+
+# $sum, $avg, $max, $first, $last, $addToSet, $push
+
+# 后面是一些分片等等高级的用法，容我日后再学
