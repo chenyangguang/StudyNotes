@@ -53,7 +53,7 @@
 + 弄个开发插件比较齐全的[[https://github.com/spf13/spf13-vim][spf13-vim]]
 - 执行 =sh <(curl https://j.mp/spf13-vim3 -L)=, 一键安装了。不少好东东
 - 中间有说到需要安装支持 lua, 先在打开的 vim内 判断一下 =:echo has('lua')=, 结果是0。好吧。重新编译 vim8.0, 找到 下载的vim目录, ./configure --enable-luainterp=yes, make && make install, 再查看，变成 1 了, OK。
-
+- [[https://gist.github.com/odiumediae/3b22d09b62e9acb7788baf6fdbb77cf8][源码安装vim的lua和python支持]]
 *** 旋律
 + 四年前，每当这个时间，晚上 11 点半，几乎都会有熄灯睡觉的习惯。但是现在没有了。唯有夜深人静，聆听着收音机里面的旋律。
 *** 几十载
