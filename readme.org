@@ -1,7 +1,7 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
 * 
 *** blog change theme
-+ [[hipaper][hexo-theme-hiker]] , 这个 theme 貌似比较简洁
++ [[https://github.com/iTimeTraveler/hexo-theme-hiker][hexo-theme-hiker]] , 这个 theme 貌似比较简洁
 *** 数据格式
 + 转了一圈，主要文档还是用通用的 markdown 比较合适。该有的主要功能都有。
 *** 接近神的人
