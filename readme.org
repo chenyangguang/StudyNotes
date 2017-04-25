@@ -1654,6 +1654,7 @@ lnmp环境居然没安装成功。
   - 主分区和逻辑分区才可以格式化
 + 挂载命令 mount  
   - 默认挂载到mnt  ~mount /dev/sdb1 /mnt/gitvim~
+  - 将远程目录文件挂载到本地， 然后直接打开 sudo mount -t cifs -o user=xxxxxx,password=xxxxxx,iocharset=utf8  //10.1.1.1/dir_name /mnt/MYSHARE 
   - 卸载 ~umount /mnt/gitvim~
   - 自动挂载(开机自动挂载) ~Vim + /etc/fstab~
 + 添加swap交换分区
