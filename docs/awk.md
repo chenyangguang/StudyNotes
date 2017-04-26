@@ -397,7 +397,69 @@ Liu 72.5 182 9999
 ➜  tmp awk  '{for (i=1; i<=NF; ++i) if ($i < 0) {$i = -$i} print }'                  
 Li -65 -177 18000 # 这里手动输入带负数的值
 Li 65 177 18000 # 返回
+```
 
+### Awk 语言之萝卜白菜
+
+输入一个文件 就叫 `radish.data` 吧, 这个文件大体就是这样的, 这个小节就用这个萝卜白菜来拌炒鱼肉吧
+```
+➜  tmp awk 'BEGIN {print "名称       重量 单价 分类\n"} {printf("%-10s %6.2f %2.2f %-1s\n", $1, $2, $3, $4)}' radish.data
+名称       重量 单价 分类
+
+Fish        30.00 8.50 Meat
+Radish      14.00 1.20 Vegetables
+Cabbage     24.00 1.50 Vegetables
+Apple      100.00 2.50 Fruit
+Onion        8.00 0.80 Vegetables
+Banana      50.00 1.40 Fruit
+Beef       120.00 22.00 Meat
+Rice        40.00 10.00 Staple
+```
+
+首先需要明确的是 Awk 炒的模式，有这么几种, 看过awk 起源之美女选男朋友的话，应该有 *似曾相识燕归去*的感觉。
+`BEGIN {statements} `
+  在输入被读取之前， statements 执行一次 , 就是不管你是爆炒还是水煮， 甭管你是鱼还是肉，你给我先洗洗!准备好油盐酱醋碗, 跟你炒没关系！
+`END {statements} `
+当所有输入读取完毕之后， statements 执行一次, 还是老话，管你吃饱没吃饱，你给我付钱！
+`expression {statements} `
+每碰到一个判断 expression 为真的输入行， statements 就执行一遍做菜流程. expression 为真的是其值非零或非空, 就是检查一下你放盐了没，油是不是太多了? 七分熟还是八分熟？
+`/regular expression/ {statements} `
+当碰到正则匹配的输入行时， statements就执行: 输入行含有一段字符串，而该字符串可以被 regular expression 匹配。一句话，老老实实按照菜谱来，要是在菜里被找到有头发或者小强便便，你丫就死定了！
+`compound pattern {statements}` 
+多种模式， &&(AND), ||(OR), !(NOT), 以及括号组合起来。 当 `compound pattern` 为真时，statements执行。就是你可以 翻炒+添醋， 或者烘烤， 但是别给我整半生不熟的。
+`pattern_1, pattern_2 {statements} `
+一个范围模式匹配多个输入行，从pattern1 开始， 到 pattern_2 结束（包括这两行）, 对其中每一行执行statements操作。 你能露几手的环节可能就是在生火后，起锅前, 这段时间段，是你的表演时刻啊。
+
+
+可以将你的七十二路炒菜法写下来， 放到 `cooking` 秘籍里, 
+```
+BEGIN { 
+      printf("%-10s %s %s %s\n",
+          "名称", "重量", "单价", "分类")
+      }
+      { printf("%-10s %6.2f %6.2f %s\n", $1, $2, $3, $4)
+        weight = weight + $2
+        price  = price + $3*$2
+      }
+END   { printf("\n%10s %6.2f %6.2f\n", "总共: ", weight, price)
+      }%
+```
+
+下次传给万中无一的练武奇才时， 直接调用 
+
+```
+➜  tmp awk -f cooking radish.data
+名称         重量 单价 分类
+Fish        30.00   8.50 Meat
+Radish      14.00   1.20 Vegetables
+Cabbage     24.00   1.50 Vegetables
+Apple      100.00   2.50 Fruit
+Onion        8.00   0.80 Vegetables
+Banana      50.00   1.40 Fruit
+Beef       120.00  22.00 Meat
+Rice        40.00  10.00 Staple
+
+      总共:  386.00 3674.20
 ```
 
 ### 刀片出鞘
