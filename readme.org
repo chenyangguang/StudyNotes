@@ -1,5 +1,6 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
 * 
+*.
 *** blog change theme
 + [[https://github.com/iTimeTraveler/hexo-theme-hiker][hexo-theme-hiker]] , 这个 theme 貌似比较简洁
 *** 数据格式
