@@ -1,5 +1,7 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
 * 
+***  终端神器 
+[[https://github.com/nvbn/thefuck][thefuck]] , 让终端命令行飞一会儿。
 *** 有所作为 
 + 要想大有作为，就必须把根基再扎的更深，必须融入更富创造力和生产力的过程。
 *** blog change theme
