@@ -61,3 +61,7 @@
 *** DONE 28. [[./The-Pragmatic-Programmer.org][《程序员修炼之道》]] (2017-02-26~2017-03-11)
     CLOSED: [2017-03-11 Sat 22:12]
 *** IN_PROGRESS 29.[[./The-Classic-on-Tea.org][《图解茶经》]](2017-02-26)
+*** 深入理解计算机系统
+*** 现代操作系统
+*** Unix高级编程
+*** TCP/IP协议第一卷
