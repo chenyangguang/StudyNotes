@@ -1,5 +1,7 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
 * 
+*** 强行撕开源码
+没有坚实的打怪升级，强行撕开内核源码的一道口子，有害无益?
 ***  终端神器 
 [[https://github.com/nvbn/thefuck][thefuck]] , 让终端命令行飞一会儿。
 *** 有所作为 
