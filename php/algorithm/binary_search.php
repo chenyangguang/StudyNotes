@@ -21,3 +21,4 @@ function binary_search($arr = [], $key)
 
 $arr = [11, 2, 43432, 22, 86, 210, 320, 223];
 var_dump(binary_search($arr, 86));
+
