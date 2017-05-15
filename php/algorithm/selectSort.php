@@ -14,9 +14,9 @@ echo "在要排序的一组数中，选出最小的一个数与第一个位置�
 function selectSort($arr)
 {
 	$len = count($arr);
-    for ($i = 0; $i < $len - 1; $i++) {
+    for ($i = 0; $i < $len - 1; ++$i) {
         $p = $i;
-        for ($j = $i + 1; $j < $len; $j++) {
+        for ($j = $i + 1; $j < $len; ++$j) {
             if ($arr[$p] < $arr[$j]) { // $arr[$p] > $arr[$j]; 此处控制从小到大('<')排序，或者从大到小('>')排序
                 $p = $j;
             }

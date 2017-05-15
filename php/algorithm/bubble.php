@@ -10,8 +10,8 @@ function bubbleSort($arr = [])
     $length = count($arr);
     if($length <= 1) return $arr;
 
-    for ($i = 1; $i < $length; $i++) {
-        for ($k = 0; $k < $length - $i; $k++) {
+    for ($i = 1; $i < $length; ++$i) {
+        for ($k = 0; $k < $length - $i; ++$k) {
             if ($arr[$k] > $arr[$k+1]) {
                 $temp = $arr[$k + 1];
                 $arr[$k+1] = $arr[$k];

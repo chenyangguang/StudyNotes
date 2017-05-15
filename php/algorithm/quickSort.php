@@ -19,7 +19,7 @@ function quickSort($arr)
 
 	// 遍历基准外所有元素，按大小放入两个数组内
 	$leftArr = $rightArr = [];
-	for ($i = 1; $i < $len; $i++) {
+	for ($i = 1; $i < $len; ++$i) {
 		if ($baseNum > $arr[$i]) {
 			$leftArr[] = $arr[$i];
 		}else {
