@@ -29,4 +29,4 @@ function selectSort($arr)
 
 $testArray = [28, 9, 2, -2, -3, 88, 100, -33, 52, 68, 70, 22, 99];
 var_dump(selectSort($testArray));
-?>
+

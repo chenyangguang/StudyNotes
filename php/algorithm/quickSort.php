@@ -1,10 +1,4 @@
 <?php
-header("Content-type:text/html;charset=utf-8");
-echo "php实现算法～快速排序"."<br />";
-echo '';
-echo '
-$testArr = [22, 29, 30, 2, 30, 9 , 40, 9, 88, 56, 99, 33, 21, 11];
-	';
 
 function quickSort($arr)
 {
@@ -27,12 +21,9 @@ function quickSort($arr)
 		}
 	}
 
-	// 分别对左右两个数组递归处理 , 最后合并
-	$leftArr = quickSort($leftArr);
-	$rightArr = quickSort($rightArr);
-
-	return array_merge($leftArr, array($baseNum), $rightArr);
+	return array_merge(quickSort($leftArr), array($baseNum), quickSort($rightArr));
 }
 
 $testArr = [22, 29, 30, 2, 30, 9 , 40, 9, 88, 56, 99, 33, 21, 11];
 var_dump(quickSort($testArr));
+
