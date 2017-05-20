@@ -1,7 +1,4 @@
 <?php
-header("Content-type:text/html;charset=utf-8");
-echo 'php实现选择算法~选择排序'.'<hr/ >';
-echo "在要排序的一组数中，选出最小的一个数与第一个位置的数交换，然后在剩下的数当中再找最小的与第二个位置的数交换，如此循环到倒数第二个数和最后一个数比较为止";
 
 /*
    *  实现思路，双重循环完成，外层控制轮数，当前的最小值。内层控制的比较次数
@@ -14,9 +11,9 @@ echo "在要排序的一组数中，选出最小的一个数与第一个位置�
 function selectSort($arr)
 {
 	$len = count($arr);
-    for ($i = 0; $i < $len - 1; $i++) {
+    for ($i = 0; $i < $len - 1; ++$i) {
         $p = $i;
-        for ($j = $i + 1; $j < $len; $j++) {
+        for ($j = $i + 1; $j < $len; ++$j) {
             if ($arr[$p] < $arr[$j]) { // $arr[$p] > $arr[$j]; 此处控制从小到大('<')排序，或者从大到小('>')排序
                 $p = $j;
             }
@@ -32,4 +29,4 @@ function selectSort($arr)
 
 $testArray = [28, 9, 2, -2, -3, 88, 100, -33, 52, 68, 70, 22, 99];
 var_dump(selectSort($testArray));
-?>
+

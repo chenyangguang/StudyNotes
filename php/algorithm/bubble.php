@@ -2,13 +2,14 @@
 /*
 	在要排序的一组数中，对当前还未排好的序列，从前往后对相邻的两个数依次进行比较和调整，让较大的数往下沉，较小的往上冒。即，每当两相邻的数比较后发现它们的排序与排序要求相反时，就将它们互换
 */
+
 function bubbleSort($arr = [])
 {
     $length = count($arr);
     if($length <= 1) return $arr;
 
-    for ($i = 1; $i < $length; $i++) {
-        for ($k = 0; $k < $length - $i; $k++) {
+    for ($i = 1; $i < $length; ++$i) {
+        for ($k = 0; $k < $length - $i; ++$k) {
             if ($arr[$k] > $arr[$k+1]) {
                 $temp = $arr[$k + 1];
                 $arr[$k+1] = $arr[$k];
