@@ -1,6 +1,9 @@
 <?php
+/*
+选择一个基准元素， 通常选择第一个元素或者最后一个元素。通过一遍扫描， 将要排序序列分成两部分， 一部分比基准元素小， 一部分大于等于基准元素。基准位置在中间正确的位置。然后对左右两个数组递归';
+*/
 
-function quickSort($arr)
+function quickSort($arr = [])
 {
 	// 判断是否需要继续进行
 	$len = count($arr);
@@ -15,9 +18,9 @@ function quickSort($arr)
 	$leftArr = $rightArr = [];
 	for ($i = 1; $i < $len; ++$i) {
 		if ($baseNum > $arr[$i]) {
-			$leftArr[] = $arr[$i];
+			$left[] = $arr[$i];
 		}else {
-			$rightArr[] = $arr[$i];
+			$right[] = $arr[$i];
 		}
 	}
 
