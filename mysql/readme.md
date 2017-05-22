@@ -64,7 +64,10 @@
 
 - 其中一个 *instr* 可以查询某些字段一些包含有特殊字符串的数据， 比如 
 
-```
+```mysql
 select * from demo.stocks where instr(column_name, '*')  limit 1;
 ```
 
+## 直接终端里执行 sql 语句
+```mysql mysql -u username -p passwd dbname -e 'use demo;show tables; show create table itjuzi\G' | grep State| sort | uniq -c | sort -rn
+```
