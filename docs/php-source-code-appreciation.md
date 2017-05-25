@@ -165,9 +165,9 @@ Warning: strpos(): Offset not contained in string in Command line code on line 1
 **ZSTR_HASH** 是获取字符串的hash值，如果不存在，就调用 hash 函数生成一个"。
 
  
-### strpos 的实现思路
-### 小结
-### 有启发木有?
+## strpos 的实现思路
+## 小结
+## 有木有启发?
 
 
 
