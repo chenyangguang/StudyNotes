@@ -70,4 +70,6 @@
 **** TODO 32.Unix高级编程
 **** DONE 33. TCP/IP协议第一卷
     CLOSED: [2017-05-14 Sun 22:30]
-**** TODO 34.《算法导论》
+**** IN_PROGRESS 34.《算法导论》
+**** 《MongoDB 权威指南》
+**** 《Redis 实战》
