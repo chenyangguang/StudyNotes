@@ -148,7 +148,7 @@ zend_memnstr(const char *haystack, const char *needle, size_t needle_len, const 
 {
 	const char *p = haystack;
 	const char ne = needle[needle_len-1];
-	ptrdiff_t off_p;
+	ptrdiff_t off_p; 
 	size_t off_s;
 
 	if (needle_len == 1) {
@@ -187,6 +187,25 @@ zend_memnstr(const char *haystack, const char *needle, size_t needle_len, const 
 ```
 
 这里 zend_memnstr() , 接收四个传进来的参数。 这里可以看到， 当判断出查找的字符串很短，查找的区间也很短时，(为啥是off_s < 1024 或者 needle_len < 9 这两个阀值， 不得而知) 调用的是 glibc 库，这个库是 linux 最底层的 api, 否则就跑去调用 **zend_operators.h** 文件下面的 **ZEND_FASTCALL** 类型的 **zend_memnstr_ex**, 注释里说 glibc 更快。
+
+ptrdiff_t  这个其实是一个 zend_long 在/intl/collator/collator_sort.c文件下面有这个定义。
+
+```
+#if !defined(HAVE_PTRDIFF_T) && !defined(_PTRDIFF_T_DEFINED)
+typedef zend_long ptrdiff_t;
+#endif
+```
+
+又跳去搞事情了
+
+/ext/standard/file.c
+
+```
+#define FPUTCSV_FLD_CHK(c) memchr(ZSTR_VAL(field_str), c, ZSTR_LEN(field_str))
+
+```
+
+
 其他看不太明白。
 
 在非字符串类型搜索分支判断里面，还进行了详细的判断。总之: 要搜索的字符应该是字符串或者数值类型。
@@ -254,7 +273,7 @@ static int php_needle_char(zval *needle, char *target)
 ## 小结
 头疼
 ## 有木有启发?
-木有，感觉 底层写的很难懂。因为中间总是卡住。各种宏定义。
+木有，感觉 底层写的很难懂。因为中间总是卡住。各种宏定义, 各种指针子子孙孙无穷尽也。
 
 
 
