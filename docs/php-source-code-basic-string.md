@@ -114,5 +114,6 @@ u2 里面是存放一个额外的数据, 有介绍说是一般情况下用不到
 3. php 官方文档给出的是基本类型是 Boolean 布尔类型， Integer整型，Float 浮点型，String 字符串，Array 数组，Object 对象，Resource 资源类型，NULL, CallBack/Callable类型。
 4. ww 这个结构体是干啥用的？莫非是存放 CallBack/Callable 类型的数据？
 
+
 ## 小结 
 PHP 底层没有看起来的那么简单。有些构造可能是巧妙的，但是目前还领会不到。

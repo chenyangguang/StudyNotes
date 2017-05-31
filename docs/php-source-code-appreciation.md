@@ -137,6 +137,89 @@ Warning: strpos(): Offset not contained in string in Command line code on line 1
 
 一个 if(){} else{}, 哎呀，我滴亲娘啊，好像很简单啊，就判断一下要查找的参数 needle 是不是字符串类型, 然后如此如此, 最后返回一个 found。
 
+而 found 最核心的就是一个真正查找这个字符的位置的函数 **php_memnstr**, 这个函数的实体实际是 **zend_memnstr** 这个函数。
+
+继续追下去看看
+
+
+```
+static zend_always_inline const char *
+zend_memnstr(const char *haystack, const char *needle, size_t needle_len, const char *end)
+{
+	const char *p = haystack;
+	const char ne = needle[needle_len-1];
+	ptrdiff_t off_p;
+	size_t off_s;
+
+	if (needle_len == 1) {
+		return (const char *)memchr(p, *needle, (end-p));
+	}
+
+	off_p = end - haystack;
+	off_s = (off_p > 0) ? (size_t)off_p : 0;
+
+	if (needle_len > off_s) {
+		return NULL;
+	}
+
+	if (EXPECTED(off_s < 1024 || needle_len < 9)) {	/* glibc memchr is faster when needle is too short */
+		end -= needle_len;
+
+		while (p <= end) {
+			if ((p = (const char *)memchr(p, *needle, (end-p+1))) && ne == p[needle_len-1]) {
+				if (!memcmp(needle, p, needle_len-1)) {
+					return p;
+				}
+			}
+
+			if (p == NULL) {
+				return NULL;
+			}
+
+			p++;
+		}
+
+		return NULL;
+	} else {
+		return zend_memnstr_ex(haystack, needle, needle_len, end);
+	}
+}
+```
+
+这里 zend_memnstr() , 接收四个传进来的参数。 这里可以看到， 当判断出查找的字符串很短，查找的区间也很短时，(为啥是off_s < 1024 或者 needle_len < 9 这两个阀值， 不得而知) 调用的是 glibc 库，这个库是 linux 最底层的 api, 否则就跑去调用 **zend_operators.h** 文件下面的 **ZEND_FASTCALL** 类型的 **zend_memnstr_ex**, 注释里说 glibc 更快。
+其他看不太明白。
+
+在非字符串类型搜索分支判断里面，还进行了详细的判断。总之: 要搜索的字符应该是字符串或者数值类型。
+
+
+```
+static int php_needle_char(zval *needle, char *target)
+{
+	switch (Z_TYPE_P(needle)) {
+		case IS_LONG:
+			*target = (char)Z_LVAL_P(needle);
+			return SUCCESS;
+		case IS_NULL:
+		case IS_FALSE:
+			*target = '\0';
+			return SUCCESS;
+		case IS_TRUE:
+			*target = '\1';
+			return SUCCESS;
+		case IS_DOUBLE:
+			*target = (char)(int)Z_DVAL_P(needle);
+			return SUCCESS;
+		case IS_OBJECT:
+			*target = (char) zval_get_long(needle);
+			return SUCCESS;
+		default:
+			php_error_docref(NULL, E_WARNING, "needle is not a string or an integer");
+			return FAILURE;
+	}
+}
+```
+
+
 然后就看到世界的尽头： 
 
 ```
@@ -146,6 +229,7 @@ Warning: strpos(): Offset not contained in string in Command line code on line 1
 		RETURN_FALSE;
 	}
 ```
+
 找到了, 就返回一个位置，没找到就返回 FALSE 了。
 伸展运动就做完了。
 现在回过头来看，好像没那么简单。好多个宏不知道是干啥用的， 还有几个方法。
@@ -166,8 +250,11 @@ Warning: strpos(): Offset not contained in string in Command line code on line 1
 
  
 ## strpos 的实现思路
+
 ## 小结
+头疼
 ## 有木有启发?
+木有，感觉 底层写的很难懂。因为中间总是卡住。各种宏定义。
 
 
 
