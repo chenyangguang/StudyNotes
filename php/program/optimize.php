@@ -32,8 +32,11 @@ function func_opt($n)
 
 // var_dump(func_opt(5));
 // var_dump(func_opt(10)); // int(55) php optimize.php  0.03s user 0.02s system 95% cpu 0.056 total
-// var_dump(func_opt(20)); // int(6765) php optimize.php  0.04s user 0.02s system 96% cpu 0.065 total
-// var_dump(func_opt(30)); // int(832040) php optimize.php  1.42s user 0.02s system 99% cpu 1.440 total
-var_dump(func_opt(35)); // int(9227465) php optimize.php  16.05s user 0.03s system 99% cpu 16.123 total
+// var_dump(func_opt(20)); // int(6765) php optimize.php  0.01s user 0.01s system 99% cpu 0.025 total
+
+// var_dump(func_opt(30)); // int(832040) php optimize.php  0.23s user 0.01s system 99% cpu 0.241 total
+
+// var_dump(func_opt(35)); // int(9227465) php optimize.php  2.32s user 0.00s system 99% cpu 2.325 total
+
 
 // 还是没优化啥, 还有更好的办法？
