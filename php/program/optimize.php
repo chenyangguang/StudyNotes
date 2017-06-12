@@ -37,6 +37,30 @@ function func_opt($n)
 // var_dump(func_opt(30)); // int(832040) php optimize.php  0.23s user 0.01s system 99% cpu 0.241 total
 
 // var_dump(func_opt(35)); // int(9227465) php optimize.php  2.32s user 0.00s system 99% cpu 2.325 total
+// var_dump(func_opt(100)); // 挂了 cpu 飙到 100%
 
 
 // 还是没优化啥, 还有更好的办法？
+
+
+
+
+// 一位朋友的实现方式, 循环
+function fab($n) {
+  if ($n == 1 || $n == 2) {
+    return 1;
+  }
+  
+  $a = 1;
+  $b = 1;
+  while ($n > 1) {
+    $b = $a + $b;
+    $a = $b - $a;
+    --$n;
+  }
+  
+  return $a;
+}
+
+$n = intval($argv[1]);
+var_dump(fab($n));
