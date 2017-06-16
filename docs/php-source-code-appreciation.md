@@ -101,7 +101,7 @@ PHP_FUNCTION(strpos)
 猜测当第三个参数 offset 是负数的时候，是反向的查找的。如果负数太小了，比如反向查找 'test' 中的 's' 来说， 就是 strpos('test', 't', -10), 就会报错了。 
 
 ```
-➜  data.formaxoa.com git:(master) php -r "echo strpos('test', 's', -10);"
+➜   php -r "echo strpos('test', 's', -10);"
 PHP Warning:  strpos(): Offset not contained in string in Command line code on line 1
 
 Warning: strpos(): Offset not contained in string in Command line code on line 1
