@@ -73,5 +73,5 @@ select * from demo.stocks where instr(column_name, '*')  limit 1;
 ```
 ## order by field 
 ```
-select id, name, title from demo where id in (11, 32, 22) order by (id, 12, 32, 22);
+SELECT id, name, title FROM demo WHERE id IN (11, 32, 22) ORDER BY FIELD (id, 12, 32, 22);
 ```
