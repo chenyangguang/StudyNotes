@@ -71,3 +71,7 @@ select * from demo.stocks where instr(column_name, '*')  limit 1;
 ## 直接终端里执行 sql 语句
 ```mysql mysql -u username -p passwd dbname -e 'use demo;show tables; show create table itjuzi\G' | grep State| sort | uniq -c | sort -rn
 ```
+## order by field 
+```
+select id, name, title from demo where id in (11, 32, 22) order by (id, 12, 32, 22);
+```
