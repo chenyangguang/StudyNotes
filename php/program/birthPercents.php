@@ -16,7 +16,7 @@ function calculateBirthPercents($base)
         $percents = $female / $male;
         if($i % 100 === 0) {
             echo sprintf('calculate number: %d, percents=%f',
-                         $i, $generations, $percents), PHP_EOL;
+                         $i, $percents), PHP_EOL;
         }
     }
 
@@ -27,4 +27,4 @@ function haveChildren() {
      return random_int(0,1);
 }
 
-calculateBirthPercents(100000);
+calculateBirthPercents(100000000000000);
