@@ -1,5 +1,8 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
 *  -
+*** spacemacs 全文搜索
+    + spacemacs 项目内搜索 文件名 Space+p+f
+    + emacs 内替换 space+p+R
 *** 南极大冒险
 + 《南极大冒险》是怎么拍出来的？
 *** 点滴
