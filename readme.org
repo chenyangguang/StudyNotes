@@ -1,6 +1,7 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
 *  -
-*** [[http://www.ybrikman.com/writing/2014/05/19/dont-learn-to-code-learn-to-think/][学会思考而不是一味学编程]]程
+*** 思考
+    [[http://www.ybrikman.com/writing/2014/05/19/dont-learn-to-code-learn-to-think/][学会思考而不是一味学编程]]程
 *** spacemacs 全文搜索
     + spacemacs 项目内搜索 文件名 Space+p+f
     + emacs 内替换 space+p+R
