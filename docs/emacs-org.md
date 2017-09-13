@@ -27,5 +27,6 @@ org-mode 下的 link 是这样款式的 [[http://www.gnu.org/software/emacs/][GN
 双胞胎, 前后跳转到链接的命令。
 
  
+
 ## 小结
 Emacs 这种程序国之重器, 思量之，适可而止。
