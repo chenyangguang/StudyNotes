@@ -1,5 +1,15 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
 *  -
+*** 解决高版本对java版本的依赖
+    + ubuntu 系统内核和程序升级之后，smartgit 启动失败了， 
+#+BEGIN_SRC
+  Java version 1.8 or higher is required, currently  is used (version 1.7.0_151)
+  Add the line
+  jre=/path/to/jre
+  to ~/.smartgit/smartgit.vmoptions and change the path
+  to the one pointing to the desired JRE.
+#+END_SRC
+    + 解决办法 [[https://stackoverflow.com/questions/30177455/moving-from-jdk-1-7-to-jdk-1-8-on-ubuntu][升级 java版本使之兼容高版本 smartgit]]
 *** 思考
     [[http://www.ybrikman.com/writing/2014/05/19/dont-learn-to-code-learn-to-think/][学会思考而不是一味学编程]]程
 *** spacemacs 全文搜索
