@@ -1,7 +1,10 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
 *  -
 *** jquery 改编 [[http://car.autohome.com.cn/config/series/81.html][汽车之家]] 滚动切换左侧目录效果的核心 js
-###+BEGIN_SRC JS
+
+原生版: 
+
+#+BEGIN_SRC JS
     for (var i = 0, len = metoList.length; i < len; i++) {
         var h = wd.abs.point(metoList[i].dom).y + wd.dom.id(metoList[i].dom.getAttribute('pid')).offsetHeight - 35 - (top + i * 27);
         if (h > sT.top) {
@@ -10,8 +13,11 @@
             break;
         }
     }
-###+END_SRC
-###+BEGIN_SRC JS
+#+END_SRC
+
+优化版: 
+
+#+BEGIN_SRC JS
       for (var i = 0, l = tables.length; i < l; i++) {
           var h = $(tables[i]).offset().top + $(tables[i]).height() - th_h - (father_h + i * step_h);
           if(h > w_sroll) {
@@ -20,7 +26,7 @@
               break;
           }
       }
-###+END_SRC
+#+END_SRC
 
 + 这段代码很有意思，事实上直接使用一层循环就可实现, 没必要使用内层循环。优化之后更简洁, 减少不必要的遍历开销, 可读性有所改善，毕竟使用 jquery 多了，原生的 js 只能读懂 60% 左右, [[./html/optimize_car.js][完整代码]]。
 *** 解决高版本对java版本的依赖
