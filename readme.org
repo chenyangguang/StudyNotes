@@ -1,5 +1,7 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
 *  -
+*** emacs 中 golang 环境设置
++ 将8个字符缩进改为4个的 [[https://github.com/syl20bnr/spacemacs/tree/master/layers/%252Blang/go][golang设置]]
 *** jquery 改编 [[http://car.autohome.com.cn/config/series/81.html][汽车之家]] 滚动切换左侧目录效果的核心 js
 
 原生版: 
