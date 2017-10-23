@@ -1,5 +1,15 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
 *  -
+*** 记一次 laravel框架项目 503.blade.php 问题的小结
+ laravel 框架的一个 503.blade.php 问题排查， 我从项目日志开始定位，然后发现并没有问题。以为 Nginx 或者 PHP 出现了问题，一查 Nginx 的 error 和 access 的日志，也没有异常。然后排查最新变更的代码版本号，也没问题，于是发布一个灰度版本，一看，灰度是正常的！ 找不到原因了, 项目里面搜了一下 503, 发现与之相关的只有的一个 Response.php 有状态码的介绍。 Google 了一下 laravel 503.blade.php 的用法，是框架自定义的一套响应。再回来，从 浏览器里 debug 发现状态码就是 503, 这说明应该是到了 php 层了， laravel 用自己的方式响应了 503 状态。好吧。不知道啥原因了。咨询一下番茄，番茄二话不说，过来发动技能了。
+***** 先上服务器，排查线上 .env 配置是否正常
+***** 访问一遍不同路由的日志
+***** 灰度看测试样本，然后直接从测试样本切换到正式版本, 并看日志!!!
+***** cli 终端启动, 另起堡垒机访问, curl 访问
+***** 查看需要写入文件权限的文件目录, bootstrap/cache 和  storage 目录!
+***** 搜索 app目录和 vendor 目录下的 503, 然后打开其中的一个文件， 看到 handle 处理的一个提示, 番茄突然说，知道啥事了。
+***** =php arsitan up= 一起来，访问就正常了。。。。。。
+ 不过从运维的监控里面，并没有查到谁执行过 =php artisan down= , 留下一个未解之迷: 到底是谁启动过 =php artisan down=?     
 *** emacs 中 golang 环境设置
 + 将8个字符缩进改为4个的 [[https://github.com/syl20bnr/spacemacs/tree/master/layers/%252Blang/go][golang设置]]
 *** jquery 改编 [[http://car.autohome.com.cn/config/series/81.html][汽车之家]] 滚动切换左侧目录效果的核心 js
