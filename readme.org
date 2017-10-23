@@ -9,7 +9,7 @@
   + cli 终端启动, 另起堡垒机访问, curl 访问
   + 查看需要写入文件权限的文件目录, bootstrap/cache 和  storage 目录!
   + 搜索 app目录和 vendor 目录下的 503, 然后打开其中的一个文件， 看到 handle 处理的一个提示, 番茄突然说，知道啥事了。
-  + =php arsitan up= 一起来，访问就正常了。。。。。。
+  + =php artisan up= 一起来，访问就正常了。。。。。。
 
  不过从运维的监控里面，并没有查到谁执行过 =php artisan down= , 留下一个未解之迷: 到底是谁启动过 =php artisan down=?     
 
