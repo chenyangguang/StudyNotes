@@ -15,8 +15,8 @@ tags:
  (为创建一组相关或相互依赖的对象提供一个接口, 而且无须指定它们的具体类。)
 
  抽象工厂模式的通用类图:
-[[../photos/abstract-factory.png]]
-[[../photos/abstract-factory-source.png]]
+![../photos/abstract-factory.png]()
+![../photos/abstract-factory-source.png]()
 
 <!--more-->
 #### 区别于工厂方法模式
