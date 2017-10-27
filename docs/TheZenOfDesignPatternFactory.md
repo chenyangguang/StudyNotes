@@ -11,12 +11,10 @@ tags:
 ##  0x00 工厂方法模式
 
 ### 定义
- *Separate the construction of a complex object from its representation so the same construction can create different representation* 
- (将一个复杂对象的构建和它的表示分离，使得同样的构建过程可以创建不同的表示)
+  *Define an interface for crating an object, but let subclasses decide which class to instantiate. Factor Method lets a class defer instantiation to subclasses.* 		 + *Separate the construction of a complex object from its representation so the same construction can create different representation* 
+ - (定义一个用于创建对象的接口，让子类决定实例化哪一个类。工厂方法使一个类的实例化延迟到其子类。)
 
 <!--more-->
-建造者的通用类图
-![](../photos/builder-pattern.png)
 
 #### 解读
 具体的产品类可以有很多个，都继承于抽象产品类。

@@ -10,17 +10,21 @@ tags:
 ##  0x00 建造者模式
 
 ### 定义
- *Define an interface for crating an object, but let subclasses decide which class to instantiate. Factor Method lets a class defer instantiation to subclasses.* 
- (定义一个用于创建对象的接口，让子类决定实例化哪一个类。工厂方法使一个类的实例化延迟到其子类。)
-建造者模式(Builder Pattern)也叫生成器模式.
+*Separate the construction of a complex object from its representation so that the same
+construction process can create different representations*. 
+(将一个复杂对象的构建与它的表示分离, 使得同样的构建过程可以创建不同的表示。)
+
 <!--more-->
+
+![](../photos/builder-pattern.png)
+
 #### 优点
 + 封装性, 客户端不需要知道产品内部的细节.
 + 建造者独立，容易扩展.
 + 便于控制细节风险, 由于具体的建造者都是独立的，因此对建造过程中的逐步细化，不会影响到其他模块.
 
 #### 使用场景
-  * 相同的方法, 不用的执行顺序, 产生不同的h四件结果时，可以采用建造者模式.
+  * 相同的方法, 不用的执行顺序, 产生不同的事件结果时，可以采用建造者模式.
   * 多个部件或零件，都可以装配到一个对象中，但是产生的运行结果又不相同的，则可以使用该模式.
   * 产品类非常复杂，或者产品类中的调用顺序不同产生了不同的效果，这个时候使用建造者模式非常合适.
 
