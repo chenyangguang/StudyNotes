@@ -13,8 +13,7 @@ class GoPlayer implements IGoGame {
     private $name = '';
 
     public function login($user, $pwd) {
-        // todo ...
-        echo $user . '成功上线接受挑战了!' . PHP_EOL;
+        echo $this->name . '成功上线接受挑战了!' . PHP_EOL;
     }
 
     public function GoPlayer($username)
@@ -33,21 +32,52 @@ class GoPlayer implements IGoGame {
     }
 }
 
-class User {
-    public static function MengBaiHeCup() {
-        $user = new GoPlayer('AlphaGo');
-        echo '网战开始' . date('Y-m-d H:i:s') . PHP_EOL;
-        $user->login('alphago', 'apphago1234');
-        $user->playGo();
-        $user->upgradeDuan();
-        echo '网战结束' . date('Y-m-d H:i:s') . PHP_EOL;
+// 利用 Alphago 代理陪练
+class GoPlayerProxy implements IGoGame {
+    private $player = null;
+
+    //构造传递谁来当陪练
+    public function GoPlayerProxy(IGoGame $user)
+    {
+        $this->player = $user;
+    }
+
+    public function login($user, $pwd)
+    {
+        $this->player->login($user, $pwd);
+    }
+
+    // 代替陪练下棋
+    public function playGo()
+    {
+        $this->player->playGo();
+    }
+
+    public function upgradeDuan()
+    {
+        $this->player->upgradeDuan();
     }
 }
 
+
+class User {
+    public static function MengBaiHeCup() {
+        $user = new GoPlayer('潜伏');
+        $proxy = new GoPlayerProxy($user); // 定义一个代理陪练
+        echo '内战开始' . date('Y-m-d H:i:s') . PHP_EOL;
+        $proxy->login('AlphaGo', 'AlphaGo1234');
+        $proxy->playGo();
+        $proxy->upgradeDuan();
+        echo '内战结束' . date('Y-m-d H:i:s') . PHP_EOL;
+    }
+}
+
+// 开启 AlphaGo 老师的陪练模式
 var_dump(User::MengBaiHeCup());
 
-    // 网战开始2017-10-30 16:15:48
-    // alphago成功上线接受挑战了!
-    // 正在下棋的AlphaGo是著名的职业八段
-    // AlphaGo终于升到九段了!
-    // 网战结束2017-10-30 16:15:48
+
+    // 内战开始2017-10-30 17:41:51
+    // 潜伏成功上线接受挑战了!
+    // 正在下棋的潜伏是著名的职业八段
+    // 潜伏终于升到九段了!
+    // 内战结束2017-10-30 17:41:51
