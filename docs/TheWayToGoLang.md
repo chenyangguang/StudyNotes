@@ -14,6 +14,9 @@
 + 两个类型相同的值可以使用 **==** 或者 **!=** 来比较。不同类型的值不可以比较。
 + Go 支持 整形和浮点型数字, 并且原生支持复数, 其中位的运算采用补码。int 是最快的类型, 尽量使用 float64。
 
+#### 精华的 goroutine 和  channel
+**goroutine** 是 Go 程序并发的执行体, **channel** 是它们之间的连接, 是可以让一个 goroutine 发送特征值到另一个 goroutine 的通信机制．没一个 channel 是一个具体类型的导管，叫做通道的元素类型．channel 的创建使用 make. channel 有两个操作, send, receive 统称通信．使用上古神奇的符号 **<-**．close(ch) 关闭　channel, make()可以创建两种通道, 带正数的第二个参数的是缓冲通道，其他的是非缓冲通道.
+
 ## 参考来源 
  + [Go之路](https://github.com/Unknwon/the-way-to-go_ZH_CN)
  + [Go官网](https://golang.org/)
