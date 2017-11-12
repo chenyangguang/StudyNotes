@@ -43,3 +43,4 @@ class ConcreteColleague extends Colleague {
         parent::doSth(); // 委托中介处理
     }
 }
+?>
