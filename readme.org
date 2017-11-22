@@ -1,7 +1,9 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
 *  -
+
 *** 有感而发
 + 脱离需要解决具体问题的语言争吵都是瞎扯.
++ [[https://www.zhihu.com/question/67846139][面试go试着解决这些面试问题]]
 
 *** 记一次 laravel框架项目 503.blade.php 问题的小结
  laravel 框架的一个 503.blade.php 问题排查， 我从项目日志开始定位，然后发现并没有问题。以为 Nginx 或者 PHP 出现了问题，一查 Nginx 的 error 和 access 的日志，也没有异常。然后排查最新变更的代码版本号，也没问题，于是发布一个灰度版本，一看，灰度是正常的！ 找不到原因了, 项目里面搜了一下 503, 发现与之相关的只有的一个 Response.php 有状态码的介绍。 Google 了一下 laravel 503.blade.php 的用法，是框架自定义的一套响应。再回来，从 浏览器里 debug 发现状态码就是 503, 这说明应该是到了 php 层了， laravel 用自己的方式响应了 503 状态。好吧。不知道啥原因了。咨询一下番茄，番茄二话不说，过来发动技能了。
