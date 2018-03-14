@@ -25,9 +25,10 @@ if has('gui_running')
 else
     set background=dark
 endif
-let g:solarized_use16 = 0
+"let g:solarized_use16 = 0
+set t_Co=256
 let g:solarized_termcolors=256
-colorscheme solarized
+colorscheme solarized8
 
 set autochdir
 set autoindent
@@ -38,6 +39,8 @@ set hlsearch
 set foldenable
 set foldmethod=syntax
 set mouse=a
+
+let mapleader=","
 
 "NERDTree
 nmap <F3> :NERDTreeToggle<CR>
@@ -91,6 +94,27 @@ let g:ctrlp_user_command = 'find %s -type f'        " MacOSX/Linux
 
 
 
-" ctags + tagslist
+" ======= ctags + tagslist
 "let g:tagbar_ctags_bin = '/c/Users/Administrator/Downloads/emacs-25.2-x86_64/bin/ctags'
 
+" ======= nerdcommenter  
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+
+" Set a language to use its alternate delimiters by default
+let g:NERDAltDelims_java = 1
+
+" Add your own custom formats or override the defaults
+let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
