@@ -1,5 +1,25 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
 *  -
+*** 伤不起的  windows 开发环境 
+我没想着有一天我会在一个周围尽是 windows 的开发工具的环境里工作，总之一言难尽。你稍微装一下工具之类，在 linux 下三下五去二就搞完了，但是 windows 下面总是出一些 幺蛾子, 而且很多流氓软件，你杀都杀不干净。像韭菜一样，请不走。今天发现 C 盘快满了。C 盘容量总共 121G， 使用 Git Bash 终端查看时，df -h 看了一下。80%磁盘被占用了。赶紧下载一个 WinDirStat 查看了一下各文件夹占用空间大小分布，及百分比。发现系统盘只有 26G 左右。剩下的都是些开发工具。一口气清理掉前人安装的 VS Code 什么的。
+
+$ df -h
+Filesystem            Size  Used Avail Use% Mounted on
+C:/Program Files/Git  121G   78G   43G  65% /
+D:                    272G  3.5G  268G   2% /d
+E:                    272G  6.1G  265G   3% /e
+F:                    270G  134M  270G   1% /f
+
+再看，还有一个 12G 的 休眠文件 Hiberfil.sys 和 15G 的虚拟内存文件 pagefile.sys , 干掉 Hiberfil.sys, 要启动 cmd 都要将 C:\windows\system32\ 加到 系统变量中去！好烦！
+
+$ df -h
+Filesystem            Size  Used Avail Use% Mounted on
+C:/Program Files/Git  121G   66G   55G  55% /
+D:                    272G  3.5G  268G   2% /d
+E:                    272G  6.1G  265G   3% /e
+F:                    270G  134M  270G   1% /f
+
+这下感觉好点了。至少 C 盘还有 45% 空间!
 
 *** 有感而发
 + [[https://www.tuicool.com/articles/3Q7R3y][zabbix 填家自定义监控]]
