@@ -118,3 +118,10 @@ let g:NERDCommentEmptyLines = 1
 
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
+
+
+
+
+
+" bug uses more memory than 'maxmempattern'
+set maxmempattern=2000
