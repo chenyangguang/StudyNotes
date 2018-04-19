@@ -1,6 +1,6 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
 *  -
-*** windows 系统安装 [[chocolatey][https://chocolatey.org/install]] 包管理
+*** windows 系统安装 [[https://chocolatey.org/install][chocolatey]] 包管理
 + cms.exe  命令行安装
 #+BEGIN_SRC CMD
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
