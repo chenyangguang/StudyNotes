@@ -1,5 +1,12 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
 *  -
+*** windows 系统安装 [[chocolatey][https://chocolatey.org/install]] 包管理
++ cms.exe  命令行安装
+#+BEGIN_SRC CMD
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+#+END_SRC
++ 要怎么使用 linux 登陆在"仅运行使用网络级别身份验证的远程桌面的计算机" 的 windows 系统上?
+
 ***  linux 下访问 windows 远程桌面 
 + 可以使用 [[https://github.com/rdesktop/rdesktop][rdesktop]]
 + 需要一些依赖
