@@ -1,5 +1,9 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
-*  -
+
+*** archlinux 下快速切换 caps 和 ctrl
+#+BEGIN_SRC SHELL
+setxkbmap -option 'ctrl:swapcaps'
+#+END_SRC
 *** windows 系统安装 [[https://chocolatey.org/install][chocolatey]] 包管理
 + cms.exe  命令行安装
 #+BEGIN_SRC CMD
