@@ -1,5 +1,7 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
 
+** up
+*** 如愿拿到mbp, 开启大杀四方吧.
 *** archlinux 下快速切换 caps 和 ctrl
 #+BEGIN_SRC SHELL
 setxkbmap -option 'ctrl:swapcaps'
