@@ -125,3 +125,4 @@ let g:NERDTrimTrailingWhitespace = 1
 
 " bug uses more memory than 'maxmempattern'
 set maxmempattern=2000
+set backupcopy=yes
