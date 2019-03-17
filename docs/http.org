@@ -1,0 +1,87 @@
+* TODO http 协议
+
+|----------+------------------------------------------------------------------------------------------------+------------------------------------------------------------|
+| 协议版本 | 特征                                                                                           | 备注                                                       |
+|----------+------------------------------------------------------------------------------------------------+------------------------------------------------------------|
+| http/0.9 | 只有一个命令GET                                                                                | 没有HEAD等描述数据的信息,服务器发送发送完毕，就关闭TCP连接 |
+| http/1.0 | 增加了很多命令POST,PUT,DELETE , 增加了status code 和header                                     | 还增加了多字符集发送、多部分发送、权限和缓存等            |
+| http/1.1 | 持久连接, (tcp创建之后持久) pipeline,  增加host和其他命令                                      |                                                            |
+| http2    | 二进制传输,同一个连接里面发送多个请求不再需要按照顺序来, 头信息压缩，推送功能提高效率,分帧传输 | 同时返回多个响应信息, 服务端可以主动发起一些传输          |
+|----------+------------------------------------------------------------------------------------------------+------------------------------------------------------------|
+
+
+
+
+浏览器跨域问题
+
+是浏览器行为，curl终端中是没有额。请求是已经发送了，而且响应也已经回来了，但是浏览器识别为不允许的行为。忽略掉并屏蔽这些返回的信息了，并曝出异常。
+header: 'Access-Control-Allow-Origin': 'http://www.qq.com'
+
+
+跨域限制
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Headers: 'X-Text-Cors'
+Access-Control-Allow-Methods: 'PUT,POST,DELETE'
+Access-Control-Allow-Max-Age: '1000' # 秒seconds
+
+缓存验证参数header内
+Etag 
+Last-Modified
+
+
+
+cookie & sesstion 
+max-age 和expires 设置过期时间
+Secure 只在https的时候发送
+httpOnly无法通过document.cookie访问 
+
+
+Redirect
+301是永久重定向
+302是重定向
+
+http 连接中 connetion_id 增长。如果是 https2 的话，同一个域名，只需要一个一个connection_id, 可以并发的发送请求，服务器主动推送，数据交互又一个质的飞跃。
+比如google.com, 查看这个页面会发现他们使用的同域内，一个网站的资源只有一个connection_id
+
+
+数据协商
+Request Accept: 
+Response Content
+
+Content-Type
+Content-Language: ZH-CN,EN
+Content-Encoding: gzip, deflate, br
+User-Agent
+
+'Content-Security-Policy': 'default-src http: https:'
+比如限制只能加载本站的资源，使用 
+'Content-Security-Policy': 'default-src \'self'\'
+
+限制form提交范围
+'Content-Security-Policy': 'default-src \'self\'; form-action \'self\''
+
+限制单个的src 
+'Content-Security-Policy': 'script-src \'self\''
+也可以通过使用html的meta标签来使用,比如：
+<meta http-equiv="Content-Security-Policy" content="default-src 'self';form-action 'self'">
+
+
+
+nginx 配置ssl
+serve {
+  listen 443 http2;
+  servie_name test.com;
+  http2_push_reload on;
+
+  ssl on;
+  ssl_certificate_key /path/localhost-privkey.pem;
+  ssl_certificate /path/localhost-cert.pem;
+
+  location / {
+    proxy_cache my_cache;
+    proxy_pass http://localhost:8888;
+    proxy_set_header Host $host
+    add_header Strict-Transport-Securety max_age = 200
+  }
+}
+
