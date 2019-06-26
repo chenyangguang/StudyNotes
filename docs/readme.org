@@ -1,5 +1,14 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
 ** linux下四步实现服务器免密登录
+#+BEGIN_SRC SHELL 
+# manjaro install mysql
+ yay -S mariadb mariadb-clients
+ sudo mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+ sudo systemctl start mysqld 
+ mysqladmin -u root password "password" 
+ sudo systemctl enable mysqld 
+ mysql -uroot -p 
+#+END_SRC
 
 #+BEGIN_SRC SHELL
 ssh-keygen
