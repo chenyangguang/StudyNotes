@@ -1,4 +1,5 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
+* life is ex
 ** linux下四步实现服务器免密登录
 #+BEGIN_SRC SHELL 
 # manjaro install mysql
