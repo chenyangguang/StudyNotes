@@ -1,6 +1,6 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
 * life is ex
-** linux下四步实现服务器免密登录
+***  linux下四步实现服务器免密登录
 #+BEGIN_SRC SHELL 
 # manjaro install mysql
  yay -S mariadb mariadb-clients
@@ -17,7 +17,7 @@ scp ~/.ssh/id_rsa.pub user@host:
 ssh user@host 
 cat id_rsa.pub >> ~/.ssh/authorized_keys
 #+END_SRC
-** up
+*** up
 *** 如愿拿到mbp, 开启大杀四方吧.
 *** archlinux 下快速切换 caps 和 ctrl
 #+BEGIN_SRC SHELL
