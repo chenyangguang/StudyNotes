@@ -1,18 +1,9 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
-* 
-*** 如愿拿到mbp, 开启大杀四方吧.
-*** archlinux 下快速切换 caps 和 ctrl
-#+BEGIN_SRC SHELL
-setxkbmap -option 'ctrl:swapcaps'
+* life is ex
+*** golang 交叉编译 ， mac 或者 windows 下预先编译好linux二进制可执行文件时，可以如下执行。
+#+BEGIN_SRC_SHELL
+env GOOS=linux GOARCH=amd64 go build -o main main.go
 #+END_SRC
-*** windows 系统安装 [[https://chocolatey.org/install][chocolatey]] 包管理
-+ cms.exe  命令行安装
-#+BEGIN_SRC CMD
-@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
-#+END_SRC
-+ 要怎么使用 linux 登陆在"仅运行使用网络级别身份验证的远程桌面的计算机" 的 windows 系统上?
-
-***  linux 下访问 windows 远程桌面 
 + 可以使用 [[https://github.com/rdesktop/rdesktop][rdesktop]]
 + 需要一些依赖
 #+BEGIN_SRC SHELL

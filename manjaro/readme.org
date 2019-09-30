@@ -1,0 +1,13 @@
+* manjaro keys 
+
+***  Download video free by command in manjaro system  by you-get 
+#+BEGIN_SRC SHELL
+yay install you-get 
+you-get video-your-link # example you-get https://www.bilibili.com/video/av14510001?from=search&seid=18310346779436338583 
+#+END_SRC 
+
+*** Play video in Emacs 
+#+BEGIN_SRC SHELL 
+dired your-video-dir
+!vlc # on the video file line you want to play
+#+END_SRC 
