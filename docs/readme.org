@@ -1,4 +1,18 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
+* latex 编辑中文简历不显示中文的问题解决
+#+BEGIN_SRC_SHELL
+% UTF-8 encoding
+% bad-looking fonts (CJKfonts package)
+% latex+dvips, latex+dvipdfm(x) or pdflatex
+\documentclass{article}
+\usepackage{CJKutf8}
+\begin{document}
+\begin{CJK*}{UTF8}{gbsn}
+中文
+文章内容。
+\clearpage\end{CJK*}
+\end{document}
+#+END_SRC
 * life is ex
 *** golang 交叉编译 ， mac 或者 windows 下预先编译好linux二进制可执行文件时，可以如下执行。
 #+BEGIN_SRC_SHELL
