@@ -1,6 +1,9 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
-* latex 编辑中文简历不显示中文的问题解决
-#+BEGIN_SRC_SHELL
+
+* life is ex
+
+*** latex 编辑中文简历不显示中文的问题解决
+#+BEGIN_SRC SHELL
 % UTF-8 encoding
 % bad-looking fonts (CJKfonts package)
 % latex+dvips, latex+dvipdfm(x) or pdflatex
@@ -13,9 +16,9 @@
 \clearpage\end{CJK*}
 \end{document}
 #+END_SRC
-* life is ex
+
 *** golang 交叉编译 ， mac 或者 windows 下预先编译好linux二进制可执行文件时，可以如下执行。
-#+BEGIN_SRC_SHELL
+#+BEGIN_SRC SHELL
 env GOOS=linux GOARCH=amd64 go build -o main main.go
 #+END_SRC
 + 可以使用 [[https://github.com/rdesktop/rdesktop][rdesktop]]
