@@ -1,7 +1,14 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
-
 * life is ex
 
+*** centos 安装 protoc 
+#+BEGIN_SRC SHELL 
+PROTOC_ZIP=protoc-3.7.1-linux-x86_64.zip
+curl -OL https://github.com/protocolbuffers/protobuf/releases/download/v3.7.1/$PROTOC_ZIP
+sudo unzip -o $PROTOC_ZIP -d /usr/local bin/protoc
+sudo unzip -o $PROTOC_ZIP -d /usr/local 'include/*'
+rm -f $PROTOC_ZIP
+#+END_SRC
 *** latex 编辑中文简历不显示中文的问题解决
 #+BEGIN_SRC SHELL
 % UTF-8 encoding
