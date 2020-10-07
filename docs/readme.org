@@ -1,6 +1,10 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
 * life is ex
-
+*** tmux 支持滚屏
+ctrl + b 然后 : 进入命令行模式，  
+#+BEGIN_SRC 
+set -g mouse on
+#+END_SRC
 *** centos 安装 protoc 
 #+BEGIN_SRC SHELL 
 PROTOC_ZIP=protoc-3.7.1-linux-x86_64.zip
