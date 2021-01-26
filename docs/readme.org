@@ -1,5 +1,10 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
 * life is ex
+**** K8S 安装master节点, 安装 docker 环节出现  404 ,  [[https://www.cnblogs.com/zgqbky/p/13036069.html][解决方案]]   
+#+BEGIN_SRC 
+vim /etc/yum.repos.d/CentOS-Base.repo # 修改 $releasever 为 7 
+vim /etc/yum.repos.d/docker-ce.repo # 修改 $releasever 为 7 
+#+END_SRC
 *** tmux 支持滚屏
 ctrl + b 然后 : 进入命令行模式，  
 #+BEGIN_SRC 
