@@ -1,5 +1,12 @@
 #+TODO: TODO IN_PROGRESS WAITING DONE
 * life is ex
+**** curl 终端加密访问数据，使用  basic auth 加密方式, 比如查询 WooCommerce 的物流跟踪号
+#+BEGIN_SRC 
+curl -X GET https://yoururl/wp-json/wc-shipment-tracking/v3/orders/50/shipment-trackings \
+ -u ck_key:cs_secret \
+
+#+END_SRC
+
 **** K8S 安装master节点, 安装 docker 环节出现  404 ,  [[https://www.cnblogs.com/zgqbky/p/13036069.html][解决方案]]   
 #+BEGIN_SRC 
 vim /etc/yum.repos.d/CentOS-Base.repo # 修改 $releasever 为 7 
